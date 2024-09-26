@@ -7,9 +7,6 @@
 
 function getForm() {
     let x = document.forms["routeForm"]["routeSrc"].value;
-    testAlert();
 }
 
-function testAlert() {
-    alert("This is an alert again!!!!"); 
-}
+

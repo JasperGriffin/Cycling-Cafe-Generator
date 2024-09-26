@@ -2,6 +2,7 @@
 <head>
     
     <script defer type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="auth.js"></script>
 
     <link rel="stylesheet" type="text/css" href="header.css">
     <link rel="stylesheet" type="text/css" href="footer.css">
@@ -21,6 +22,9 @@
         <h1>Cafe Generator Website v2</h1>
         <h2>Enter your Strava route here</h2>
         <br />
+
+        <button onclick="initiateOAuth()">Go to Strava's site to grant access</button>
+
         <form action="" id="routeForm" onsubmit="getForm()">
             <label for="routeTitle" id="routeTitle"><b>Enter your Strava route</b></label><br> 
             <input type="text" id="routeSrc" name="routeSrc">
