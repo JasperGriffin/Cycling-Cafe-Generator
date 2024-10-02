@@ -1,0 +1,32 @@
+<html>
+<head>
+    
+    <script defer type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="auth.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="header.css">
+    <link rel="stylesheet" type="text/css" href="footer.css">  
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <%- include('templates/header.ejs') -%>
+
+</head>
+    <body>
+
+        <div class="container"> 
+            <h1>Cafe Generator Website v2</h1>
+            <h2>Enter your Strava route here</h2>
+            <br />
+    
+            <button onclick="initiateOAuth()">Go to Strava's site to grant access</button>
+    
+            <form action="" id="routeForm" onsubmit="getForm()">
+                <label for="routeTitle" id="routeTitle"><b>Enter your Strava route</b></label><br> 
+                <input type="text" id="routeSrc" name="routeSrc">
+                <input type="submit" value="Submit">
+            </form>
+    
+        </div>
+    
+        <%- include('templates/footer.ejs') -%>
+    </body>
+</html>

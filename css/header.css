@@ -52,8 +52,9 @@ a {
 .nav-right {
     float: right;
     padding: 20px;
-
 }
+.clear { clear:both; }
+
 
 .nav-right form {
     display: inline;

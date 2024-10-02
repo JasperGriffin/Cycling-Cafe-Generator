@@ -7,6 +7,7 @@
 
 function getForm() {
     let x = document.forms["routeForm"]["routeSrc"].value;
+    console.log(x);
 }
 
 
