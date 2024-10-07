@@ -16,10 +16,15 @@
             <h1>Cafe Generator Website v2</h1>
             <h2>Enter your Strava route here</h2>
             <br />
+
+
+            
+            <form action="/api/" id="" method="GET"> 
+                <input type="submit" value="Authenticate through OAuth please">
+            </form>
+            
     
-            <button onclick="initiateOAuth()">Go to Strava's site to grant access</button>
-    
-            <form action="" id="routeForm" onsubmit="getForm()">
+            <form action="/api" id="routeForm" method="POST"> 
                 <label for="routeTitle" id="routeTitle"><b>Enter your Strava route</b></label><br> 
                 <input type="text" id="routeSrc" name="routeSrc">
                 <input type="submit" value="Submit">

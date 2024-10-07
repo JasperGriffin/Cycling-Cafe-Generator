@@ -4,7 +4,17 @@ const port = 3000;
 var path = require('path');
 var fs = require('fs');
 var http = require('http'); 
+//ejs library
 let ejs = require('ejs');
+
+//referencing env variables
+require('dotenv').config();
+
+let { sayHello, validateLink, getId } = require('./strava.js');
+
+//Strava API
+var StravaApiV3 = require('strava_api_v3');
+var defaultClient = StravaApiV3.ApiClient.instance;
 
 app.use(express.json()); 
 
@@ -14,39 +24,60 @@ app.use(express.static(path.join(__dirname, 'js')))
 app.use(express.static(path.join(__dirname, 'css')));
 app.use(express.static(path.join(__dirname, 'assets')));
 
-//https://github.com/DevonCrawford/Personal-Website
-
-/*
-app.get('/', function(req, res) {
-    res.writeHead(200,{'Content-Type': 'text/html'});
-    var readStream = fs.createReadStream('../index.html');
-    readStream.pipe(res);
-}).listen(port);
-*/
-
-
 app.set('view engine', 'ejs'); 
+app.set('trust proxy', true);
 
 app.get('/', (req, res) => {
     res.render('index', {title: 'Hey', message: 'Hello there!' }) 
-}).listen(port);  
+})//.listen(port);  
+ 
+// Configure OAuth2 access token for authorization: strava_oauth
+var strava_oauth = defaultClient.authentications['strava_oauth'];
+strava_oauth.accessToken = process.env.ACCESS_TOKEN;
+//const id = BigInt("3273788391549797542");
 
 
-/*
-fs.readFile('index.html', function(err, html) {
+app.get('/api', async (req, res) => {
 
-    http.createServer(function(req, res) {
-        res.writeHeader(200, {"Content-Type": 'text/html'});
-        res.write(html);
-        res.end(); 
-    }).listen(port);
+  /*
+  OAUTH
+  */
 });
 
-http.createServer(function(req, res) {
-    res.writeHead(200,{'Content-Type': 'text/html'});
-    res.write(req.url); 
-    res.end(); 
-}).listen(4200);
-*/
+//327378839154979754
+//https://www.strava.com/routes/3273788391549797542
+app.post('/api', async (req, res) => {
 
-//app.get (api) -> create a javascript function that reditcts to api 
+  //if authenticated, run below
+
+  let link = req.body['routeSrc'];  
+
+  let api = new StravaApiV3.RoutesApi();
+
+  if(validateLink(link)) {
+
+    let id = getId(link);
+
+    console.log("this works: " + id); 
+
+  }
+  else {
+    console.log("this doesn't");
+  }
+
+  /*
+  var callback = function(error, data, response) {
+    if (error) {
+      console.error(error);
+    } else {
+      //console.log('API called successfully. Returned data: ' + data);
+      sayHello(); 
+    }
+  };
+  api.getRouteById(id, callback);
+  */
+});
+
+
+app.listen(port); 
+
