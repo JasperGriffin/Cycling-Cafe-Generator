@@ -1,19 +1,19 @@
+const regex = new RegExp("https:\/\/www\.strava\.com\/routes\/[0-9]{19}");
+
 function sayHello() { 
     console.log("Success!"); 
 }
 
 function validateLink(link) {
-    
-   
-    //let arr = link.split('/'); 
-    //if arr[1] == strava, arr[2] == routes, etc
-    //getId(); 
 
-    return true;
+    if (regex.test(link)) {
+        return true; 
+    }
 }
 
 function getId(link) { 
-    return link.split('/')[4]; 
+    let id = link.split('/')[4]; 
+    return id; 
 }
 /**
  * Implement Polyline encoder

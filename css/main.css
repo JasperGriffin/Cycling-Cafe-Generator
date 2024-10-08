@@ -1,3 +1,33 @@
 .container {
     padding: 10px;
+    text-align: center;
+}
+
+.title { 
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+.form-container { 
+    padding-top: 20px;
+}
+
+#route-title {
+    font-size: 30px;
+}
+
+#route-src {
+    width: 500px;
+    height: 40px;
+    padding: 10px;
+}
+
+#submit-button {
+    width: 60px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.error-message {
+    color: red;
 }

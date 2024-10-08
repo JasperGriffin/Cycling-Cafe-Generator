@@ -4,8 +4,10 @@
     <script defer type="text/javascript" src="script.js"></script>
     <script type="text/javascript" src="auth.js"></script>
 
+    <!--
     <link rel="stylesheet" type="text/css" href="header.css">
     <link rel="stylesheet" type="text/css" href="footer.css">  
+    -->
     <link rel="stylesheet" type="text/css" href="main.css">
     <%- include('templates/header.ejs') -%>
 
@@ -13,24 +15,37 @@
     <body>
 
         <div class="container"> 
-            <h1>Cafe Generator Website v2</h1>
-            <h2>Enter your Strava route here</h2>
+
+            <div class="title">
+                <h1>Cycle Cafe Generator</h1>
+            </div>
             <br />
 
-
-            
+            <!--
             <form action="/api/" id="" method="GET"> 
                 <input type="submit" value="Authenticate through OAuth please">
             </form>
+            -->
             
-    
-            <form action="/api" id="routeForm" method="POST"> 
-                <label for="routeTitle" id="routeTitle"><b>Enter your Strava route</b></label><br> 
-                <input type="text" id="routeSrc" name="routeSrc">
-                <input type="submit" value="Submit">
-            </form>
-    
+
+            <div class="form-container">
+
+                
+                <form action="/api" id="routeForm" method="POST"> 
+                    <label for="routeTitle" id="route-title"><b>Enter your Strava route</b></label><br> 
+                    <br />
+                    <div class="error-message">
+                        <b><%= message %></b>
+                    </div>
+                    <br />
+                    <input type="text" id="route-src" name="routeSrc">
+                    <input type="submit" id="submit-button" value="Search">
+                </form>
+            </div>
+            
         </div>
+
+        
     
         <%- include('templates/footer.ejs') -%>
     </body>

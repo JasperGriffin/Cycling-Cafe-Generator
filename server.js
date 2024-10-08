@@ -28,7 +28,7 @@ app.set('view engine', 'ejs');
 app.set('trust proxy', true);
 
 app.get('/', (req, res) => {
-    res.render('index', {title: 'Hey', message: 'Hello there!' }) 
+    res.render('index', {title: 'Hey', message: '' }) 
 })//.listen(port);  
  
 // Configure OAuth2 access token for authorization: strava_oauth
@@ -44,40 +44,56 @@ app.get('/api', async (req, res) => {
   */
 });
 
-//327378839154979754
-//https://www.strava.com/routes/3273788391549797542
-app.post('/api', async (req, res) => {
-
-  //if authenticated, run below
+//private link
+//https://www.strava.com/routes/3273788814186038130 
+app.post('/api', async (req, res, next) => {
 
   let link = req.body['routeSrc'];  
 
-  let api = new StravaApiV3.RoutesApi();
-
   if(validateLink(link)) {
-
+    
     let id = getId(link);
+    let api = new StravaApiV3.RoutesApi();
 
-    console.log("this works: " + id); 
-
+    console.log("id: " + id);
+    
+    var callback = function(error, data, response) {
+      if (error) {
+        return next(error);
+      } else {
+        console.log('API called successfully. Returned data: ' + data);
+      }
+    };
+    api.getRouteById(id, callback);
+    
   }
-  else {
-    console.log("this doesn't");
+  else { 
+    return next("linkError");
   }
 
-  /*
-  var callback = function(error, data, response) {
-    if (error) {
-      console.error(error);
-    } else {
-      //console.log('API called successfully. Returned data: ' + data);
-      sayHello(); 
-    }
-  };
-  api.getRouteById(id, callback);
-  */
+  //need to catch private links which return forbidden (403)
+  
+});
+app.listen(port); 
+
+app.use((err, req, res, next) => {
+
+  //app.set('views','/views/errors/');
+
+  if(err.status == 403) {
+    res.render('403', { url: req.url });
+    //res.status(err.status || 403).json({ error: err.message });
+  }
+  else if(err.status == 404) {
+    res.render('404', {url: req.url})
+    //res.status(err.status || 404).json({ error: err.message });
+  }
+  else if (err == "linkError") {
+    res.render('index', { message: 'Make sure your link is a full Strava URL route'})
+    res.end(); 
+  }
+
+
 });
 
-
-app.listen(port); 
 
