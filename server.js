@@ -10,7 +10,7 @@ let ejs = require('ejs');
 //referencing env variables
 require('dotenv').config();
 
-let { sayHello, validateLink, getId } = require('./strava.js');
+let { sayHello, validateLink, getId, getPolyline } = require('./strava.js');
 
 //Strava API
 var StravaApiV3 = require('strava_api_v3');
@@ -46,6 +46,9 @@ app.get('/api', async (req, res) => {
 
 //private link
 //https://www.strava.com/routes/3273788814186038130 
+
+//public link
+//https://www.strava.com/routes/3273788391549797542
 app.post('/api', async (req, res, next) => {
 
   let link = req.body['routeSrc'];  
@@ -62,6 +65,7 @@ app.post('/api', async (req, res, next) => {
         return next(error);
       } else {
         console.log('API called successfully. Returned data: ' + data);
+        getPolyline(data);
       }
     };
     api.getRouteById(id, callback);
@@ -71,7 +75,6 @@ app.post('/api', async (req, res, next) => {
     return next("linkError");
   }
 
-  //need to catch private links which return forbidden (403)
   
 });
 app.listen(port); 
@@ -82,11 +85,11 @@ app.use((err, req, res, next) => {
 
   if(err.status == 403) {
     res.render('403', { url: req.url });
-    //res.status(err.status || 403).json({ error: err.message });
+    res.end(); 
   }
   else if(err.status == 404) {
     res.render('404', {url: req.url})
-    //res.status(err.status || 404).json({ error: err.message });
+    res.end(); 
   }
   else if (err == "linkError") {
     res.render('index', { message: 'Make sure your link is a full Strava URL route'})

@@ -1,3 +1,5 @@
+let polylineConvert = require('google-polyline'); 
+
 const regex = new RegExp("https:\/\/www\.strava\.com\/routes\/[0-9]{19}");
 
 function sayHello() { 
@@ -11,13 +13,31 @@ function validateLink(link) {
     }
 }
 
+
+
 function getId(link) { 
     let id = link.split('/')[4]; 
     return id; 
 }
+
+function getPolyline(data) {
+
+    const polyline = data.map.polyline; 
+    
+    try {
+        let obj = polylineConvert.decode(polyline); 
+        console.log(obj);
+    }
+    catch(err) {
+        console.log("error: " + err); 
+    }
+    //return polyline;
+    //return polyline
+}
+
 /**
  * Implement Polyline encoder
  * 
  */
 
-module.exports = { sayHello, validateLink, getId };
+module.exports = { sayHello, validateLink, getId, getPolyline };

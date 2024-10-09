@@ -20,6 +20,7 @@
     "dotenv": "^16.4.5",
     "ejs": "^3.1.10",
     "express": "^4.21.0",
+    "google-polyline": "^1.0.3",
     "simple-oauth2": "^5.1.0"
   }
 }
