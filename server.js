@@ -57,8 +57,6 @@ app.post('/api', async (req, res, next) => {
     
     let id = getId(link);
     let api = new StravaApiV3.RoutesApi();
-
-    console.log("id: " + id);
     
     var callback = function(error, data, response) {
       if (error) {
@@ -66,6 +64,10 @@ app.post('/api', async (req, res, next) => {
       } else {
         console.log('API called successfully. Returned data: ' + data);
         getPolyline(data);
+
+        res.render('routes', { url: req.url });
+        res.end();         
+
       }
     };
     api.getRouteById(id, callback);
@@ -79,6 +81,7 @@ app.post('/api', async (req, res, next) => {
 });
 app.listen(port); 
 
+//error handling
 app.use((err, req, res, next) => {
 
   //app.set('views','/views/errors/');

@@ -13,8 +13,6 @@ function validateLink(link) {
     }
 }
 
-
-
 function getId(link) { 
     let id = link.split('/')[4]; 
     return id; 
@@ -31,13 +29,11 @@ function getPolyline(data) {
     catch(err) {
         console.log("error: " + err); 
     }
-    //return polyline;
-    //return polyline
+
 }
 
-/**
- * Implement Polyline encoder
- * 
- */
+
+
+
 
 module.exports = { sayHello, validateLink, getId, getPolyline };
