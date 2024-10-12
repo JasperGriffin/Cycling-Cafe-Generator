@@ -10,7 +10,7 @@ let ejs = require('ejs');
 //referencing env variables
 require('dotenv').config();
 
-let { sayHello, validateLink, getId, getPolyline } = require('./strava.js');
+let { sayHello, validateLink, getId, getPolyline, getCountry } = require('./strava.js');
 
 //Strava API
 var StravaApiV3 = require('strava_api_v3');
@@ -34,21 +34,14 @@ app.get('/', (req, res) => {
 // Configure OAuth2 access token for authorization: strava_oauth
 var strava_oauth = defaultClient.authentications['strava_oauth'];
 strava_oauth.accessToken = process.env.ACCESS_TOKEN;
-//const id = BigInt("3273788391549797542");
 
 
 app.get('/api', async (req, res) => {
-
   /*
   OAUTH
   */
 });
 
-//private link
-//https://www.strava.com/routes/3273788814186038130 
-
-//public link
-//https://www.strava.com/routes/3273788391549797542
 app.post('/api', async (req, res, next) => {
 
   let link = req.body['routeSrc'];  
@@ -59,25 +52,25 @@ app.post('/api', async (req, res, next) => {
     let api = new StravaApiV3.RoutesApi();
     
     var callback = function(error, data, response) {
-      if (error) {
-        return next(error);
-      } else {
-        console.log('API called successfully. Returned data: ' + data);
-        getPolyline(data);
+      if (error) { return next(error);} 
+      else {
+        let polyline = getPolyline(data);
 
-        res.render('routes', { url: req.url });
-        res.end();         
-
+        getCountry(polyline) // <- return here is important
+          .then(result => {
+            if (result == "GBR") {
+              res.render('routes', { message: polyline });
+              res.end(); 
+            }
+            else { return next("locationError"); }
+          })   
       }
     };
     api.getRouteById(id, callback);
     
   }
-  else { 
-    return next("linkError");
-  }
+  else { return next("linkError"); }
 
-  
 });
 app.listen(port); 
 
@@ -94,11 +87,14 @@ app.use((err, req, res, next) => {
     res.render('404', {url: req.url})
     res.end(); 
   }
-  else if (err == "linkError") {
+  else if(err == "linkError") {
     res.render('index', { message: 'Make sure your link is a full Strava URL route'})
     res.end(); 
   }
-
+  else if(err == "locationError") {
+    res.render('index', { message: 'This website is sadly exclusive to routes in the UK only'})
+    res.end();
+  }
 
 });
 

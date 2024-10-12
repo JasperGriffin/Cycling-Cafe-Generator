@@ -24,7 +24,11 @@
     crossorigin="">
     </script>
 
-    <script type="text/javascript" src="routes.js"></script>
+    <script>
+        const data = '<%- JSON.stringify(message) %>'
+    </script>
+
+    <script defer type="text/javascript" src="routes.js"></script>
 
     <%- include('templates/footer.ejs') -%>
 </body> 

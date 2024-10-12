@@ -1,4 +1,6 @@
 let polylineConvert = require('google-polyline'); 
+const latlongify = require('latlongify');
+const GBR = "GBR";
 
 const regex = new RegExp("https:\/\/www\.strava\.com\/routes\/[0-9]{19}");
 
@@ -25,6 +27,7 @@ function getPolyline(data) {
     try {
         let obj = polylineConvert.decode(polyline); 
         console.log(obj);
+        return obj;
     }
     catch(err) {
         console.log("error: " + err); 
@@ -32,8 +35,18 @@ function getPolyline(data) {
 
 }
 
+async function getCountry(polyline) {
+    
+    let str = polyline[0].toString(); 
+    
+    var array = str.split(',');
+    a = Number(array[0]), b = Number(array[1]);  
+    
+    const res = await latlongify.find(a, b); 
+    return res.country.code; 
+}
 
 
 
 
-module.exports = { sayHello, validateLink, getId, getPolyline };
+module.exports = { sayHello, validateLink, getId, getPolyline, getCountry };
