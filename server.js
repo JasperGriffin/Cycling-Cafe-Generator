@@ -45,8 +45,6 @@ app.get('/api', async (req, res) => {
 
 app.post('/api', async (req, res, next) => {
 
-  checkServerErrURL(); 
-
   let link = req.body['routeSrc'];  
 
   if(!validateLink(link)) {
@@ -66,7 +64,9 @@ app.post('/api', async (req, res, next) => {
         .then(result => {
           if (result == "GBR") {
             res.render('routes', { message: polyline });
-            res.end(); 
+            //check404s
+            checkServerErrURL();
+            //res.end(); 
           }
           else { return next("locationError"); }
         })   
@@ -77,39 +77,62 @@ app.post('/api', async (req, res, next) => {
 });
 app.listen(port); 
 
+
+
 async function checkServerErrURL() {
-  
+
+  console.log("this server is being run"); 
+
   var json = require('./assets/cafes.json'); 
 
   var noPhotoArr = [];
   var absoluteURLErr = []; 
   var totalArr = []; 
-  
+
+  var failed404 = [];
+  var failedOther = []; 
+
   //still need to check for 404 errors
-  json.forEach((item) => {
+  json.forEach(async (item) => {
 
     totalArr.push(item.name);
     
     if('photo' in item) {
       let url = item.photo;
-      fetch(url)
-      .then(response => console.log("this works!"))
-      .catch(error => console.log("cafe: " + item.name + " does not have an absolute URL"));
 
-      noPhotoArr.push(item.name); 
+      if (!url.includes("cafes.cyclingmaps.net")) {
+        try {
+          await new Promise((resolve) => setTimeout(resolve, 0));
+          var res = await fetch(url);
+    
+          if(res.status == 404) {
+            console.log("404: " + item.name); 
+            failed404.push(item.name); 
+          }
+        }
+        catch(err) {
+          console.log("other error: " + item.name + ": " + item.photo);
+          //console.log(err); 
+          failedOther.push(item.name); 
+        }
+      }
+        
     }
     else {
       console.log(item.name + " does not have a photo");
-      absoluteURLErr.push(item.name); 
+      noPhotoArr.push(item.name); 
     }
   });
-
+  
   console.log("List finished");
   console.log("total no photos: " + noPhotoArr.length); 
-  console.log("total absolute errors: " + absoluteURLErr.length); 
   console.log("total array: " + totalArr.length); 
-    
+
+  console.log("total 404s: " + failed404.length);
+  console.log("total other fails: " + failedOther.length);  
+  
 }
+
 
 //error handling
 app.use((err, req, res, next) => {
