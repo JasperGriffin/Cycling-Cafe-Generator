@@ -23,6 +23,7 @@
     "google-polyline": "^1.0.3",
     "latlongify": "^1.0.2",
     "leaflet": "^1.9.4",
+    "node-fetch": "^2.7.0",
     "simple-oauth2": "^5.1.0"
   }
 }

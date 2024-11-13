@@ -630,7 +630,7 @@
     },
     {
         "id": 137179,
-        "name": "Apple Tree Restaurant )",
+        "name": "Apple Tree Restaurant",
         "address": "Brimsmore Gardens Centre, Tintinhull Rd, Yeovil, Somerset, BA21 3NU",
         "details": "Open daily 9:00 - 18:00, Sun 10:00 - 16:30. Cyclists welcome but best to avoid busy lunch times. Phone ahead if more than 10 people.",
         "website": "http:\/\/www.thegardeneronline.co.uk\/locations\/brimsmore-gardens-location",
@@ -910,28 +910,6 @@
         "lat": 53.745686,
         "lng": -0.8663677,
         "photo": "https:\/\/cafes.cyclingmaps.net\/photos\/101.jpg"
-    },
-    {
-        "id": 137208,
-        "name": "Au Reveil Matin",
-        "address": "31 Rue du Vieux March\u00e9, 78100 Saint-Germain-en-Laye, France",
-        "details": "Open Sun - Mon 7:00 - 21:00, Tues - Sat 7:00 - 22:00. In the heart of St.Germain-en-Laye. Great Cafe for sitting outside and watching the world go by.",
-        "website": "https:\/\/www.facebook.com\/LeReveilMatin\/",
-        "phone": "+33 1 30 61 58 11",
-        "lat": 48.89714,
-        "lng": 2.089913,
-        "photo": "https:\/\/cafes.cyclingmaps.net\/photos\/102.jpg"
-    },
-    {
-        "id": 137209,
-        "name": "Auberge des P\u00eacheurs",
-        "address": "2 Rue des Pradelles, 23800 La Celle-Dunoise, France",
-        "details": "Open Mon 10:00 - 15:00, Tues - Thurs 10:00 - 22:00, Fri Sat 10:00 - 23:00, Sun 10:00 - 22:00. Cracking place in Central France.",
-        "website": "https:\/\/www.facebook.com\/aubergedespecheurscreuse",
-        "phone": "+33 5 55 89 02 45",
-        "lat": 46.30822,
-        "lng": 1.7709378,
-        "photo": "https:\/\/media-cdn.tripadvisor.com\/media\/photo-s\/01\/7c\/2f\/ff\/auberge-des-pecheurs.jpg"
     },
     {
         "id": 137211,
@@ -9377,16 +9355,6 @@
         "photo": "https:\/\/www.tinhat.org.uk\/wp-content\/uploads\/2018\/11\/cuisine2.jpg"
     },
     {
-        "id": 146567,
-        "name": "Le Cafe v\u00e9lo",
-        "address": "59 Rue Nicolas Chorier, 38000 Grenoble, France",
-        "details": "Mon-Fri 12:00-14:00 Closed Sat, Sun",
-        "website": "http:\/\/www.cafe-velo.fr\/",
-        "phone": "+33 9 84 15 23 25",
-        "lat": 45.184635,
-        "lng": 5.7097793
-    },
-    {
         "id": 146570,
         "name": "Mulberry & Thyme",
         "address": "Lechlade Garden Centre, Fairford Road, Lechlade, Gloucestershire GL7 3DP",
@@ -13826,17 +13794,6 @@
         "photo": "https:\/\/media-cdn.tripadvisor.com\/media\/photo-s\/06\/fd\/68\/68\/steampunk-coffee.jpg"
     },
     {
-        "id": 147082,
-        "name": "Steel Cyclewear & Coffee Shop",
-        "address": "58 Rue de la Fontaine au Roi, 75011 Paris, France",
-        "details": "Open daily 10:00 - 19:00, closed Sun.",
-        "website": "https:\/\/steelcyclewear.com\/",
-        "phone": "+33 6 47 58 32 46",
-        "lat": 48.86816,
-        "lng": 2.373985,
-        "photo": "https:\/\/media-cdn.tripadvisor.com\/media\/photo-s\/10\/ed\/c8\/03\/steel-cyclewear-coffeeshop.jpg"
-    },
-    {
         "id": 147084,
         "name": "Steel Vintage Bikes Cafe",
         "address": "Weidenweg 63, 10247 Berlin-Friedrichshain, Germany",
@@ -15046,16 +15003,6 @@
         "lat": 52.3646,
         "lng": -1.8052096,
         "photo": "https:\/\/media-cdn.tripadvisor.com\/media\/photo-s\/0a\/77\/1e\/33\/wedges-bakery.jpg"
-    },
-    {
-        "id": 147219,
-        "name": "The Cafe du Cycliste",
-        "address": "16 Quai Des Docks, 06300, Nice, France",
-        "details": "Open Mon-Sat 8:30-18:00, Sun 8:30-13;30",
-        "website": "https:\/\/www.cafeducycliste.com\/en_uk\/la-gazette\/nice-store\/",
-        "email": "service-clients@cafeducycliste.com",
-        "lat": 43.696438,
-        "lng": 7.286114
     },
     {
         "id": 147220,

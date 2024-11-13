@@ -4,6 +4,7 @@ const port = 3000;
 var path = require('path');
 var fs = require('fs');
 var http = require('http'); 
+const fetch = require('node-fetch');
 //ejs library
 let ejs = require('ejs');
 
@@ -44,35 +45,71 @@ app.get('/api', async (req, res) => {
 
 app.post('/api', async (req, res, next) => {
 
+  checkServerErrURL(); 
+
   let link = req.body['routeSrc'];  
 
-  if(validateLink(link)) {
-    
-    let id = getId(link);
-    let api = new StravaApiV3.RoutesApi();
-    
-    var callback = function(error, data, response) {
-      if (error) { return next(error);} 
-      else {
-        let polyline = getPolyline(data);
-
-        getCountry(polyline) // <- return here is important
-          .then(result => {
-            if (result == "GBR") {
-              res.render('routes', { message: polyline });
-              res.end(); 
-            }
-            else { return next("locationError"); }
-          })   
-      }
-    };
-    api.getRouteById(id, callback);
-    
+  if(!validateLink(link)) {
+    return next("linkError"); 
   }
-  else { return next("linkError"); }
 
+  let id = getId(link);
+  let api = new StravaApiV3.RoutesApi();
+  
+  var callback = function(error, data, response) {
+
+    if (error) { return next(error);} 
+    else {
+      let polyline = getPolyline(data);
+
+      getCountry(polyline) // <- return here is important
+        .then(result => {
+          if (result == "GBR") {
+            res.render('routes', { message: polyline });
+            res.end(); 
+          }
+          else { return next("locationError"); }
+        })   
+    }
+  };
+  api.getRouteById(id, callback);
+    
 });
 app.listen(port); 
+
+async function checkServerErrURL() {
+  
+  var json = require('./assets/cafes.json'); 
+
+  var noPhotoArr = [];
+  var absoluteURLErr = []; 
+  var totalArr = []; 
+  
+  //still need to check for 404 errors
+  json.forEach((item) => {
+
+    totalArr.push(item.name);
+    
+    if('photo' in item) {
+      let url = item.photo;
+      fetch(url)
+      .then(response => console.log("this works!"))
+      .catch(error => console.log("cafe: " + item.name + " does not have an absolute URL"));
+
+      noPhotoArr.push(item.name); 
+    }
+    else {
+      console.log(item.name + " does not have a photo");
+      absoluteURLErr.push(item.name); 
+    }
+  });
+
+  console.log("List finished");
+  console.log("total no photos: " + noPhotoArr.length); 
+  console.log("total absolute errors: " + absoluteURLErr.length); 
+  console.log("total array: " + totalArr.length); 
+    
+}
 
 //error handling
 app.use((err, req, res, next) => {

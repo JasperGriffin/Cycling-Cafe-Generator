@@ -13,6 +13,9 @@ function validateLink(link) {
     if (regex.test(link)) {
         return true; 
     }
+    else {
+        return false;
+    }
 }
 
 function getId(link) { 
