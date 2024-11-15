@@ -106,7 +106,7 @@ async function checkServerErrURL() {
           var res = await fetch(url);
     
           if(res.status == 404) {
-            console.log("404: " + item.name); 
+            console.log("404: " + item.name + ": " + item.photo); 
             failed404.push(item.name); 
           }
         }
