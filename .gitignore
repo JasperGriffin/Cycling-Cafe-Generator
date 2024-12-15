@@ -1,6 +1,5 @@
 # ignore ALL .env files
 *.env
-cafes.json
 
 # ignore node modules
 node_modules/

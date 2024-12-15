@@ -92,7 +92,7 @@ async function checkServerErrURL() {
   var failed404 = [];
   var failedOther = []; 
 
-  //still need to check for 404 errors
+  //check for 404 errors
   json.forEach(async (item) => {
 
     totalArr.push(item.name);
@@ -119,8 +119,8 @@ async function checkServerErrURL() {
         
     }
     else {
-      console.log(item.name + " does not have a photo");
-      noPhotoArr.push(item.name); 
+      //console.log(item.name + " does not have a photo");
+      //noPhotoArr.push(item.name); 
     }
   });
   

@@ -219,17 +219,6 @@
         "photo": "https:\/\/cafes.cyclingmaps.net\/photos\/22.jpg"
     },
     {
-        "id": 137138,
-        "name": "Achiltibuie Piping School Cafe",
-        "address": "Old Village Hall, Achiltibuie IV26 2YF",
-        "details": "Friendly and welcoming. Excellent cakes, great paninis and they will do you filled rolls to take away. The 15 miles of single-track road from there to the main road are the most beautiful I have ever cycled!",
-        "phone": "01854 622777",
-        "lat": 58.014786,
-        "lng": -5.339296,
-        "status": "TempClosed",
-        "photo": "https:\/\/media-cdn.tripadvisor.com\/media\/photo-s\/0b\/de\/af\/a3\/photo2jpg.jpg"
-    },
-    {
         "id": 137139,
         "name": "Ackworth Garden Centre",
         "address": "Barnsley Road, Ackworth, Pontefract  West Yorkshire  WF7 7NB",
@@ -1145,7 +1134,7 @@
         "phone": "03447 769380",
         "lat": 51.58684,
         "lng": -2.563698,
-        "photo": "https:\/\/olddownestate.co.uk\/wp-content\/uploads\/2016\/12\/030517_BarnHire_3x1Banner.jpg"
+        "photo": "https://images.myguide-cdn.com/bristol/companies/old-down-country-park/large/old-down-country-park-337204.jpg"
     },
     {
         "id": 137236,
@@ -2876,7 +2865,7 @@
         "email": "book@theboathouseglencaple.com",
         "lat": 55.00258,
         "lng": -3.574032,
-        "photo": "https:\/\/media-cdn.tripadvisor.com\/media\/photo-s\/14\/f2\/38\/91\/the-boathouse-from-the.jpg"
+        "photo": "https://theboathouseglencaple.com/wp-content/uploads/2019/01/slide2.jpg"
     },
     {
         "id": 137430,
@@ -3934,18 +3923,6 @@
         "photo": "https:\/\/cafes.cyclingmaps.net\/photos\/494.jpg"
     },
     {
-        "id": 137561,
-        "name": "Chalfonts tea room and coffee house",
-        "address": "14 Market Place, Norwich NR9 4AF",
-        "details": "Large selection of cakes and incorporates local Post Office.",
-        "website": "https:\/\/www.facebook.com\/chalfontstearoom",
-        "phone": "01953 851747",
-        "email": "orders@chalfontstearooms.co.uk",
-        "lat": 52.579304,
-        "lng": 0.9855187,
-        "photo": "https:\/\/www.edp24.co.uk\/polopoly_fs\/1.5708861!\/image\/image.jpg_gen\/derivatives\/landscape_630\/image.jpg"
-    },
-    {
         "id": 137563,
         "name": "The Old Barn",
         "address": "Church Farm, Marton, Cheshire, SK11 9HF",
@@ -3990,13 +3967,13 @@
     {
         "id": 137567,
         "name": "Charlie's Cafe",
-        "address": "Church Street, Baslow, Derbys., DE45 1RY",
+        "address": "Church Street, Baslow, Derbyshire, DE45 1RY",
         "details": "Open Wed-Fri 10:00-16:00, Sat 9:00-17:00, Sun 9:00-16:00 Closed Mon",
         "website": "http:\/\/www.charliesbaslow.com",
         "phone": "01246 582619",
         "lat": 53.247974,
         "lng": -1.624337,
-        "photo": "http:\/\/www.charliesbaslow.com\/Media\/Default\/Images\/Slider\/17.jpg"
+        "photo": "https://media-cdn.tripadvisor.com/media/photo-s/02/ec/ee/d9/charlie-s-bistro.jpg"
     },
     {
         "id": 137569,
@@ -4269,18 +4246,6 @@
         "photo": "https:\/\/www.undiscoveredscotland.co.uk\/durisdeer\/durisdeer\/images\/church-450.jpg"
     },
     {
-        "id": 137596,
-        "name": "Church Wilne Watersports Centre",
-        "address": "Sawley Road, Draycott, Derbyshire, DE72 3QF",
-        "details": "Winter weekends only",
-        "website": "https:\/\/www.churchwilne.co.uk\/",
-        "phone": "01332 875574",
-        "email": "clubhouse@churchwilne.co.uk",
-        "lat": 52.88724,
-        "lng": -1.322827,
-        "photo": "https:\/\/www.churchwilne.co.uk\/wp-content\/uploads\/2016\/03\/11539725_10207425517984389_2459309018814795266_n.jpg"
-    },
-    {
         "id": 137597,
         "name": "Churchfields Barn Cafe",
         "address": "Salwarpe, Droitwich, Worcs, WR9 0AH",
@@ -4549,14 +4514,14 @@
     },
     {
         "id": 137630,
-        "name": "Coco Mama",
+        "name": "The Chocolaterie & The Tilting Sky Gift Shop",
         "address": "4 Broad St, Eye, Suffolk IP23 7AF",
         "details": "Open daily 9:00 - 13:00, Sat 9:00 - 16:00, closed Sun.Highly Recommended. Is a cafe and chocolaterie so a must for all chocolate and cycling fams",
         "website": "https:\/\/www.facebook.com\/suffolkchocolate\/",
         "phone": "01379 870688",
         "lat": 52.320847,
         "lng": 1.146297,
-        "photo": "https:\/\/static1.squarespace.com\/static\/5a65df46914e6b3776d162a0\/t\/5a69d6418165f5523aee30e0\/1516885571567\/cocoa-mama-cafe.jpg?format=500w"
+        "photo": "https://images.squarespace-cdn.com/content/v1/5a65df46914e6b3776d162a0/157d24c7-233e-4d64-944e-bff4373acb8b/CMandTS.jpg"
     },
     {
         "id": 137632,
@@ -4568,7 +4533,7 @@
         "email": "mail@beicsbrenin.co.uk",
         "lat": 52.824345,
         "lng": -3.896202,
-        "photo": "https:\/\/www.beicsbrenin.co.uk\/wp-content\/uploads\/2013\/11\/center.jpg"
+        "photo": "https://lh3.googleusercontent.com/p/AF1QipPSTV84griYk3_Ds34P9-MkjPwxPBRQ517ei9F7=s680-w680-h510"
     },
     {
         "id": 137634,
@@ -4718,18 +4683,6 @@
         "photo": "https:\/\/cafes.cyclingmaps.net\/photos\/596.jpg"
     },
     {
-        "id": 137650,
-        "name": "Coffee Apple Cafe",
-        "address": "508-510 Manchester Rd, Stocksbridge, Sheffield S36 2DU",
-        "details": "Open Tues - Sat 9:00 - 15:00, closed Sun & Mon. Located just up the road from the finish of stage 3 of 2017 Tour De Yorkshire. This cyclist friendly Cafe has an outside garden area with cycle dedicated parking.",
-        "website": "https:\/\/www.facebook.com\/CoffeeappleCafe",
-        "phone": "0114 283 0513",
-        "email": "info@coffeeapple.com",
-        "lat": 53.482456,
-        "lng": -1.5931247,
-        "photo": "https:\/\/files.gandi.ws\/gandi41366\/image\/cafestreet.jpg"
-    },
-    {
         "id": 137652,
         "name": "Colbourne's Cafe",
         "address": "A57 Complex, Saxilby Rd, Odder, Lincoln LN1 2BB",
@@ -4841,7 +4794,7 @@
         "phone": "01842 810185",
         "lat": 52.435078,
         "lng": 0.623944,
-        "photo": "https\/\/2.bp.blogspot.com\/-J0V_yZYe7Cs\/UxDsZ-nx-fI\/AAAAAAAAAUM\/GQvpkALEGgU\/s1600\/01e578546e11f16e7512f2d8a14f861dc9ca651f15.jpg"
+        "photo": "https://lh3.googleusercontent.com/p/AF1QipNQQ07MSpH57BxbloFKmVT5Jn4AUQXgk66F258t=s680-w680-h510"
     },
     {
         "id": 137667,
@@ -5585,7 +5538,7 @@
         "email": "scarborough@deansgardencentre.co.uk",
         "lat": 54.27346,
         "lng": -0.41500002,
-        "photo": "https:\/\/www.deansgardencentre.co.uk\/wp-content\/uploads\/sites\/10\/2018\/08\/Seating-Area-1-768x568.jpg"
+        "photo": "https://deansscarboroughgardencentre.co.uk/wp-content/uploads/2024/08/The-Gardeners-Choice-Outdoor.jpg"
     },
     {
         "id": 137755,
@@ -5597,7 +5550,7 @@
         "email": "york@deansgardencentre.co.uk",
         "lat": 53.989563,
         "lng": -1.013442,
-        "photo": "https:\/\/www.deansgardencentre.co.uk\/wp-content\/uploads\/sites\/10\/2018\/08\/Seating-DGC-768x482.jpg"
+        "photo": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/83/f3/2a/part-of-our-coffee-shop.jpg?w=1200&h=-1&s=1"
     },
     {
         "id": 137756,
@@ -5837,7 +5790,7 @@
         "phone": "01953 483855",
         "lat": 52.53219,
         "lng": 0.9348464,
-        "photo": "https:\/\/lh4.googleusercontent.com\/-3n4oM5JFrKQ\/VlyWYGIc78I\/AAAAAAAAAAM\/BmSKea4BZ6E\/s213-k-no\/"
+        "photo": "https://lh3.googleusercontent.com/p/AF1QipNpxFA80mM29QWDyh2LSOgWZOWxC_5tJFFNse6G=s680-w680-h510"
     },
     {
         "id": 146186,
@@ -5849,7 +5802,7 @@
         "email": "office@dovecottage.org.",
         "lat": 52.883858,
         "lng": -0.879231,
-        "photo": "http:\/\/www.dovecottage.org\/wp-content\/uploads\/2012\/10\/tearoomphoto1-300x190.jpg"
+        "photo": "https://s0.geograph.org.uk/geophotos/01/79/28/1792818_b8e3b85a.jpg"
     },
     {
         "id": 146187,
@@ -6495,18 +6448,6 @@
         "photo": "https:\/\/cafes.cyclingmaps.net\/photos\/817.jpg"
     },
     {
-        "id": 146255,
-        "name": "Falling Foss Tea Garden",
-        "address": "Midge Hall, Falling Foss, Sneaton, Whitby  North Yorkshire  YO22 5JD",
-        "details": "Open April -Sept 10:30 -16:00",
-        "website": "https:\/\/www.fallingfossteagarden.co.uk\/",
-        "phone": "07723 477929",
-        "email": "fallingfossteagarden@googlemail.com",
-        "lat": 54.41877,
-        "lng": -0.6326,
-        "photo": "https:\/\/www.fallingfossteagarden.co.uk\/gallery?lightbox=dataItem-j0juetfz"
-    },
-    {
         "id": 146256,
         "name": "Falstone Old School Tea Rooms",
         "address": "Falstone, Hexham, Northumberland NE48 1AA, UK",
@@ -6586,7 +6527,7 @@
         "email": "info@farmercopleys.co.uk",
         "lat": 53.67958,
         "lng": -1.336318,
-        "photo": "http:\/\/providerfiles2.thedms.co.uk\/eandapics\/YS\/2191046_1B.jpg"
+        "photo": "https://media-cdn.tripadvisor.com/media/photo-s/0e/a8/5b/43/farmer-copley-s-restaurant.jpg"
     },
     {
         "id": 146265,
@@ -6656,7 +6597,7 @@
         "email": "james.faulkner@bluediamond.gg",
         "lat": 50.497597,
         "lng": -3.631153,
-        "photo": "https:\/\/www.bluediamond.gg\/sites\/open\/files\/styles\/alt_row\/public\/indulge_alt_row\/Fermoys_Front_Thumbnail.jpg?itok=sIvNh5h_"
+        "photo": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/02/36/c5/20160918-121437-largejpg.jpg?w=400&h=300&s=1"
     },
     {
         "id": 146271,
@@ -7215,7 +7156,7 @@
         "phone": "01789 205745",
         "lat": 52.164536,
         "lng": -1.7227116,
-        "photo": "https:\/\/stratfordgardencentre.co.uk\/storage\/Lime-Tree-restaurant-extension.jpg"
+        "photo": "https://stratfordgardencentre.co.uk/wp-content/uploads/Lime-Tree-restaurant-extension.jpg"
     },
     {
         "id": 146330,
@@ -7301,7 +7242,7 @@
         "phone": "028 9187 1818",
         "lat": 54.550743,
         "lng": -5.7450423,
-        "photo": "https:\/\/cdn-03.belfasttelegraph.co.uk\/migration_catalog\/article25655922.ece\/9541a\/AUTOCROP\/w620\/Georgian%20House%202"
+        "photo": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/69/1d/f1/the-goose-cafe.jpg?w=400&h=-1&s=1"
     },
     {
         "id": 146342,
@@ -7826,7 +7767,7 @@
         "phone": "01926 426977",
         "lat": 52.290413,
         "lng": -1.5364938,
-        "photo": "https:\/\/www.royal-leamington-spa.co.uk\/identity-cms\/wp-content\/uploads\/2014\/07\/Gusto_ricco1.jpg"
+        "photo": "https://lh3.googleusercontent.com/p/AF1QipM7hc4HykOaYaUFw5a1aR2hQNU_EBDKtW3NZ-gG=s680-w680-h510"
     },
     {
         "id": 146400,
@@ -7892,7 +7833,7 @@
         "phone": "01865 251315",
         "lat": 51.753227,
         "lng": -1.260389,
-        "photo": "https:\/\/images.squarespace-cdn.com\/content\/v1\/5b56bf0996d4550f0abcc31c\/1591187108367-YGM8KADBCXSSQA98N3EX\/ke17ZwdGBToddI8pDm48kEpVg-ILAPna1wRh-xAJ9fRZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpwEv36x-EUL2-BSQ5feDhwGCbXuJBFqZ-erYzVouT8yOb9TwqchglLQOCYTRn7ZGxI\/image-asset.jpeg?format=300w"
+        "photo": "https://lh3.googleusercontent.com/p/AF1QipNANiDjU7IfoRG7cAfMV9-ro7DENU8JXD15Hkql=s680-w680-h510"
     },
     {
         "id": 146406,
@@ -7948,7 +7889,7 @@
         "email": "info@harrisonsofgreyabbey.co.uk",
         "lat": 54.52289,
         "lng": -5.548295,
-        "photo": "https:\/\/www.harrisonsofgreyabbey.co.uk\/index_htm_files\/1981.jpg"
+        "photo": "https://hrjess.co.uk/editor/wp-content/uploads/2018/03/harrisons-view.jpg"
     },
     {
         "id": 146412,
@@ -9207,7 +9148,7 @@
         "phone": "07813 276623\u202c",
         "lat": 52.81834,
         "lng": -0.90043044,
-        "photo": "https:\/\/lirp-cdn.multiscreensite.com\/4a82bb71\/dms3rep\/multi\/opt\/ef2fd5e62e3d4cd19c1b36fc4e2d8040-800x450.dm.edit_Y2O2dA-1920w.jpg"
+        "photo": "https://scontent-lhr6-1.xx.fbcdn.net/v/t1.6435-9/188003251_4008401342578409_8620265405236206424_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ZMTVG0WHk0UQ7kNvgHlo2Lt&_nc_zt=23&_nc_ht=scontent-lhr6-1.xx&_nc_gid=AswTVHo2wc17yah7xVP0BUe&oh=00_AYD28PP-34t3z6W7De_XTnKs7IGkGhWLzsdf2x9uW-f0DA&oe=6763BC23"
     },
     {
         "id": 146554,
@@ -9431,7 +9372,7 @@
         "website": "http:\/\/lightashfarmshop.co.uk\/",
         "lat": 53.85713,
         "lng": -2.78304,
-        "photo": "https:\/\/lightashfarmshop.co.uk\/wp-content\/uploads\/2013\/05\/IMG_0172-700x393.jpg"
+        "photo": "https://www.lightashfarmshop.co.uk/wp-content/uploads/2020/06/IMG_0172.jpg"
     },
     {
         "id": 146577,
@@ -9988,7 +9929,7 @@
         "website": "https:\/\/www.maxwellscafebar.co.uk\/",
         "lat": 53.8731,
         "lng": -2.393,
-        "photo": "https:\/\/www.maxwellscafebar.co.uk\/images\/pages\/16.jpg"
+        "photo": "https://scontent-lhr8-2.xx.fbcdn.net/v/t39.30808-6/465737555_1111125401021863_8271851858923232630_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=JMhdqV2fAlcQ7kNvgEgXCzk&_nc_zt=23&_nc_ht=scontent-lhr8-2.xx&_nc_gid=AqACJL4Yv6crTGMpPfDsAr4&oh=00_AYCHWgF9pNLnd3YiE8PW99cTQYtbFHMekSUlXIt78WL8gw&oe=675E0CA3"
     },
     {
         "id": 146643,
@@ -10027,7 +9968,7 @@
     },
     {
         "id": 146646,
-        "name": "Meadowside",
+        "name": "Meadowside Cafe",
         "address": "Laning, Dent, Sedbergh  Cumbria  LA10 5QJ",
         "details": "Open Fri - Sun 10:00 - 16:00.",
         "website": "https:\/\/www.meadowsidecafe.co.uk\/",
@@ -10035,7 +9976,7 @@
         "email": "info@meadowsidecafe.co.uk",
         "lat": 54.27859,
         "lng": -2.45676,
-        "photo": "https:\/\/www.dentdale.com\/wp-content\/uploads\/2018\/04\/medowside-cafe.jpg"
+        "photo": "https://lh3.googleusercontent.com/p/AF1QipPlVpCi1R2zlJwbn1nmH9UjaUBPGPLMFoCJkKG9=s680-w680-h510"
     },
     {
         "id": 146647,
@@ -10453,7 +10394,7 @@
         "website": "https:\/\/restaurantguru.com\/Naburn-Station-Trust-Hut-York",
         "lat": 53.90794,
         "lng": -1.08706,
-        "photo": "https:\/\/10619-2.s.cdn12.com\/rests\/original\/102_501839895.jpg"
+        "photo": "https://img.restaurantguru.com/r48d-Naburn-Station-Trust-Hut-interior.jpg"
     },
     {
         "id": 146694,
@@ -11563,18 +11504,6 @@
         "lng": -4.127254
     },
     {
-        "id": 146823,
-        "name": "Phoenix Velo and Garden Cafe",
-        "address": "Phoenix House, Hedley on the Hill, NE43 7SW",
-        "details": "Has secure cycle storage, track pump, bottle topups, indoor & outdoor seating.",
-        "website": "http:\/\/phoenixvelogardencafe.co.uk\/",
-        "phone": "0797 932 3184",
-        "email": "info@phoenixvelogardencafe.co.uk",
-        "lat": 54.927937,
-        "lng": -1.8742961,
-        "photo": "http:\/\/www.phoenixvelogardencafe.co.uk\/images\/Phoenix-Cycle-Cafe-1.png"
-    },
-    {
         "id": 146824,
         "name": "Pickering Station Tea Room",
         "address": "27 Park St, Pickering, North Yorkshire",
@@ -12105,7 +12034,7 @@
         "phone": "020 7494 9831",
         "lat": 51.510784,
         "lng": -0.136667,
-        "photo": "https:\/\/i8.amplience.net\/i\/rapha\/rapha-soho-clubhouse-carousel?aspect=16:9&sm=aspect&scaleFit=poi&poi={($this.metadata.pointOfInterest.w==0)?0.5:$this.metadata.pointOfInterest.x},{($this.metadata.pointOfInterest.w==0)?0.5:$this.metadata.pointOfInterest.y},{($this.metadata.pointOfInterest.w==0)?0:$this.metadata.pointOfInterest.w},{($this.metadata.pointOfInterest.h==0)?0:$this.metadata.pointOfInterest.h}}&fmt.jpeg.interlaced=true&w=1500"
+        "photo": "https://lh3.googleusercontent.com/p/AF1QipM3gy7yJuB6YbI_9qImLAAzTiwXBWMH-zlzCefU=s680-w680-h510"
     },
     {
         "id": 146885,
@@ -12180,17 +12109,6 @@
         "lat": 53.6646,
         "lng": -1.4475,
         "photo": "https:\/\/cafes.cyclingmaps.net\/photos\/1540.jpg"
-    },
-    {
-        "id": 146896,
-        "name": "Redcliffe Farm Shop & Cafe",
-        "address": "RedcliffeFarm Shop, Redcliffe Lane,Lebberston, Scarborough YO11 3NT",
-        "details": "On the cycle path between Cayton Bay and Filey. The old A165 behind the Plough Inn, Lebberston.",
-        "website": "http:\/\/www.redcliffefarmshop.co.uk\/",
-        "phone": "01723 583194",
-        "lat": 54.234222,
-        "lng": -0.347697,
-        "photo": "https:\/\/cml.sad.ukrd.com\/image\/431630-232x300.jpg"
     },
     {
         "id": 146898,
@@ -12293,7 +12211,7 @@
         "phone": "01200 446398",
         "lat": 53.966236,
         "lng": -2.438203,
-        "photo": "https:\/\/www.riverbanktearooms.co.uk\/wp-content\/uploads\/imag0252.jpg"
+        "photo": "https://lh3.googleusercontent.com/p/AF1QipO6XpO4-oZ4BoOh4-uFvHorRNZaUuqxUz9KR6gD=s680-w680-h510"
     },
     {
         "id": 146911,
@@ -12710,7 +12628,7 @@
         "phone": "01538 306280",
         "lat": 53.12218,
         "lng": -2.075345,
-        "photo": "https:\/\/www.rudyardlake.com\/wp-content\/uploads\/2016\/09\/RUDY-04A_08-600x429.jpg"
+        "photo": "https://i2-prod.stokesentinel.co.uk/incoming/article7156126.ece/ALTERNATES/s1227b/0_JS268149371.jpg"
     },
     {
         "id": 146957,
@@ -14018,7 +13936,7 @@
         "email": "summercafe@hotmail.co.uk",
         "lat": 51.58361,
         "lng": -2.09787,
-        "photo": "https:\/\/www.malmesbury.com\/media\/k2\/items\/cache\/9bd015d07c5bfacb9a0e5aa7302868c3_M.jpg"
+        "photo": "https://pbs.twimg.com/media/ELwkpcwWsAAcoOZ.jpg"
     },
     {
         "id": 147109,
@@ -14633,14 +14551,14 @@
     },
     {
         "id": 147178,
-        "name": "The Bear Cafe",
+        "name": "The Old Co-Op Cafe",
         "address": "29 Rochdale Road, Todmorden, Lancashire  OL14 7LA",
         "details": "Open Mon - Sat 9:30 - 17:00. Sun 11;00 -17:00",
         "website": "https:\/\/www.bearco-op.com\/",
         "phone": "01706 813737",
         "lat": 53.71265,
         "lng": -2.098267,
-        "photo": "https:\/\/www.bearco-op.com\/wp-content\/uploads\/2018\/09\/coffee-shop-1.jpg"
+        "photo": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivN-fiAIwoWBIRR32FUQ5WHWMDVIBampWyxgu90ORq8A46rjHm1rNUDtXPOgJhM-QOKWZ8HPhOXyiBy6Alnzjvh7Sro5Z2WQAeDqa5NMUEilp3bo6kQYgmf3ddW3d5c4Y_JMbc8VcE9R4/s1600/The+Bear.jpg"
     },
     {
         "id": 147179,
@@ -14755,7 +14673,7 @@
         "email": "emma@theblackbirdcafe.co.uk",
         "lat": 51.423435,
         "lng": -1.180222,
-        "photo": "https:\/\/www.theblackbirdcafe.co.uk\/wp-content\/uploads\/2014\/09\/BxFsb_9IgAA4GtF.jpg"
+        "photo": "https://lh3.googleusercontent.com/p/AF1QipO_va1lpQo6KMiXDGRInMjY85V90tCLKb110Un1=s680-w680-h510"
     },
     {
         "id": 147191,
@@ -14804,18 +14722,6 @@
         "lat": 51.938553,
         "lng": 0.445888,
         "photo": "https:\/\/cafes.cyclingmaps.net\/photos\/1858.jpg"
-    },
-    {
-        "id": 147195,
-        "name": "Amy's Place",
-        "address": "Elgol Road, Torrin. Isle of Skye IV49 9BA,",
-        "details": "Open wed - Sun 11:00 - 16:30, closed Mon & Tues.",
-        "website": "https:\/\/www.facebook.com\/Amysplacetorrin\/",
-        "phone": "01471 822847",
-        "email": "amysplacetorrin@gmail.com",
-        "lat": 57.145508,
-        "lng": -6.102696,
-        "photo": "https:\/\/www.amys-tearoom-torrin.com\/images\/slideshow\/Tearoom.jpg"
     },
     {
         "id": 147196,
@@ -16147,7 +16053,7 @@
         "phone": "01527 821 272",
         "lat": 52.274498,
         "lng": -2.057254,
-        "photo": "https:\/\/www.jinneyring.co.uk\/acatalog\/header.jpg"
+        "photo": "https://visit-worcs.transforms.svdcdn.com/production/assets/images/Entry-Main-Image/Photo-of-exterior-of-Jinny-Ring.jpg?w=1200&h=630&q=82&auto=format&fit=crop&dm=1668090102&s=8820932dd07ad5705bec284ea3f7ec54"
     },
     {
         "id": 147360,
@@ -17252,18 +17158,6 @@
         "lng": -5.160248
     },
     {
-        "id": 147484,
-        "name": "The Secret Garden",
-        "address": "Writtle Road Nursery, 7 Writtle Road, Writtle, Chelmsford, Essex CM1 3BL",
-        "details": "Open Mon - Sat 9:00 - 16:00, Sun 10:00 - 16:00",
-        "website": "https:\/\/secretgardentearooms.co.uk\/tearooms\/",
-        "phone": "01245 348 337",
-        "email": "info@secretgardentearooms.co.uk",
-        "lat": 51.726196,
-        "lng": 0.455899,
-        "photo": "https:\/\/secretgardentearooms.co.uk\/wp-content\/uploads\/2015\/09\/secret-garden-img8.jpg"
-    },
-    {
         "id": 147485,
         "name": "The Secret Garden Tearooms",
         "address": "5A Lincoln Rd, Welton, Lincoln LN2 3HZ",
@@ -17339,7 +17233,7 @@
         "email": "info@allthingswild.co.uk",
         "lat": 52.09746,
         "lng": -1.83193,
-        "photo": "https:\/\/providerfiles.thedms.co.uk\/eandapics\/GB\/2730112_1000.jpg"
+        "photo": "https://lh3.googleusercontent.com/p/AF1QipMXiYrK4wuh33iAF78Qrvdc9zdhkeE5ONBhCoeQ=s680-w680-h510"
     },
     {
         "id": 147494,
@@ -17956,18 +17850,6 @@
         "lng": -1.3020878
     },
     {
-        "id": 147564,
-        "name": "Thornwick Bay Cafe",
-        "address": "North Marine Rd, Flamborough, Bridlington, YO15 1BD",
-        "details": "Overlooking the North Sea and Thornwick Bay. Access along a track on the left just before the Viking Hotel.",
-        "website": "http:\/\/www.thornwickbaycafe.com\/Cafe.htm",
-        "phone": "01262 850430",
-        "email": "customerservices@ThornwickBayCafe.com",
-        "lat": 54.13155,
-        "lng": -0.1162766,
-        "photo": "https:\/\/s0.geograph.org.uk\/geophotos\/04\/10\/13\/4101390_22fb2dcd.jpg"
-    },
-    {
         "id": 147565,
         "name": "Thorp Perrow Arboretum",
         "address": "Bedale, North Yorkshire  DL8 2PR",
@@ -17977,7 +17859,7 @@
         "email": "enquiries@thorpperrow.com",
         "lat": 54.263073,
         "lng": -1.605313,
-        "photo": "https:\/\/www.thorpperrow.com\/wp-content\/uploads\/2017\/05\/The-Tearoom-1902x599.jpg"
+        "photo": "https://www.thorpperrow.com/wp-content/uploads/2023/03/thorpP0069_-1024x698.jpg"
     },
     {
         "id": 147566,
@@ -18965,7 +18847,7 @@
         "email": "info@wentworthgardencentre.co.uk",
         "lat": 53.475136,
         "lng": -1.413007,
-        "photo": "http:\/\/wgc.burt.one\/wp-content\/uploads\/2019\/03\/Walled-Garden.jpg"
+        "photo": "https://pbs.twimg.com/media/E1DZNe3XoAETjvC?format=jpg&name=large"
     },
     {
         "id": 147673,
@@ -19705,17 +19587,6 @@
         "photo": "https:\/\/cafes.cyclingmaps.net\/photos\/2460.jpg"
     },
     {
-        "id": 147754,
-        "name": "Yorkshire Tea Rooms & Restaurant",
-        "address": "3-5 Castlegate, Malton, North Yorkshire  YO17 7DP",
-        "details": "Open 8:00 - 15:00 daily Need to bring your lock as it's straight onto the street.",
-        "website": "https:\/\/www.facebook.com\/maltonNorthYorkshire2005\/",
-        "phone": "01653 692365",
-        "lat": 54.13465,
-        "lng": -0.79607,
-        "photo": "https:\/\/c.yell.com\/t_galleryFit,f_auto\/2cce570b-11cf-4439-96e5-65e220f9560f_image_jpeg.jpg"
-    },
-    {
         "id": 147756,
         "name": "Your Cafe In The Park",
         "address": "Aston Clinton Park, London Road, Aston Clinton, Bucks, HP22 5HL",
@@ -20113,17 +19984,6 @@
         "phone": "07983 677328",
         "lat": 55.162796,
         "lng": -6.813944
-    },
-    {
-        "id": 147802,
-        "name": "The Rose Cafe",
-        "address": "38a Main Street, Portglenone, Ballymena BT44 8FB",
-        "details": "Busy friendly place open seven days a week. Good soup and tea to warm us up and owner playing his fiddle to add to the atmosphere. Bike racks not great but handy railings round tree outside to lock bikes.",
-        "website": "https:\/\/www.facebook.com\/pages\/category\/Family-Style-Restaurant\/The-Rose-Cafe-420540574638463\/",
-        "phone": "028 2556 9406",
-        "lat": 54.87289,
-        "lng": -6.477167,
-        "photo": "https:\/\/10619-2.s.cdn12.com\/rests\/original\/404_41787350.jpg"
     },
     {
         "id": 147803,
@@ -20798,17 +20658,6 @@
         "lat": 55.92341,
         "lng": -3.397706,
         "photo": "https:\/\/media-cdn.tripadvisor.com\/media\/photo-s\/02\/37\/eb\/3e\/reception-of-the-worlds.jpg"
-    },
-    {
-        "id": 147874,
-        "name": "The Deli of Malton",
-        "address": "16 Market Place, Malton, Yorkshire YO17 7LX",
-        "details": "Open Mon - Sat 8 -4:30, closed Sun.",
-        "website": "https:\/\/www.facebook.com\/deliofmalton\/",
-        "phone": "01653 696563",
-        "lat": 54.135002,
-        "lng": -0.798958,
-        "photo": "https:\/\/c.yell.com\/t_bigRect,f_auto\/a66cd873-7eb2-491d-b26c-bbb5785ae0fb_image_jpeg.jpg"
     },
     {
         "id": 147875,
@@ -22243,15 +22092,15 @@
     },
     {
         "id": 148019,
-        "name": "Bike Chain Ricci",
+        "name": "Saint Piran Cafe",
         "address": "The Old Conns Works, Bissoe Truro, Cornwall, TR4 8QZ",
-        "details": "Open Mon-Sat: 09:00 - 18:00 Sun: 10:00 - 16:00",
+        "details": "Open Mon-Sat: 09:00 - 15:00 Sun: 09:00 - 15:00",
         "website": "https:\/\/www.facebook.com\/Bikechainbissoebikehireandcafe\/",
         "phone": "01209 215787",
         "email": "enquiries@bikechainricci.co.uk",
         "lat": 50.23155,
         "lng": -5.12837,
-        "photo": "https:\/\/bikechainricci.co.uk\/assets\/img\/dyn\/4807r0x0.jpg"
+        "photo": "https://lh3.googleusercontent.com/p/AF1QipO_D5MCtpDnaciPvG34DGR0mOmsfDqMB9KgFLeG=s680-w680-h510"
     },
     {
         "id": 148020,
@@ -22839,18 +22688,6 @@
         "lat": 53.29001,
         "lng": -3.46392,
         "photo": "https:\/\/cafes.cyclingmaps.net\/photos\/2805.jpg"
-    },
-    {
-        "id": 148082,
-        "name": "Tpodz Tea Room",
-        "address": "Horam Emporium, High Street, Horam Heathfield, East Sussex, TN21 0ER",
-        "details": "Closed Monday, Open Tues - 9 -4, Sun 10 - 4",
-        "website": "https:\/\/horamemporium.co.uk\/tpodz-tea-room\/",
-        "phone": "01435 813999",
-        "email": "wessonscafe@yahoo.co.uk",
-        "lat": 50.93542,
-        "lng": 0.24441,
-        "photo": "https:\/\/cycleseahaven.org.uk\/wp-content\/uploads\/2019\/07\/2019-07-28-Tpodz-Cafe.jpg"
     },
     {
         "id": 148083,
@@ -23838,17 +23675,6 @@
         "photo": "https:\/\/cafes.cyclingmaps.net\/photos\/2904.jpg"
     },
     {
-        "id": 148180,
-        "name": "Whistlestop Cafe",
-        "address": "Aylsham Station, Norwich Road, Aylsham, Norfolk, NR11 6BW",
-        "details": "Open everyday  9:00am - 4:30pm",
-        "website": "https:\/\/www.bvrw.co.uk\/whistlestop-cafe",
-        "phone": "01263 733858",
-        "lat": 52.79114,
-        "lng": 1.25471,
-        "photo": "https:\/\/www.bvrw.co.uk\/shares\/Cakes_Whistlestop_Cafe_Bure_Valley-187.jpg"
-    },
-    {
         "id": 148181,
         "name": "The Milking Parlour Tea Rooms",
         "address": "1 Main Street, Market Harborough LE16 8QP",
@@ -24152,18 +23978,7 @@
         "email": "Balkenna@Aol.Com",
         "lat": 55.30309,
         "lng": -4.8353,
-        "photo": "https:\/\/s3-eu-west-1.amazonaws.com\/logs.omnibuilder\/492951f4-bdb8-4cd5-9bb2-204230d4cb5d\/8e282f43-1d23-4dd9-8714-fc40da83f96c.jpg"
-    },
-    {
-        "id": 148214,
-        "name": "Bean Emporium",
-        "address": "St James Square, Boroughbridge, York, YO51 9BA",
-        "details": "Closed Sun & Mon. Open Tue - Sat 9:00 - 17:00",
-        "website": "https:\/\/www.facebook.com\/beanemporium\/",
-        "phone": "01423 322275",
-        "lat": 54.09402,
-        "lng": -1.3943,
-        "photo": "https:\/\/img1.wsimg.com\/isteam\/ip\/0a443fe2-2388-46af-a4c6-45b157acde25\/bean%20bike.jpg\/:\/cr=t:0%25,l:0%25,w:100%25,h:100%25\/rs=w:1300,h:800"
+        "photo": "https://scontent-lhr8-2.xx.fbcdn.net/v/t1.6435-9/182980200_141831484624682_5641693082010473767_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=ctokklRJ_4cQ7kNvgGfy2Pp&_nc_zt=23&_nc_ht=scontent-lhr8-2.xx&_nc_gid=AcbfQ3Fgw_ZQiHoz0sn2zbW&oh=00_AYBHqaP78nJy02TXseqUWqtI2sONqqC8OS9FjMfCBz6-NQ&oe=677B8F14"
     },
     {
         "id": 148215,
@@ -24175,7 +23990,7 @@
         "email": "info@magliarosso.co.uk",
         "lat": 52.19029,
         "lng": 0.72337,
-        "photo": "https:\/\/magliarosso.co.uk\/wp-content\/uploads\/2019\/01\/42985384_891278284404495_5465502281099116544_o-300x225.jpg?_t=1547634012"
+        "photo": "https://img1.wsimg.com/isteam/ip/bc27753c-0be4-48ce-955d-837628aad74e/250422-MagliaRosso-print-265.jpg/:/cr=t:12.51%25,l:0%25,w:100%25,h:74.99%25/rs=w:600,h:300,cg:true"
     },
     {
         "id": 148216,
@@ -24362,7 +24177,7 @@
         "phone": "01522 812518",
         "lat": 53.21883,
         "lng": -0.6524,
-        "photo": "https:\/\/www.doddingtonhall.com\/wp-content\/uploads\/2019\/02\/bike-coffee-shop-e1549323994248-1170x357.jpg"
+        "photo": "https://d2exd72xrrp1s7.cloudfront.net/www/000/1k3/1l/1ldj1xbd8staz12gcn6n8vqqn02xw2ruoi-uhi5432541/0?width=768&height=576&crop=true"
     },
     {
         "id": 148236,
@@ -24757,13 +24572,13 @@
     },
     {
         "id": 148278,
-        "name": "Cale Park Kitchen",
+        "name": "River Cale Cafe",
         "address": "Wincanton Recreation Ground, Cemetery Ln, Wincanton BA9 9ED",
-        "details": "Open Tuesday - Saturday 8:30 - 16:00, Sun 8:30 -15:00",
-        "website": "https:\/\/www.caleparkkitchen.co.uk\/",
+        "details": "Open Monday - Saturday 9:00 - 16:00, Sun 9:00 -14:00",
+        "website": "https://www.rivercalecafe.com/?fbclid=PAZXh0bgNhZW0CMTEAAaY_rPPtHphbA7ZH0H4wYhPPi8n9H99JjwuiK6zK_9fowjBjMKGXnKkiTBA_aem_tD3z8gpsalDjoOcm0omy9Q",
         "lat": 51.05346,
         "lng": -2.41757,
-        "photo": "https:\/\/imageprocessor.digital.vistaprint.com\/crop\/0,74,738x738\/maxWidth\/2000\/https:\/\/www.vistaprint.com\/preview\/image.aspx?image_type=upload&image_token=1774293364-6406000800-14acf6&use_crop=1&croptop=0&cropleft=0.0231865436280809&cropbottom=0&cropright=0.0231865436280809&png=1"
+        "photo": "https://lh3.googleusercontent.com/p/AF1QipPmbjkqsUj1qe1t8KjK085DTH-X1yuKMpnK3u4W=s680-w680-h510"
     },
     {
         "id": 148279,
@@ -24774,17 +24589,6 @@
         "lat": 51.00643,
         "lng": -2.19652,
         "photo": "https:\/\/cafes.cyclingmaps.net\/photos\/3008.jpg"
-    },
-    {
-        "id": 148280,
-        "name": "William's Cafe at Dike & Son Ltd",
-        "address": "Dike & Son Supermarket, Ring St, Stalbridge, Sturminster Newton DT10 2NB",
-        "details": "",
-        "website": "https:\/\/allaboutus.dikes-direct.co.uk\/our-cafe",
-        "phone": "01963 362204",
-        "lat": 50.95868,
-        "lng": -2.37865,
-        "photo": "https:\/\/allaboutus.dikes-direct.co.uk\/brochure-site\/public\/cache\/WlliamsCafeNews-iyqk__width_620__height_620__zoomcrop_none__bgcolour_FFF.jpg"
     },
     {
         "id": 148281,
@@ -24969,7 +24773,7 @@
         "email": "manager@theshopatcrowle.co.uk",
         "lat": 52.19823,
         "lng": -2.11496,
-        "photo": "https:\/\/www.theshopatcrowle.co.uk\/wp-content\/uploads\/IMG_3512-1.jpg"
+        "photo": "https://lh3.googleusercontent.com/p/AF1QipNLxjrnSg4zKxOo_hSw-G20ZP4Ypi8JK03OFSNK=s680-w680-h510"
     },
     {
         "id": 148299,
@@ -25385,7 +25189,7 @@
         "phone": "01335 324595",
         "lat": 53.00393,
         "lng": -1.84526,
-        "photo": "https:\/\/daltonsdairy.co.uk\/wp-content\/uploads\/2019\/01\/19206160_10154668061577314_1693155735_n.jpg"
+        "photo": "https://daltonsdairy.co.uk/wp-content/uploads/2023/07/Mask-Group-378.jpg"
     },
     {
         "id": 148341,
@@ -26507,7 +26311,7 @@
         "email": "boats@bartonmarina.co.uk",
         "lat": 52.76036,
         "lng": -1.70599,
-        "photo": "http:\/\/bartonmarina.co.uk\/site\/wp-content\/uploads\/2016\/10\/Marina-Tea-Rooms-sq.jpg"
+        "photo": "https://lh3.googleusercontent.com/p/AF1QipNn-lZquvdKFKPddVDp1pQBHLCKHVIWcaPZO9Df=s680-w680-h510"
     },
     {
         "id": 148449,
@@ -26630,7 +26434,7 @@
         "email": "holburnemuseum@benugo.com",
         "lat": 51.38572,
         "lng": -2.3508,
-        "photo": "https:\/\/www.holburne.org\/wp-content\/uploads\/2014\/06\/Holburne-Garden-Caf%C3%A9-156385.XL_.jpg"
+        "photo": "https://eu-assets.simpleview-europe.com/greatwestway/imageresizer/?image=%2Fdmsimgs%2FEEE65BDB7808322442D205DC4A0E8CD9A275FE9A.jpg&action=ProductDetailProFullWidth"
     },
     {
         "id": 148462,
@@ -26776,7 +26580,7 @@
         "phone": "01635 202642",
         "lat": 51.48273,
         "lng": -1.23785,
-        "photo": "https:\/\/www.hncs.co.uk\/uploads\/1\/2\/6\/7\/126751691\/editor\/shop1-4-2.jpg?1573145663"
+        "photo": "https://lh3.googleusercontent.com/p/AF1QipNTZPAN3TUGcZTHbvuV1Gv8n4J6Lok288V-YXAa=s680-w680-h510"
     },
     {
         "id": 148475,
@@ -27409,18 +27213,6 @@
         "photo": "https:\/\/cafes.cyclingmaps.net\/photos\/3274.jpg"
     },
     {
-        "id": 148536,
-        "name": "Little Wonder Cafe",
-        "address": "Cape Cornwall, National Trust Car Park, St Just, Cornwall, TR19 7NN",
-        "details": "Outdoor seating only. Open daily Easter until end of Oct, 10:00 \u2013 17:00",
-        "website": "https:\/\/www.facebook.com\/LittleWonderCafe\/",
-        "phone": "07980 005885",
-        "email": "hello@littlewondercafe.co.uk",
-        "lat": 50.12708,
-        "lng": -5.70458,
-        "photo": "https:\/\/littlewondercafe.co.uk\/wp-content\/uploads\/2020\/04\/header-pic.jpg"
-    },
-    {
         "id": 148537,
         "name": "Tick Tock Coffee and Wine",
         "address": "8 Kent Road, Northampton, NN5 4DR",
@@ -27578,16 +27370,6 @@
         "photo": "https:\/\/cafes.cyclingmaps.net\/photos\/3290.jpg"
     },
     {
-        "id": 148552,
-        "name": "The Cotton Arms",
-        "address": "Cholmondeley Rd, Wrenbury, Nantwich CW5 8HG",
-        "details": "Open Mon - Fri 12:00 - 14:30 & 17:30 - 21:00. Sat 12:00 - 21:00, Sun 12:00 - 18:00. Apparently serves huge bowls of hand cut, home made chips. Can also be accessed from the canal side.",
-        "website": "http:\/\/www.cottonarmswrenbury.co.uk\/",
-        "lat": 53.02743,
-        "lng": -2.61172,
-        "photo": "https:\/\/media-cdn.tripadvisor.com\/media\/photo-s\/0e\/88\/85\/83\/the-cotton-arms-wrenbury.jpg"
-    },
-    {
         "id": 148553,
         "name": "Rhubarb & Lime",
         "address": "Main St, Kippen, Stirling FK8 3DN",
@@ -27620,18 +27402,6 @@
         "lat": 51.09323,
         "lng": -4.12928,
         "photo": "https:\/\/static.wixstatic.com\/media\/e61a62_f9e17d0b690b4c408b915552ac71563f~mv2_d_2883_4320_s_4_2.jpg\/v1\/fill\/w_422,h_420,fp_0.50_0.50,q_90\/e61a62_f9e17d0b690b4c408b915552ac71563f~mv2_d_2883_4320_s_4_2.webp"
-    },
-    {
-        "id": 148556,
-        "name": "Grant Arms Cafe",
-        "address": "The Square, Monymusk, Inverurie, Aberdeenshire AB51 7HJ",
-        "details": "Closed Thurs. Open Fri - Wed 10:00 -16:00",
-        "website": "https:\/\/grant-arms.co.uk\/cafe",
-        "phone": "01467 651500",
-        "email": "grantarmscafe@gmail.com",
-        "lat": 57.22679,
-        "lng": -2.52469,
-        "photo": "https:\/\/img1.wsimg.com\/isteam\/ip\/f8c2ffe3-f906-4227-937c-eb2877e11fc1\/IMG_20190513_215059.jpg\/:\/rs=w:1280"
     },
     {
         "id": 148557,
@@ -27831,7 +27601,7 @@
         "email": "enquiries@millviewgardencentre.co.uk",
         "lat": 51.73973,
         "lng": -1.14261,
-        "photo": "https:\/\/i1.wp.com\/www.millviewgardencentre.co.uk\/wp-content\/uploads\/2016\/09\/mill-view-garden-center-building.jpg?fit=450%2C300&ssl=1"
+        "photo": "https://static.wixstatic.com/media/1b11cc_781f51c6569742c090a1de91ffa88055~mv2.jpg/v1/crop/x_0,y_527,w_4032,h_1238/fill/w_640,h_400,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Photo%2018-01-2024%2C%2014%2009%2016.jpg"
     },
     {
         "id": 148578,
@@ -27878,7 +27648,7 @@
         "email": "fly@abbasair.com",
         "lat": 50.96597,
         "lng": -2.15672,
-        "photo": "https:\/\/comptonabbasairfield.co.uk\/wp-content\/uploads\/2019\/11\/compton-abbas-7.jpg"
+        "photo": "https://lh3.googleusercontent.com/p/AF1QipPhAepxXjoZ4tn8B9mQGuw6hMwjv9VmB0qTLkWR=s680-w680-h510"
     },
     {
         "id": 148582,
@@ -28151,7 +27921,7 @@
         "phone": "020 8853 4675",
         "lat": 51.48409,
         "lng": 0.0137,
-        "photo": "https:\/\/pistachiosinthepark.org.uk\/wp-content\/uploads\/2017\/04\/Pistachios-East-Greenwich-Pleasaunce.jpg"
+        "photo": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1d/5c/36/3a/caption.jpg?w=900&h=500&s=1"
     },
     {
         "id": 148609,
@@ -28501,7 +28271,7 @@
         "email": "info@highlandsafaris.net",
         "lat": 56.61745,
         "lng": -3.93711,
-        "photo": "https:\/\/www.highlandsafaris.net\/images\/landing\/cafe.jpg"
+        "photo": "https://lochtay.co.uk/wp-content/uploads/2019/05/highland-safaris-cafe-visitors.jpg"
     },
     {
         "id": 148645,
@@ -30044,7 +29814,7 @@
         "email": "EAT@BOSTONLOCKCAFE.CO.UK",
         "lat": 52.98194,
         "lng": -0.02943,
-        "photo": "https:\/\/images.squarespace-cdn.com\/content\/v1\/5b6c50022714e5d474684b33\/1545168616144-LUWIA799BPVNGJV8HMJ2\/ke17ZwdGBToddI8pDm48kMpk1Ixf7w9_x3THSadD8DoUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKciugcLTbeMEl1Bj5ZdA8SqmfWtr-shiRQmZYT_tMicXQ1Utg1lbCx7MjLVZDItlzG\/OPEN+DAY+exterior+1442+lr.jpg?format=1500w"
+        "photo": "https://foto1.sluurpy.com/locali/gb/4883198/46408519.jpg"
     },
     {
         "id": 148793,
@@ -30066,7 +29836,7 @@
         "phone": "01992 676710",
         "lat": 51.92378,
         "lng": 0.2558,
-        "photo": "https:\/\/www.cliffords.info\/wp-content\/uploads\/2020\/10\/Cliffords-Pledgdon-Barn.jpg"
+        "photo": "https://1.bp.blogspot.com/-iQknyySCFlU/YSJwAGfgdRI/AAAAAAABGYE/7ITkaJFiElwxTwQchtB-hvXu7gKoSzGSgCPcBGAsYHg/s3285/PXL_20210822_100932436.jpg"
     },
     {
         "id": 148795,
@@ -30167,7 +29937,7 @@
         "email": "bashleymanortearooms@outlook.com",
         "lat": 50.76565,
         "lng": -1.67311,
-        "photo": "https:\/\/sammymiller.co.uk\/admin\/resources\/suecake-w1070h689.jpg"
+        "photo": "https://media-cdn.tripadvisor.com/media/photo-s/10/90/b3/82/bashley-manor-tea-rooms.jpg"
     },
     {
         "id": 148805,
@@ -31271,7 +31041,7 @@
         "email": "enquiries@roukenglenboathouse.co.uk",
         "lat": 55.79262,
         "lng": -4.31256,
-        "photo": "https:\/\/media-cdn.tripadvisor.com\/media\/photo-s\/0a\/e9\/db\/ad\/the-boathouse-coffee.jpgy"
+        "photo": "https://www.glasgowist.com/wp-content/uploads/2018/06/IMG_8986.jpg"
     },
     {
         "id": 148912,
