@@ -49,7 +49,4 @@ async function getCountry(polyline) {
     return res.country.code; 
 }
 
-
-
-
 module.exports = { sayHello, validateLink, getId, getPolyline, getCountry };

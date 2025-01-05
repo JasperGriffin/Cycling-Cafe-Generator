@@ -65,8 +65,8 @@ app.post('/api', async (req, res, next) => {
           if (result == "GBR") {
             res.render('routes', { message: polyline });
             //check404s
-            checkServerErrURL();
-            //res.end(); 
+            //checkServerErrURL();
+            res.end(); 
           }
           else { return next("locationError"); }
         })   
@@ -119,8 +119,8 @@ async function checkServerErrURL() {
         
     }
     else {
-      //console.log(item.name + " does not have a photo");
-      //noPhotoArr.push(item.name); 
+      console.log(item.name + " does not have a photo");
+      noPhotoArr.push(item.name); 
     }
   });
   
