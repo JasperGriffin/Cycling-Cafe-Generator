@@ -2,7 +2,6 @@
 *.env
 
 # ignore node modules
-node_modules/
 
 #TODO list
 TODO.txt
