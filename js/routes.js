@@ -72,8 +72,8 @@ function addCafeMarkers(data) {
         marker.addTo(map);
        }
        else {
-        //marker.bindPopup(locations[i][0]);
-        //marker.addTo(map);
+        marker.bindPopup(locations[i][0]);
+        marker.addTo(map);
        }
 
         marker.on('mouseover',function(ev) {
