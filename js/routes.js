@@ -3,6 +3,8 @@
 
 //cafe link: https://uxwing.com/coffee-shop-map-location-icon/
 
+setTimeout(1000);
+
 var map = L.map('map').setView([51.39434, -0.31393], 10);//13
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -43,7 +45,11 @@ async function initMap(parsedData) {
     
     firstpolyline.addTo(map);
 
-    addCafeMarkers(firstpolyline);
+    //addCafeMarkers(firstpolyline);
+
+    setTimeout(function () {
+        addCafeMarkers(firstpolyline);
+    }, 2000);
 
     setTimeout(function () {
         map.fitBounds(firstpolyline.getBounds());
@@ -56,25 +62,38 @@ function addCafeMarkers(data) {
     console.log("test: " + typeof(data));
 
     var locations = [
-        ["Kingdom", 51.1627, 0.16314],
-        ["Giro", 51.37064, -0.363588],
-        ["Rapha", 51.510784, -0.136667],
-        ["Rykas", 51.255543, -0.32239097],
-        ["devil", 51.114136, -0.729459]
+        ["Kingdom", 51.1627, 0.16314, "Open everyday 9am - 5pm (after 4pm drinks and cake only)", "Grove Road,Penshurst, Tonbridge, Kent, TN11 8DU"],
+        ["Giro", 51.37064, -0.363588, "Open daily 7:30 - 15:00, Sat & Sun 7:30 - 17:00", "2 High St, Esher KT10 9RT"],
+        ["Rapha", 51.510784, -0.136667, "Open daily 7:30 - 19:00", "85 Brewer St, Soho, London W1F 9ZN, UK"],
+        ["Rykas", 51.255543, -0.32239097, "Open Mon - Fri 8:00 -16:00, Sat - Sun8;00 -17:00", "Old London Rd, Mickleham, Dorking, Surrey RH5 6BY"],
     ];
 
     for (var i = 0; i < locations.length; i++) {
 
+        //Find town from address field
+        let text = locations[i][4]
+        let townArr = text.split(",");
+        let town = townArr[1];
+
+        //create marker
         marker = new L.marker([locations[i][1], locations[i][2]], {icon: cafeIcon});
        
-       if (isMarkerInsidePolygon(marker, data)) {
-        marker.bindPopup(locations[i][0]);
-        marker.addTo(map);
-       }
-       else {
-        marker.bindPopup(locations[i][0]);
-        marker.addTo(map);
-       }
+        if (isMarkerInsidePolygon(marker, data)) {
+            //marker.bindPopup(locations[i][0]);
+            marker.bindPopup(
+                "<img class='marker-img' src='https:lh3.googleusercontent.com/p/AF1QipN1FE0zhWzca3hD0KOCZqQuMUUwSWHlHcmHnHNa=s1360-w1360-h1020'>" +
+                "<h1>"+locations[i][0]+"</h1>" + town + "<br/>" + locations[i][3]
+
+            );
+            marker.addTo(map);
+        }
+        else {
+            marker.bindPopup(
+                "<img class='marker-img' src='https:\/\/media-cdn.tripadvisor.com\/media\/photo-s\/0b\/af\/fb\/b4\/garden-room.jpg'>" +
+                "<h1>"+locations[i][0]+"</h1>" + town + "<br/>" + locations[i][3]
+            );
+            marker.addTo(map);
+        }
 
         marker.on('mouseover',function(ev) {
             ev.target.openPopup();

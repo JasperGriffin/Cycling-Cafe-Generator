@@ -7305,7 +7305,7 @@
         "id": 146348,
         "name": "Giro",
         "address": "2 High St, Esher KT10 9RT",
-        "details": "Open daily 7:30 - 15:00, Sat & Sun 7:30 - 17:00, a lovely Cafe. A brightly lit area serving all manner of coffee, cake and lunch options. There\u2019s kit to buy too, and several group rides leaving from the cafe. On the Ride London Route.",
+        "details": "Open daily 7:30 - 15:00, Sat & Sun 7:30 - 17:00. A brightly lit area serving all manner of coffee, cake and lunch options. There\u2019s kit to buy too, and several group rides leaving from the cafe. On the Ride London Route.",
         "website": "https:\/\/www.girocycles.com\/pages\/cafe",
         "phone": "01372 200538",
         "lat": 51.37064,
@@ -11414,7 +11414,8 @@
         "address": "Peel Farm Coffee & Crafts, Easter Peel Farm, Lintrathen, Kirriemuir DD8 5JJ",
         "details": "",
         "lat": 56.6723,
-        "lng": -3.203165
+        "lng": -3.203165,
+        "photo": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/80/c3/e5/photo0jpg.jpg?w=1400&h=-1&s=1"
     },
     {
         "id": 146813,
@@ -12029,7 +12030,7 @@
         "id": 146884,
         "name": "Rapha Cycle Club",
         "address": "85 Brewer St, Soho, London W1F 9ZN, UK",
-        "details": "Breakfasts, snacks and beers in road-cycling shop Cafe showing live cycle events on big screens",
+        "details": "Open daily 7:30 - 19:00",
         "website": "https:\/\/www.rapha.cc\/gb\/en\/clubhouses\/londonsoho",
         "phone": "020 7494 9831",
         "lat": 51.510784,
@@ -24290,8 +24291,8 @@
     {
         "id": 148251,
         "name": "Kingdom",
-        "address": "Grove Road,Penshurst, Nr Tonbridge, Kent, TN11 8DU",
-        "details": "Open everyday 9am - 5pm (after 4pm drinks and cake only",
+        "address": "Grove Road,Penshurst, Tonbridge, Kent, TN11 8DU",
+        "details": "Open everyday 9am - 5pm (after 4pm drinks and cake only)",
         "website": "https:\/\/www.facebook.com\/thiskingdom.pen\/",
         "phone": "01892 577507",
         "email": "hello@kingdomkitchen.co.uk",
@@ -24525,17 +24526,6 @@
         "email": "FIONAPOLSON@HOTMAIL.CO.UK",
         "lat": 58.18485,
         "lng": -3.50112
-    },
-    {
-        "id": 148276,
-        "name": "La Fabrica Girona",
-        "address": "Carrer de la Llebre, 3, 17004 Girona, Spain",
-        "details": "Open daily 9:00 - 16:00.",
-        "website": "https:\/\/www.lafabricagirona.com\/about-us",
-        "phone": "+34 972 29 66 22",
-        "lat": 41.98392,
-        "lng": 2.82599,
-        "photo": "https:\/\/cafes.cyclingmaps.net\/photos\/3005.jpg"
     },
     {
         "id": 148277,

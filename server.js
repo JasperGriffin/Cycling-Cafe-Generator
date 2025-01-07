@@ -64,8 +64,8 @@ app.post('/api', async (req, res, next) => {
         .then(result => {
           if (result == "GBR") {
             res.render('routes', { message: polyline });
-            //check404s
             //checkServerErrURL();
+            //verifyJSON();
             res.end(); 
           }
           else { return next("locationError"); }
@@ -77,18 +77,15 @@ app.post('/api', async (req, res, next) => {
 });
 app.listen(port); 
 
-
-
+//Method checks for 404 errors for photo URLs
 async function checkServerErrURL() {
 
   console.log("this server is being run"); 
 
   var json = require('./assets/cafes.json'); 
-
   var noPhotoArr = [];
   var absoluteURLErr = []; 
   var totalArr = []; 
-
   var failed404 = [];
   var failedOther = []; 
 
@@ -131,6 +128,16 @@ async function checkServerErrURL() {
   console.log("total 404s: " + failed404.length);
   console.log("total other fails: " + failedOther.length);  
   
+}
+
+async function verifyJSON() {
+  var json = require('./assets/cafes.json'); 
+
+  //check for 404 errors
+  json.forEach(async (item) => {
+    let x = Object.keys(item).length
+    console.log(x + item.name);
+  })
 }
 
 
