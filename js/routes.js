@@ -56,10 +56,14 @@ async function initMap(parsedData) {
     }, 1000);
 }
 
+async function printJSON() {
+    const res = await fetch('./assets/cafes.json');
+    return await res.json();
+}
+
+
 function addCafeMarkers(data) {
     //let marker = L.marker([51.1627, 0.16314], {icon: cafeIcon}).addTo(map);
-
-    console.log("test: " + typeof(data));
 
     var locations = [
         ["Kingdom", 51.1627, 0.16314, "Open everyday 9am - 5pm (after 4pm drinks and cake only)", "Grove Road,Penshurst, Tonbridge, Kent, TN11 8DU"],
@@ -68,28 +72,30 @@ function addCafeMarkers(data) {
         ["Rykas", 51.255543, -0.32239097, "Open Mon - Fri 8:00 -16:00, Sat - Sun8;00 -17:00", "Old London Rd, Mickleham, Dorking, Surrey RH5 6BY"],
     ];
 
+    let json = printJSON(); 
+    console.log("json: " + json); 
+    
     for (var i = 0; i < locations.length; i++) {
 
         //Find town from address field
-        let text = locations[i][4]
-        let townArr = text.split(",");
-        let town = townArr[1];
-
+        let town = getLocationName(i, locations); 
+        
         //create marker
         marker = new L.marker([locations[i][1], locations[i][2]], {icon: cafeIcon});
        
         if (isMarkerInsidePolygon(marker, data)) {
             //marker.bindPopup(locations[i][0]);
             marker.bindPopup(
-                "<img class='marker-img' src='https:lh3.googleusercontent.com/p/AF1QipN1FE0zhWzca3hD0KOCZqQuMUUwSWHlHcmHnHNa=s1360-w1360-h1020'>" +
-                "<h1>"+locations[i][0]+"</h1>" + town + "<br/>" + locations[i][3]
-
+                "<div class=marker-background>"+
+                "<img class='marker-img' src='https://lh3.googleusercontent.com/p/AF1QipN1FE0zhWzca3hD0KOCZqQuMUUwSWHlHcmHnHNa=s1360-w1360-h1020'>" +
+                "<h1>"+locations[i][0]+"</h1>" + town + "<br/>" + locations[i][3]+
+                "</div>"
             );
             marker.addTo(map);
         }
         else {
             marker.bindPopup(
-                "<img class='marker-img' src='https:\/\/media-cdn.tripadvisor.com\/media\/photo-s\/0b\/af\/fb\/b4\/garden-room.jpg'>" +
+                "<img class='marker-img' src='https://lh3.googleusercontent.com/p/AF1QipM3gy7yJuB6YbI_9qImLAAzTiwXBWMH-zlzCefU=s680-w680-h510'>" +
                 "<h1>"+locations[i][0]+"</h1>" + town + "<br/>" + locations[i][3]
             );
             marker.addTo(map);
@@ -107,6 +113,12 @@ function addCafeMarkers(data) {
     
 }
     
+function getLocationName(i, locations) {
+    let text = locations[i][4]
+    let townArr = text.split(",");
+    let town = townArr[1];
+    return town; 
+}
 
 function isMarkerInsidePolygon(marker, poly) {
     var polyPoints = poly.getLatLngs();       
@@ -123,8 +135,7 @@ function isMarkerInsidePolygon(marker, poly) {
     }
 
     return inside;
-};
-
+}
 
 
 

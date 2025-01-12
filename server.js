@@ -11,7 +11,7 @@ let ejs = require('ejs');
 //referencing env variables
 require('dotenv').config();
 
-let { sayHello, validateLink, getId, getPolyline, getCountry } = require('./strava.js');
+let { validateLink, getId, getPolyline, getCountry, getCafeList, checkServerErrURL, verifyJSON } = require('./strava.js');
 
 //Strava API
 var StravaApiV3 = require('strava_api_v3');
@@ -36,6 +36,7 @@ app.get('/', (req, res) => {
 var strava_oauth = defaultClient.authentications['strava_oauth'];
 strava_oauth.accessToken = process.env.ACCESS_TOKEN;
 
+var json = require('./assets/cafes.json'); 
 
 app.get('/api', async (req, res) => {
   /*
@@ -63,82 +64,26 @@ app.post('/api', async (req, res, next) => {
       getCountry(polyline) // <- return here is important
         .then(result => {
           if (result == "GBR") {
-            res.render('routes', { message: polyline });
+            //polyline, list of cafes within it'
+
+            getCafeList(polyline)
+
+            //res.render('routes', { message: polyline });
             //checkServerErrURL();
             //verifyJSON();
             res.end(); 
           }
           else { return next("locationError"); }
-        })   
+        })
+        .catch(err => {
+          return next("countryCodeErr");
+        })
     }
   };
   api.getRouteById(id, callback);
     
 });
 app.listen(port); 
-
-//Method checks for 404 errors for photo URLs
-async function checkServerErrURL() {
-
-  console.log("this server is being run"); 
-
-  var json = require('./assets/cafes.json'); 
-  var noPhotoArr = [];
-  var absoluteURLErr = []; 
-  var totalArr = []; 
-  var failed404 = [];
-  var failedOther = []; 
-
-  //check for 404 errors
-  json.forEach(async (item) => {
-
-    totalArr.push(item.name);
-    
-    if('photo' in item) {
-      let url = item.photo;
-
-      if (!url.includes("cafes.cyclingmaps.net")) {
-        try {
-          await new Promise((resolve) => setTimeout(resolve, 0));
-          var res = await fetch(url);
-    
-          if(res.status == 404) {
-            console.log("404: " + item.name + ": " + item.photo); 
-            failed404.push(item.name); 
-          }
-        }
-        catch(err) {
-          console.log("other error: " + item.name + ": " + item.photo);
-          //console.log(err); 
-          failedOther.push(item.name); 
-        }
-      }
-        
-    }
-    else {
-      console.log(item.name + " does not have a photo");
-      noPhotoArr.push(item.name); 
-    }
-  });
-  
-  console.log("List finished");
-  console.log("total no photos: " + noPhotoArr.length); 
-  console.log("total array: " + totalArr.length); 
-
-  console.log("total 404s: " + failed404.length);
-  console.log("total other fails: " + failedOther.length);  
-  
-}
-
-async function verifyJSON() {
-  var json = require('./assets/cafes.json'); 
-
-  //check for 404 errors
-  json.forEach(async (item) => {
-    let x = Object.keys(item).length
-    console.log(x + item.name);
-  })
-}
 
 
 //error handling
@@ -160,6 +105,10 @@ app.use((err, req, res, next) => {
   }
   else if(err == "locationError") {
     res.render('index', { message: 'This website is sadly exclusive to routes in the UK only'})
+    res.end();
+  }
+  else if (err == "countryCodeErr") {
+    res.render('index', { message: 'Unfortunately there was an error with the link. Please ensure the route is from the UK'})
     res.end();
   }
 

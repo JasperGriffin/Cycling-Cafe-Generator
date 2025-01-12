@@ -279,7 +279,7 @@
         "id": 137145,
         "name": "Albion Cafe",
         "address": "Cilfynydd Rd, Pontypridd, Mid Glamorgan CF37 4NN",
-        "details": "Open Sat 7:00 - 12:30, Sun- Mon 9:00  - 14:00, Tues 7:00 - 14:00, Wed - Fri 8:00 - 14:00.",
+        "details": "Open Sat 7:00 - 12:30, Sun- Mon 9:00 - 14:00, Tues 7:00 - 14:00, Wed - Fri 8:00 - 14:00.",
         "website": "https:\/\/www.facebook.com\/thealbioncafe\/",
         "phone": "01443 406996",
         "lat": 51.62499,
@@ -403,7 +403,7 @@
         "id": 137159,
         "name": "Allington Farm Shop",
         "address": "Allington Bar Farm, Chippenham, SN14 6LJ",
-        "details": "Open dail 9:00 - 18:00, Sun 9:30 - 17:00.",
+        "details": "Open daily 9:00 - 18:00, Sun 9:30 - 17:00.",
         "website": "https:\/\/www.allingtonfarmshop.co.uk\/cafe\/",
         "phone": "01249 658112",
         "email": "sales@allingtonfarmshop.co.uk",
@@ -933,18 +933,6 @@
         "lat": 54.686928,
         "lng": -1.4646027,
         "photo": "https:\/\/cafes.cyclingmaps.net\/photos\/107.jpg"
-    },
-    {
-        "id": 137214,
-        "name": "Avoca Garden Cafe, Mount Usher Gardens",
-        "address": "Mt Usher Gardens, Ashford, Co. Wicklow, Ireland",
-        "details": "Open daily 9:30 - 16:30.",
-        "website": "http:\/\/www.mountushergardens.ie\/gardencafe.html",
-        "phone": "+353 404 40205",
-        "email": "mountusherCafe@shop.avoca.ie",
-        "lat": 53.011017,
-        "lng": -6.108334,
-        "photo": "https:\/\/media-cdn.tripadvisor.com\/media\/photo-s\/11\/c1\/66\/3d\/avoca-mount-usher-the.jpg"
     },
     {
         "id": 137215,
@@ -1928,18 +1916,6 @@
         "photo": "https:\/\/www.dropbox.com\/s\/64sqe6p05awsmxg\/230.jpg?raw=1"
     },
     {
-        "id": 137325,
-        "name": "Blue Bicycle Tea Rooms",
-        "address": "8 Main St, Co. Mayo, Ireland",
-        "details": "Open: May \u2013 October Mon to Sun: 10:30am to 6pm",
-        "website": "https:\/\/www.facebook.com\/bluebicycletearooms\/",
-        "phone": "+353 98 41145",
-        "email": "phillychambers@eircom.net",
-        "lat": 53.885494,
-        "lng": -9.546362,
-        "photo": "https:\/\/media-cdn.tripadvisor.com\/media\/photo-s\/05\/0a\/0a\/61\/blue-bicycle-tea-rooms.jpg"
-    },
-    {
         "id": 137326,
         "name": "Blue Cafe",
         "address": "7-9 High St, Harlow, CM17 0DN",
@@ -1987,7 +1963,7 @@
         "id": 137330,
         "name": "Bluebells Dairy Ice Cream Cafe",
         "address": "Brunswood Farm, Locko Road, Spondon, Derby, DE21 7AR",
-        "details": "Open Fri  - Mon 10:00 - 17:00, Closed Tues - Thurs.",
+        "details": "Open Fri - Mon 10:00 - 17:00, Closed Tues - Thurs.",
         "website": "https:\/\/bluebelldairy.co.uk\/events\/tea-rooms\/",
         "phone": "01332 673924",
         "email": "info@bluebelldairy.co.uk",
@@ -2515,7 +2491,7 @@
         "id": 137389,
         "name": "Brookside Restaurant",
         "address": "Station Rd, Bovey Tracey TQ13 9AW",
-        "details": "Open weekday 9:30 - 16:00, weekends 9:00  - 16:00. Very welcoming to cyclists on a regular basis. Has bike racks. Can deal with large groups.",
+        "details": "Open weekday 9:30 - 16:00, weekends 9:00 - 16:00. Very welcoming to cyclists on a regular basis. Has bike racks. Can deal with large groups.",
         "website": "http:\/\/www.brooksiderestaurant.co.uk",
         "phone": "01626 832254",
         "lat": 50.591167,
@@ -3807,16 +3783,6 @@
         "photo": "https:\/\/media-cdn.tripadvisor.com\/media\/photo-s\/06\/b3\/d2\/62\/castlegate-cafe.jpg"
     },
     {
-        "id": 137548,
-        "name": "Catterick Caravans & Garden Centre Cafe",
-        "address": "Catterick Bridge, Richmond, North Yorkshire, DL10 7JB",
-        "details": "",
-        "website": "https:\/\/www.leisureworldgroup.com\/on-site-facilities",
-        "phone": "01748 818391",
-        "lat": 54.395386,
-        "lng": -1.65546
-    },
-    {
         "id": 137549,
         "name": "Ivy's Corner Tea Room",
         "address": "Cattistock, Dorchester, Dorset, DT2 0HY",
@@ -4527,7 +4493,7 @@
         "id": 137632,
         "name": "Coedwig Coed Y Brenin Visitors Centre",
         "address": "Ganllwyd, Dolgellau, Gwynedd LL40 2HZ",
-        "details": "Open Mon -Fri 9:30  - 17:00, Sat - Sun  9:00 -17:00. Closes 16:30 in Winter.",
+        "details": "Open Mon -Fri 9:30 - 17:00, Sat - Sun  9:00 -17:00. Closes 16:30 in Winter.",
         "website": "https:\/\/www.beicsbrenin.co.uk\/visitor-centre\/",
         "phone": "01341 440728",
         "email": "mail@beicsbrenin.co.uk",
@@ -4686,7 +4652,7 @@
         "id": 137652,
         "name": "Colbourne's Cafe",
         "address": "A57 Complex, Saxilby Rd, Odder, Lincoln LN1 2BB",
-        "details": "Open Mon - Thurs 7:30 - 13:30, Fri - Sat 7:30  -14:00, Sun 8:30 - 14:00. Mainly savoury but some cakes and may well increase the cake selection if demand increases this summer. Open daily till 14:30. Has bike racks.",
+        "details": "Open Mon - Thurs 7:30 - 13:30, Fri - Sat 7:30 -14:00, Sun 8:30 - 14:00. Mainly savoury but some cakes and may well increase the cake selection if demand increases this summer. Open daily till 14:30. Has bike racks.",
         "website": "https:\/\/www.facebook.com\/colbournecafe\/",
         "phone": "01522 702409",
         "lat": 53.26168,
@@ -4806,17 +4772,6 @@
         "lat": 55.180355,
         "lng": -2.812025,
         "photo": "https:\/\/cafes.cyclingmaps.net\/photos\/616.jpg"
-    },
-    {
-        "id": 137668,
-        "name": "Corks Cafe",
-        "address": "1 Hunter's Ln, Ashbourne, Co. Meath, Ireland",
-        "details": "Open daily 9:30 - 16:00, Sun 10:30 - 16:00.",
-        "website": "http:\/\/www.corks.ie\/",
-        "phone": "+353 1 835 3396",
-        "lat": 53.51215,
-        "lng": -6.396433,
-        "photo": "https:\/\/s3-media4.fl.yelpcdn.com\/bphoto\/O_e4y_IGcPCBphqi9Q5AFA\/ls.jpg"
     },
     {
         "id": 137669,
@@ -5520,7 +5475,7 @@
         "id": 137753,
         "name": "Dean Forest Cycles & Cafe",
         "address": "New Road, Parkend, GL15 4HG",
-        "details": "",
+        "details": "Open daily 9:00 - 17:00",
         "website": "https:\/\/www.deanforestcycles.co.uk\/cafe.html",
         "phone": "01594 368009",
         "email": "contactus@deanforestcycles.co.uk",
@@ -5568,7 +5523,7 @@
         "id": 137757,
         "name": "Debbie's Cafe at Bruichladdich Mini Market",
         "address": "Bruichladdich, Isle of Islay, PA49 7UN",
-        "details": "Open Mon  - Sat 9:00 -18:00, Sun 11:00 - 18:00. Snacks and Coffee",
+        "details": "Open Mon - Sat 9:00 -18:00, Sun 11:00 - 18:00. Snacks and Coffee",
         "website": "http:\/\/www.ileach.co.uk\/debbies\/",
         "phone": "01496 850319",
         "email": "debbie@welcometogreatcoffee.co.uk",
@@ -7366,16 +7321,6 @@
         "photo": "https:\/\/cafes.cyclingmaps.net\/photos\/930.jpg"
     },
     {
-        "id": 146355,
-        "name": "Glebe Garden Centre",
-        "address": "Foston Rd, Countersthorpe, Leics, LE8 5QP",
-        "details": "",
-        "website": "https:\/\/www.cherry-lane.co.uk\/static\/store-glebe.html",
-        "phone": "0116 2771570",
-        "lat": 52.5541,
-        "lng": -1.1238637
-    },
-    {
         "id": 146356,
         "name": "Glen Clova Hotel",
         "address": "Glen Clova,Kirriemuir, Angus DD8 4QS",
@@ -7386,51 +7331,6 @@
         "lat": 56.84432,
         "lng": -3.104217,
         "photo": "https:\/\/media-cdn.tripadvisor.com\/media\/photo-s\/08\/cb\/cb\/7f\/front-of-hotel.jpg"
-    },
-    {
-        "id": 146358,
-        "name": "Glendalough Green",
-        "address": "Larragh, Co. Wicklow",
-        "details": "",
-        "website": "https:\/\/glendaloughgreen.com\/",
-        "phone": "0035 340445151",
-        "lat": 53.008446,
-        "lng": -6.297352,
-        "photo": "https:\/\/media-cdn.tripadvisor.com\/media\/photo-s\/02\/57\/69\/1f\/the-front-view-of-glendalough.jpg"
-    },
-    {
-        "id": 146359,
-        "name": "Glenmalure Lodge",
-        "address": "Drumgoff, Rathdrum, Glendalough, Ireland",
-        "details": "",
-        "website": "https:\/\/www.glenmalurelodge.ie\/",
-        "phone": "+353 (0404) 46188",
-        "email": "glenmalurelodge@yahoo.com",
-        "lat": 52.95738,
-        "lng": -6.3536167,
-        "photo": "https:\/\/media-cdn.tripadvisor.com\/media\/photo-s\/04\/1f\/de\/1b\/glenmalure-lodge-restaurant.jpg"
-    },
-    {
-        "id": 146360,
-        "name": "Glentrool Visitor Centre Cafe",
-        "address": "National Cycle Route 7, Glen Trool Lodge, Newton Stewart, Dumfries and Galloway, DG8 6SY",
-        "details": "",
-        "website": "https:\/\/www.facebook.com\/Glentroolvisitorcentre",
-        "phone": "03000 676800",
-        "lat": 55.075317,
-        "lng": -4.552995
-    },
-    {
-        "id": 146361,
-        "name": "Glenwhisk Cafe & Bistro",
-        "address": "High St, Moniaive, Thornhill, Dumfries & Galloway, DG3 4HN",
-        "details": "",
-        "website": "http:\/\/www.glencairnepm.com\/glenwhiskhome\/",
-        "phone": "01848 200656",
-        "email": "info@glenwhisk.co.uk",
-        "lat": 55.1974,
-        "lng": -3.918827,
-        "photo": "https:\/\/media-cdn.tripadvisor.com\/media\/photo-s\/08\/f9\/ce\/77\/glenwhisk-cafe-bistro.jpg"
     },
     {
         "id": 146362,
@@ -7447,7 +7347,7 @@
         "id": 146363,
         "name": "Glossop Cafeteria",
         "address": "13 Victoria St, Glossop SK13 8HT",
-        "details": "",
+        "details": "Open daily 7:00 - 16:00",
         "website": "https:\/\/www.facebook.com\/Glossop-cafeteria-419236441462593\/",
         "phone": "01457 863711",
         "lat": 53.44252,
@@ -7502,7 +7402,7 @@
         "id": 146368,
         "name": "Gog Magog Hills Farm Shop",
         "address": "Heath Farm, Shelford Bottom, Cambridge CB22 3AD",
-        "details": "",
+        "details": "Open Mon & Thurs 9:00 - 17:00, Fri & Sat 9:00 - 18:00, Sun 10:00 - 16:00",
         "website": "http:\/\/www.gogmagoghills.com\/gog-magog-farm-shop-cambridge\/#cafe",
         "phone": "01223 248352",
         "lat": 52.159737,
@@ -7534,7 +7434,7 @@
         "id": 146371,
         "name": "Goodrich Castle Tea Room",
         "address": "Castle Lane, Goodrich, Ross-on-Wye, Herefordshire, HR9 6HY",
-        "details": "",
+        "details": "Open Weekends 10:00 - 16:00",
         "website": "http:\/\/www.english-heritage.org.uk\/visit\/places\/goodrich-castle\/things-to-do\/",
         "phone": "01600 890538",
         "lat": 51.876804,
@@ -7555,7 +7455,7 @@
         "id": 146373,
         "name": "Goose Slade Farm Shop and Tea Room",
         "address": "Goose Slade Farm, East Coker, Yeovil, Somerset, BA22 9QJ",
-        "details": "",
+        "details": "Open Tue - Sat 10:00 - 17:00",
         "website": "http:\/\/thegoosefarm.co.uk\/",
         "phone": "01935 863735",
         "lat": 50.90491,
@@ -7935,12 +7835,13 @@
         "id": 146417,
         "name": "Haswells Homer Hill Farm Shop",
         "address": "Pittington Rd, Houghton le Spring DH5 9RG",
-        "details": "",
+        "details": "Open Mon - Sat 9:00 - 17:00, Sun 10:00 - 16:00",
         "website": "https:\/\/www.homerhillfarmshop.com\/coffeeshop.html\/",
         "phone": "0191 5841941",
         "email": "joanne@homerhillfarmshop.co.uk",
         "lat": 54.803493,
-        "lng": -1.4999465
+        "lng": -1.4999465,
+        "photo": "https://lh3.googleusercontent.com/p/AF1QipNW5Se812ax4-PXM7nWI3kE_h4eswCqP63d2X-d=s680-w680-h510"
     },
     {
         "id": 146418,
@@ -7995,17 +7896,6 @@
         "lat": 53.17028,
         "lng": -0.9498,
         "photo": "https:\/\/cafes.cyclingmaps.net\/photos\/1007.jpg"
-    },
-    {
-        "id": 146423,
-        "name": "Hayburn Wyke Inn",
-        "address": "Newlands Rd, Cloughton,, Scarborough YO13 0AU",
-        "details": "",
-        "website": "https:\/\/hayburnwykeinn.co.uk\/",
-        "phone": "01723 870202",
-        "lat": 54.357414,
-        "lng": -0.451467,
-        "photo": "https:\/\/media-cdn.tripadvisor.com\/media\/photo-s\/0c\/4d\/76\/58\/imag0582-largejpg.jpg"
     },
     {
         "id": 146424,
@@ -8525,12 +8415,13 @@
     },
     {
         "id": 146481,
-        "name": "Ilam Hall Tea Rooms",
+        "name": "Manifold Tea-room",
         "address": "Ilam Park, Ilam, Ashbourne, DE6 2AZ",
-        "details": "",
+        "details": "Open daily 10:00 - 15:00",
         "website": "http:\/\/www.nationaltrust.org.uk\\white-peak\\opening-times",
         "lat": 53.0525,
-        "lng": -1.8075105
+        "lng": -1.8075105,
+        "photo": "https://lh3.googleusercontent.com/p/AF1QipMEjLr6osB_yhfXaVnYSIwLVHRGICDLwI9Z-CSu=s680-w680-h510"
     },
     {
         "id": 146482,
@@ -8948,18 +8839,6 @@
         "photo": "https:\/\/media-cdn.tripadvisor.com\/media\/photo-s\/03\/83\/f2\/39\/the-kings-head-hotel.jpg"
     },
     {
-        "id": 146533,
-        "name": "The Buffer Stop Cafe",
-        "address": "Kirklees Light Railway, Park Mill Way, Clayton West, West Yorkshire  HD8 9XJ",
-        "details": "",
-        "website": "https:\/\/www.kirkleeslightrailway.com\/article.php\/6\/food-drink",
-        "phone": "01484 865727",
-        "email": "info@kirkleeslightrailway.com",
-        "lat": 53.597,
-        "lng": -1.6111001,
-        "photo": "https:\/\/www.dropbox.com\/s\/13kw4rg2p4vmo53\/1126.jpg?raw=1"
-    },
-    {
         "id": 146534,
         "name": "Kirkley Cycles Cafe",
         "address": "Thorneyford Farm, Kirkley, Ponteland, Northumberland NE20 0AJ",
@@ -8983,8 +8862,8 @@
     {
         "id": 146536,
         "name": "Kitchenetta",
-        "address": "4 The Broadway, Woodhall Spa LN10 6ST",
-        "details": "",
+        "address": "4 The Broadway, Woodhall Spa, LN10 6ST",
+        "details": "Open weekdays 8:30 - 16:00, Sat 9:00 - 16:00, Sun 9:30 - 16:00",
         "website": "https:\/\/www.kitchenetta.co.uk\/",
         "phone": "01526 268008",
         "email": "etta@kitchenetta.co.uk",
@@ -9066,7 +8945,7 @@
         "id": 146546,
         "name": "Lakeside Cafe",
         "address": "Cotebrook Shire Horse Centre, Cotebrook, Cheshire. CW6 9DS",
-        "details": "Open daily 10:00  - 16:30. Indoor and outdoor seating",
+        "details": "Open daily 10:00 - 16:30. Indoor and outdoor seating",
         "website": "https:\/\/cotebrookshirehorses.co.uk\/lakeside-cafe-and-gift-shop\/",
         "phone": "01829 760506",
         "email": "info@cotebrookshirehorses.co.uk",
@@ -9378,7 +9257,7 @@
         "id": 146577,
         "name": "Lighthorne Pavillion Cafe",
         "address": "Chesterton Rd, Warwick, 35 0AB",
-        "details": "Open Wed  - Sun 9:00 - 15:00, closed Mon & Tues. In the summer you might even get to watch some cricket while you enjoy your excellent coffee and cake.",
+        "details": "Open Wed - Sun 9:00 - 15:00, closed Mon & Tues. In the summer you might even get to watch some cricket while you enjoy your excellent coffee and cake.",
         "website": "https:\/\/www.facebook.com\/LighthornePavilionCafe\/",
         "phone": "07768 195882",
         "email": "lighthornepavilioncafe@outlook.com",
@@ -10067,17 +9946,6 @@
         "photo": "https:\/\/media-cdn.tripadvisor.com\/media\/photo-s\/02\/bf\/94\/aa\/micks-burger-van.jpg"
     },
     {
-        "id": 146656,
-        "name": "Middleton Railway",
-        "address": "Moor Road, Hunslet, Leeds  LS10 2JQ",
-        "details": "",
-        "website": "https:\/\/www.middletonrailway.org.uk\/index.php\/visit-us",
-        "phone": "0845 680 1758",
-        "email": "info@middletonrailway.org.uk",
-        "lat": 53.775,
-        "lng": -1.5388
-    },
-    {
         "id": 146657,
         "name": "Midway Truckstop",
         "address": "Prees Heath, Whitchurch SY13 3JT",
@@ -10702,13 +10570,14 @@
     },
     {
         "id": 146729,
-        "name": "Norths at Goscote Nurseries",
+        "name": "Goscote Nurseries Cafe",
         "address": "Syston Road, Cossington, Leics, LE7 4UZ",
-        "details": "",
+        "details": "Open",
         "website": "http:\/\/www.goscote.co.uk",
         "phone": "01509 812121",
         "lat": 52.712223,
-        "lng": -1.1103384
+        "lng": -1.1103384,
+        "photo": "https://goscote.co.uk/wp-content/uploads/2024/03/tea-garden-cafe_interior_01_2000x1200.jpg"
     },
     {
         "id": 146730,
@@ -10891,11 +10760,12 @@
         "id": 146751,
         "name": "Old Barn Coffee Shop",
         "address": "Manor Farm & Woodlands, Manor Farm, Castle Hill, East Leake, Leics. LE12 6LU",
-        "details": "",
+        "details": "Open Mon & Thurs - Sun 9:30 - 17:00",
         "website": "http:\/\/www.manorfarm.info\\Cafes.html",
         "phone": "01509 852525",
         "lat": 52.82621,
-        "lng": -1.173648
+        "lng": -1.173648,
+        "photo": "https://www.yhlparks.co.uk/wp-content/uploads/2017/12/Old-Barn-Coffee-Shop-Outside-3-e1560862846184.jpg"
     },
     {
         "id": 146753,
@@ -10951,25 +10821,6 @@
         "phone": "01403 700094",
         "lat": 51.022972,
         "lng": -0.504777
-    },
-    {
-        "id": 146759,
-        "name": "Old Moor (RSPB)",
-        "address": "RSPB Dearne Valley, Broomhill, Barnsley",
-        "details": "",
-        "lat": 53.515404,
-        "lng": -1.364914
-    },
-    {
-        "id": 146761,
-        "name": "Old School Coffee Shop",
-        "address": "Grosmont, Whitby YO22 5QW",
-        "details": "",
-        "website": "http:\/\/www.grosmontcoffeeshop.co.uk\/",
-        "phone": "01947 895167",
-        "lat": 54.43505,
-        "lng": -0.7244177,
-        "photo": "https:\/\/media-cdn.tripadvisor.com\/media\/photo-s\/0d\/2e\/cb\/75\/old-school-coffee-shop.jpg"
     },
     {
         "id": 146762,
@@ -11181,23 +11032,14 @@
     },
     {
         "id": 146783,
-        "name": "Oxford Island Discovery Centre",
+        "name": "Oxford Island Discovery Centre Cafe",
         "address": "Lough Neagh Discovery Centre, Craigavon, Co. Armagh, BT66 6NJ",
-        "details": "",
+        "details": "Open Mon - Fri 9:00 - 17:00, Sat - Sun 10:00 - 17:00",
         "website": "https:\/\/www.facebook.com\/oxfordislandnaturereserve\/",
         "phone": "028 3832 2205",
         "lat": 54.489037,
-        "lng": -6.378646
-    },
-    {
-        "id": 146784,
-        "name": "Tasty Butties",
-        "address": "A1035 Tickton Layby, Beverley.",
-        "details": "Open Mon - Fri 8:00 - 14:00, Sat 8:00 - 13:00. A takeaway caravan with a couple of tables in the layby just East of Tickton.",
-        "website": "https:\/\/www.facebook.com\/tastybutties\/",
-        "phone": "07784 719666",
-        "lat": 53.86506,
-        "lng": -0.365225
+        "lng": -6.378646,
+        "photo": "https://scontent-lhr6-2.xx.fbcdn.net/v/t39.30808-6/464618623_3355762761225205_2121806599831099338_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=100&ccb=1-7&_nc_sid=0b6b33&_nc_ohc=7cDTwOaMIe8Q7kNvgEySYxj&_nc_zt=23&_nc_ht=scontent-lhr6-2.xx&_nc_gid=ATOkzmVEDA0X4jzNRSqWVZL&oh=00_AYCgK0dXvbeq2bjnYlggWPHGl3ynaGOeuoESx_Kz9yUP3w&oe=6786D15C"
     },
     {
         "id": 146785,
@@ -11397,22 +11239,10 @@
         "photo": "https:\/\/backpedalerdotcom.files.wordpress.com\/2014\/08\/f0062-img_1148.jpg"
     },
     {
-        "id": 146809,
-        "name": "Pedals & Boots",
-        "address": "Lauragh, Killarney, Co. Kerry, Ireland",
-        "details": "Open: Monday-Saturday 10am to 5pm April, May & September. Open 7 days a week 10am-5pm June, July & August",
-        "website": "http:\/\/pedalsandboots.ie\/?page_id=38",
-        "phone": "+353 (0)64 6683101",
-        "email": "info@pedalsandboots.ie",
-        "lat": 51.76256,
-        "lng": -9.779144,
-        "photo": "https:\/\/media-cdn.tripadvisor.com\/media\/photo-s\/05\/ee\/2f\/4b\/getlstd-property-photo.jpg"
-    },
-    {
         "id": 146810,
         "name": "Peel Farm Coffee Shop",
         "address": "Peel Farm Coffee & Crafts, Easter Peel Farm, Lintrathen, Kirriemuir DD8 5JJ",
-        "details": "",
+        "details": "Open Mon - Sun 9:00 - 16:00",
         "lat": 56.6723,
         "lng": -3.203165,
         "photo": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/80/c3/e5/photo0jpg.jpg?w=1400&h=-1&s=1"
@@ -11628,11 +11458,12 @@
         "id": 146837,
         "name": "Planters at Bretby",
         "address": "Bretby Nurseries, Bretby Lane, Bretby, Burton upon Trent, DE15 0QS",
-        "details": "",
+        "details": "Open Mon - Sat 9:00 - 17:00, Sun 10:00 - 16:45",
         "website": "http:\/\/www.plantersatbretby.com\\restaurant.html",
         "phone": "01283 703355",
         "lat": 52.807648,
-        "lng": -1.570098
+        "lng": -1.570098,
+        "photo": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/22/47/c6/albion-burton.jpg?w=400&h=300&s=1"
     },
     {
         "id": 146838,
@@ -11739,7 +11570,7 @@
         "id": 146849,
         "name": "The Wild Rabbit Cafe at Portland Park",
         "address": "Lindley's Ln, Kirkby in Ashfield, Nottingham NG17 9AL",
-        "details": "Open Mon & Thurs 8:30 - 14:00, Fri  - Sun 8:30 - 15:00, closed Tues & Wed.",
+        "details": "Open Mon & Thurs 8:30 - 14:00, Fri - Sun 8:30 - 15:00, closed Tues & Wed.",
         "website": "https:\/\/www.facebook.com\/TheWildRabbitCafe\/",
         "phone": "01623 753577",
         "lat": 53.090534,
@@ -11972,15 +11803,6 @@
         "photo": "https:\/\/cafes.cyclingmaps.net\/photos\/1517.jpg"
     },
     {
-        "id": 146877,
-        "name": "Railway Station Cafe",
-        "address": "Mill Ln, Oxenhope, Keighley BD22 9LB",
-        "details": "",
-        "website": "https:\/\/kwvr.co.uk\/visiting-the-kwvr\/stations\/oxenhope-station\/",
-        "lat": 53.81403,
-        "lng": -1.95094
-    },
-    {
         "id": 146878,
         "name": "Railway Street Cafe & Brew Bar",
         "address": "2 Railway St, Newcastle, County Down BT33 0AJ",
@@ -12091,25 +11913,6 @@
         "lng": 0.483913
     },
     {
-        "id": 146895,
-        "name": "Redbeck Motel - (AL'S Cafe Bar)",
-        "address": "Doncaster Road (A638), Crofton, Wakefield  WF4 1RR",
-        "details": "",
-        "website": "https:\/\/redbeckmotel.co.uk\/",
-        "lat": 53.6646,
-        "lng": -1.4475,
-        "photo": "https:\/\/cafes.cyclingmaps.net\/photos\/1540.jpg"
-    },
-    {
-        "id": 146898,
-        "name": "Rendezvous Tea Rooms",
-        "address": "Barnabas House, Harrowbeer Lane, Yelverton, PL20 6DY",
-        "details": "",
-        "phone": "01822 853268",
-        "lat": 50.493237,
-        "lng": -4.086562
-    },
-    {
         "id": 146901,
         "name": "Revills Farm Shop, Defford",
         "address": "Bourne Rd, Defford, Pershore, WR8 9BS",
@@ -12142,13 +11945,13 @@
         "id": 146905,
         "name": "Riley's Fish Shack",
         "address": "King Edward House, 31 East St, Tynemouth, North Shields, Tyne and Wear NE30 4EB",
-        "details": "",
+        "details": "Open Mon, Wed & Thurs - 12:00 - 22:00, Sat 9:00 - 22:00, Sun 9:00 - 20:00",
         "website": "http:\/\/rileysfishshack.com\/",
         "phone": "0191 2571371",
         "email": "riley@rileysfishshack.com",
         "lat": 55.018623,
         "lng": -1.4204664,
-        "photo": "https:\/\/i2.chroniclelive.co.uk\/incoming\/article10126144.ece\/ALTERNATES\/s615b\/JS72898271.jpg"
+        "photo": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_KW-tCUfksJZ2L3WeA-IpnbL6mFs590Ra5UPIrvHt5TJkNQ4btXAx_SXsh4-kn0BX_gXDag_UI_Wuq3Sj7jXxlr7GNBLgv4kvKugjkkDieu4rhUUOI5oq6Tbyw1AOcFZqzjvx-ZagpuaY/s1600/9.jpg"
     },
     {
         "id": 146906,
@@ -12160,14 +11963,6 @@
         "email": "enquiries@ripleycastle.co.uk",
         "lat": 54.04045,
         "lng": -1.56917
-    },
-    {
-        "id": 146907,
-        "name": "Ripon Leisure Centre",
-        "address": "Dallamires Lane, Ripon, North Yorkshire  HG4 1TT",
-        "details": "",
-        "lat": 54.1289,
-        "lng": -1.51907
     },
     {
         "id": 146908,
@@ -12207,11 +12002,12 @@
         "id": 146911,
         "name": "Riverside Cafe",
         "address": "Waterside, Knaresborough, North Yorkshire  HG5 9AZ",
-        "details": "",
+        "details": "Open Mon, Wed - Fri 10:00 - 14:30, Sat - Sun 9:30 - 15:30",
         "website": "http:\/\/www.riversidecafeknaresborough.co.uk\/",
         "phone": "01423 546759",
         "lat": 54.007107,
-        "lng": -1.470082
+        "lng": -1.470082,
+        "photo": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/71/9b/0f/riverside-cafe.jpg?w=900&h=500&s=1"
     },
     {
         "id": 146912,
@@ -12272,13 +12068,13 @@
     },
     {
         "id": 146919,
-        "name": "Riverview Cafe",
-        "address": "Tees Barrage International White Water Centre, Tees Barrage Way,Tees Barrage,Stockton on Tees, TS18 2QW",
-        "details": "",
-        "website": "http:\/\/www.tbiwwc.com\/cafe.html",
-        "phone": "01642 674239",
-        "lat": 54.56539,
-        "lng": -1.289177
+        "name": "San Seb Coffee",
+        "address": "Navigation Way, Thornaby, Stockton-on-Tees TS17 6QA",
+        "details": "Open Wed - Sat 8:00 - 14:00, Sun 8:00 - 15:00",
+        "phone": "07725114752",
+        "lat": 54.5639123,
+        "lng": -1.2875604,
+        "photo": "https://lh3.googleusercontent.com/p/AF1QipMb1GreYVqINoifQxmJqvLzGChqqd9NHadiF-dq=s680-w680-h510"
     },
     {
         "id": 146920,
@@ -12516,15 +12312,6 @@
         "photo": "https:\/\/media-cdn.tripadvisor.com\/media\/photo-s\/0d\/8e\/6d\/ef\/rosie-lee-hayfield.jpg"
     },
     {
-        "id": 146946,
-        "name": "Rother Valley Country Park",
-        "address": "Mansfield Road, Wales Bar, Sheffield  S26 5PQ",
-        "details": "",
-        "phone": "0114 247 1452",
-        "lat": 53.33986,
-        "lng": -1.32028
-    },
-    {
         "id": 146947,
         "name": "Route 1 Coffee House",
         "address": "3 Queen St, Redcar TS10 1DY",
@@ -12550,7 +12337,7 @@
         "id": 146950,
         "name": "Route One Cycle Cafe",
         "address": "70 Beach St, Deal CT14 6HZ",
-        "details": "",
+        "details": "Open Tues - Sun 8:30 - 16:00",
         "website": "http:\/\/routeonedeal.co.uk\/",
         "phone": "01304 373127",
         "lat": 51.224007,
@@ -12602,18 +12389,19 @@
         "id": 146955,
         "name": "RSPB Saltholme",
         "address": "Seaton Carew Rd, Middlesbrough, TS2 1TU",
-        "details": "",
+        "details": "Open daily 9:30 - 16:00",
         "website": "http:\/\/www.rspb.org.uk\/discoverandenjoynature\/seenature\/reserves\/guide\/s\/saltholme\/cafe.aspx",
         "phone": "01642 546625",
         "email": "saltholme@rspb.org.uk",
         "lat": 54.601032,
-        "lng": -1.21741
+        "lng": -1.21741,
+        "photo": "https://base-prod.rspb-prod.magnolia-platform.com/.imaging/focalpoint/_WIDTH_x_HEIGHT_/dam/jcr:5fb09b36-fa9f-4c8a-aed9-35ec022d4f07/Place-Saltholme-cafe-looking-out-of-window.jpg"
     },
     {
         "id": 146956,
         "name": "Rudyard Lake Visitor Centre",
         "address": "Rudyard, Nr Leek ST13 8PF",
-        "details": "",
+        "details": "Open daily 10:00 - 16:00",
         "website": "http:\/\/www.rudyardlake.com\/eating\/",
         "phone": "01538 306280",
         "lat": 53.12218,
@@ -12621,23 +12409,14 @@
         "photo": "https://i2-prod.stokesentinel.co.uk/incoming/article7156126.ece/ALTERNATES/s1227b/0_JS268149371.jpg"
     },
     {
-        "id": 146957,
-        "name": "Rumbles At The Lawn",
-        "address": "The Community Cafe, Sutton Lawn Pleasure Garden, off Station Road, Sutton in Ashfield, NG17 5FU",
-        "details": "",
-        "website": "http:\/\/www.rumbles.org.uk\\sutton-lawn",
-        "phone": "01623 558752",
-        "lat": 53.125896,
-        "lng": -1.2647144
-    },
-    {
         "id": 146958,
         "name": "Rumblin Tum",
         "address": "9 New Inn Court, Otley, West Yorkshire  LS21 3AJ",
-        "details": "",
+        "details": "Open Mon - Sat 9:00 - 16:00, Sun 10:00 - 16:00",
         "website": "https:\/\/www.facebook.com\/rumblintumcafe",
         "lat": 53.905117,
-        "lng": -1.693379
+        "lng": -1.693379,
+        "photo": "https://scontent-lhr8-1.xx.fbcdn.net/v/t39.30808-6/471667510_1118403213628608_4268563951143270812_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=86c6b0&_nc_ohc=YgnveG2xkyEQ7kNvgE0nBiu&_nc_zt=23&_nc_ht=scontent-lhr8-1.xx&_nc_gid=AK49Rkr6Ok01WnRcSmnJZEN&oh=00_AYDHBkqVkX8LPWK1C_t0jwVUGaitugZVVPSXyihByiAMZQ&oe=67887137"
     },
     {
         "id": 146960,
@@ -12674,25 +12453,6 @@
         "photo": "https:\/\/media-cdn.tripadvisor.com\/media\/photo-s\/06\/6d\/a7\/f0\/russells.jpg"
     },
     {
-        "id": 146964,
-        "name": "Rutland Coffee House",
-        "address": "10 Crown Walk, Oakham LE15 6BZ",
-        "details": "Open Tues-Sat 10:00 - 15:00. Closed Sun, Mon",
-        "website": "https:\/\/www.facebook.com\/profile.php?id=100042066716897",
-        "phone": "01572 722216",
-        "lat": 52.6694,
-        "lng": -0.727653
-    },
-    {
-        "id": 146965,
-        "name": "Rutland Railway Museum",
-        "address": "Ashwell Rd, Cottesmore, Rutland LE15 7BX.",
-        "details": "",
-        "website": "https:\/\/www.rocks-by-rail.org\/",
-        "lat": 52.7137,
-        "lng": -0.6884118
-    },
-    {
         "id": 146966,
         "name": "Ryde",
         "address": "The Courtyard, Cains Brewery Village, Stanhope St, Liverpool L8 5XJ",
@@ -12711,20 +12471,10 @@
         "details": "Good cycle friendly Cafe.",
         "website": "https:\/\/www.facebook.com\/ryeburnofhelmsley",
         "phone": "01439 770331",
-        "email": "nfo@ryeburn.com",
+        "email": "info@ryeburn.com",
         "lat": 54.24714,
-        "lng": -1.06437
-    },
-    {
-        "id": 146968,
-        "name": "Rykas Cafe",
-        "address": "Old London Rd, Mickleham, Dorking, Surrey RH5 6BY",
-        "details": "Bikers Cafe. Greasy food. Not very good if you are a veggie. Open Mon - Fri 8:00 -16:00, Sat - Sun8;00 -17:00",
-        "website": "http:\/\/www.rykas.co.uk\/",
-        "phone": "01306 884454",
-        "email": "info@rykas.co.uk",
-        "lat": 51.255543,
-        "lng": -0.32239097
+        "lng": -1.06437,
+        "photo": "https://www.northyorkmoors.org.uk/__data/assets/image/0011/10136/RyeburnIcecream_NYM-Credit-Polly-Baldwin-2.jpg"
     },
     {
         "id": 146970,
@@ -12802,30 +12552,6 @@
         "photo": "https:\/\/cafes.cyclingmaps.net\/photos\/1630.jpg"
     },
     {
-        "id": 146978,
-        "name": "Sandhill Nurseries Coffee Shop",
-        "address": "Sandhill Nurseries and Garden Centre, Wyton Road, Preston, East Yorkshire  HU12 8TY",
-        "details": "",
-        "website": "https:\/\/www.sandhill-gardencentre.co.uk\/coffee-shop",
-        "phone": "01482 898370",
-        "email": "info@sandhill-gardencentre.co.uk",
-        "lat": 53.76392,
-        "lng": -0.20568998,
-        "photo": "https:\/\/media-cdn.tripadvisor.com\/media\/photo-s\/12\/1b\/fc\/8d\/sandhill.jpg"
-    },
-    {
-        "id": 146979,
-        "name": "Sands Leisure Centre",
-        "address": "Newmarket Rd, Carlisle CA1 1JQ",
-        "details": "",
-        "website": "https:\/\/www.facebook.com\/thesandsriverside\/",
-        "phone": "01228 633766",
-        "lat": 54.899685,
-        "lng": -2.9342651,
-        "status": "TempClosed",
-        "photo": "https:\/\/media-cdn.tripadvisor.com\/media\/photo-s\/08\/76\/4e\/c0\/sands-centre.jpg"
-    },
-    {
         "id": 146980,
         "name": "Sandside Cafe",
         "address": "East Row, Sandsend, North Yorkshire  YO21 3SU",
@@ -12850,23 +12576,14 @@
         "photo": "https:\/\/media-cdn.tripadvisor.com\/media\/photo-s\/0b\/6a\/54\/de\/savour-fare-cafe-garth.jpg"
     },
     {
-        "id": 146982,
-        "name": "Scaddows Farm Shop and Cafe",
-        "address": "On A514 about half way between Ticknall and Hartsthorne, South Derbys",
-        "details": "",
-        "website": "http:\/\/www.scadddowsfarm.co.uk",
-        "phone": "01332 865709",
-        "lat": 52.802254,
-        "lng": -1.499142
-    },
-    {
         "id": 146984,
         "name": "Scarlett's Restaurant",
         "address": "20 The Beach, Clevedon, North Somerset BS21 7QU",
-        "details": "",
+        "details": "Open daily 9:00 - 17:00",
         "website": "https:\/\/www.facebook.com\/Scarlettsclevedon",
         "lat": 51.442383,
-        "lng": -2.860963
+        "lng": -2.860963,
+        "photo": "https://media-cdn.tripadvisor.com/media/photo-s/0f/84/79/50/scarlett-s.jpg"
     },
     {
         "id": 146985,
@@ -12880,23 +12597,14 @@
         "photo": "https:\/\/cafes.cyclingmaps.net\/photos\/1638.jpg"
     },
     {
-        "id": 146986,
-        "name": "Scarva Visitor Centre",
-        "address": "Main Street, Scarva BT63 6NS",
-        "details": "",
-        "website": "http:\/\/www.discovernorthernireland.com\/Scarva-Visitor-Centre-Scarva-Craigavon-P2863",
-        "phone": "028 4062 3322",
-        "lat": 54.332024,
-        "lng": -6.364375
-    },
-    {
         "id": 146989,
         "name": "Rumbles Cafe",
         "address": "Sconce and Devon Park, Boundary Road, Newark-on-Trent, Newark, Nottinghamshire NG24 4AU",
-        "details": "",
+        "details": "Open Mon - Sat 9:00 - 17:00, Sun 9:00 - 16:00",
         "website": "https:\/\/www.facebook.com\/simonbell.rumbles",
         "lat": 53.07106,
-        "lng": -0.8178838
+        "lng": -0.8178838,
+        "photo": "https://www.newarkadvertiser.co.uk/_media/img/O0JKEKZGLKVH7QLJ9ZTB.jpg"
     },
     {
         "id": 146990,
@@ -12987,16 +12695,6 @@
         "lat": 54.40304,
         "lng": -1.729615,
         "photo": "https:\/\/www.dropbox.com\/s\/vq2mv21u6nb6wp4\/1652.jpg?raw=1"
-    },
-    {
-        "id": 146999,
-        "name": "Seaton Delaval Hall",
-        "address": "The Avenue, Seaton Sluice, Northumberland, NE26 4QR",
-        "details": "",
-        "website": "https:\/\/www.nationaltrust.org.uk\/visit\/north-east\/seaton-delaval-hall",
-        "phone": "0191 237 9100",
-        "lat": 55.082157,
-        "lng": -1.4986451
     },
     {
         "id": 147001,
@@ -13101,9 +12799,10 @@
         "id": 147013,
         "name": "Sherwood Pines Cafe",
         "address": "Sherwood Pines Visitor Centre, Off B6030, Old Clipstone, Mansfield NG21 9JL",
-        "details": "",
+        "details": "Open daily 9:00 - 16:30",
         "lat": 53.167664,
-        "lng": -1.085664
+        "lng": -1.085664,
+        "photo": "https://images.squarespace-cdn.com/content/v1/660160ff2eb98e2e85af1abc/1711366401806-0QCJQDBV3KZI1XHO8LSM/Sherwood+Pines+Cafe+Exterior.jpg"
     },
     {
         "id": 147014,
@@ -13169,9 +12868,9 @@
     },
     {
         "id": 147021,
-        "name": "Simpson's nurseries cafe.",
+        "name": "Simpson's nurseries cafe",
         "address": "42 Station Rd, Fordham, Ely CB7 5LW",
-        "details": "",
+        "details": "Open Mon - Sat 9:00 - 17:00, Sun 9:00 - 16:00",
         "website": "http:\/\/www.simpsonsnurseries.com\/index.php\/simpson-s-coffee-shop",
         "phone": "01638 720194",
         "email": "office@simpsonsnurseries.com",
@@ -13183,9 +12882,10 @@
         "id": 147022,
         "name": "Simply Gorgeous Tea Room",
         "address": "The Cliffs, Cheddar BS27 3QA",
-        "details": "Very cycle friendly Cafe If more than 10 then use The Mousehole over the road. Go round the back to the conservatory.",
+        "details": "Open Mon - Sat 8:30 - 16:30",
         "lat": 51.28072,
-        "lng": -2.771843
+        "lng": -2.771843,
+        "photo": "https://media-cdn.tripadvisor.com/media/photo-s/14/44/3d/46/a-quaint-little-building.jpg"
     },
     {
         "id": 147023,
@@ -13197,16 +12897,6 @@
         "lat": 54.60663,
         "lng": -3.2005699,
         "photo": "https:\/\/cafes.cyclingmaps.net\/photos\/1680.jpg"
-    },
-    {
-        "id": 147024,
-        "name": "Skelton Garden Centre",
-        "address": "Shipton Road, Skelton, York  YO30 1XW",
-        "details": "",
-        "website": "https:\/\/www.facebook.com\/SkeltonGardenCentre\/?locale=en_GB",
-        "phone": "01904 470072",
-        "lat": 53.99722,
-        "lng": -1.1354
     },
     {
         "id": 147025,
@@ -13342,13 +13032,14 @@
     },
     {
         "id": 147038,
-        "name": "Sooter Lighthouse",
+        "name": "Sooter Lighthouse Cafe",
         "address": "Coast Rd, Sunderland SR6 7NH",
-        "details": "",
+        "details": "Open daily 10:00 - 17:00",
         "website": "http:\/\/www.nationaltrust.org.uk\/souter-lighthouse-and-the-leas",
         "phone": "0191 529 3161",
         "lat": 54.970448,
-        "lng": -1.364441
+        "lng": -1.364441,
+        "photo": "https://images.happycow.net/venues/1024/34/13/hcmp341332_2030680.jpeg"
     },
     {
         "id": 147039,
@@ -13455,7 +13146,7 @@
         "id": 147048,
         "name": "Spider on a Bicycle",
         "address": "Station Square, Aboyne AB34 5E",
-        "details": "",
+        "details": "Open Tues - Wed 10:00 - 15:00, Thurs - Sat 10:00 - 22:00, Sun 10:00 - 16:00",
         "website": "https:\/\/www.facebook.com\/spideronabicycle\/",
         "email": "hello@spideronabicycle.co.uk",
         "lat": 57.076214,
@@ -13929,18 +13620,6 @@
         "photo": "https://pbs.twimg.com/media/ELwkpcwWsAAcoOZ.jpg"
     },
     {
-        "id": 147109,
-        "name": "Caf\u00e9 in The Park",
-        "address": "The Cottage Annexe Ripon Spa, Park St, Ripon HG4 2BD",
-        "details": "Open daily 8:00 \u2013 16:30.",
-        "website": "https:\/\/www.squidandtonic.co.uk\/cafe-in-the-park\/",
-        "phone": "07565 189 025",
-        "email": "enquiries@squidandtonic.co.uk",
-        "lat": 54.13599,
-        "lng": -1.529223,
-        "photo": "https:\/\/cafes.cyclingmaps.net\/photos\/1771.jpg"
-    },
-    {
         "id": 147110,
         "name": "Sunflower Tea Rooms",
         "address": "Greenacres Garden Centre, Ashby Rd, Stapleton, LE9 8JE",
@@ -14154,22 +13833,12 @@
         "id": 147136,
         "name": "Tan-y-Pistyll Cafe",
         "address": "Pistyll Rhaeadr, Waterfall Lane, Llanrhaeadr ym Mochnant, Powys SY10 0BZ, Wales",
-        "details": "",
+        "details": "Open daily 10:00 - 16:00 (Winter), Open daily 9:30 - 17:00 (Summer)",
         "website": "http:\/\/www.pistyllrhaeadr.co.uk\/cafe.html",
         "phone": "01691 780392",
         "lat": 52.855034,
-        "lng": -3.378596
-    },
-    {
-        "id": 147137,
-        "name": "Tarvin sands fishery",
-        "address": "Kelsall Rd, Tarvin, Chester, Cheshire West and Chester CH3 8NR",
-        "details": "",
-        "website": "http:\/\/www.tarvinsands.com\/fishery",
-        "phone": "01829 741835",
-        "email": "info@tarvinsands.com",
-        "lat": 53.203503,
-        "lng": -2.756688
+        "lng": -3.378596,
+        "photo": "https://lh3.googleusercontent.com/p/AF1QipOyLuOnUWUlQcG81K6JBsBQwUB-5G7v0rCwcGjv=s680-w680-h510"
     },
     {
         "id": 147138,
@@ -14903,18 +14572,6 @@
         "photo": "https:\/\/cafes.cyclingmaps.net\/photos\/1885.jpg"
     },
     {
-        "id": 147221,
-        "name": "Doughie's",
-        "address": "1 Main Street, Barrowby, Grantham NG32 1BZ",
-        "details": "",
-        "website": "https:\/\/dougiesbistro.com\/",
-        "phone": "07912 499770",
-        "email": "barrowbycakehole@hotmail.co.uk",
-        "lat": 52.916794,
-        "lng": -0.6921387,
-        "photo": "https:\/\/media-cdn.tripadvisor.com\/media\/photo-s\/04\/12\/1d\/a1\/the-front-entrance.jpg"
-    },
-    {
         "id": 147222,
         "name": "The Canal Tea Rooms & Garden",
         "address": "Grand Western Canal, Lime Kiln Road, Tiverton, Devon, EX16 4AQ",
@@ -15108,15 +14765,6 @@
         "lat": 51.870907,
         "lng": 0.2225995,
         "photo": "https:\/\/media-cdn.tripadvisor.com\/media\/photo-s\/09\/78\/eb\/60\/the-coffee-shop.jpg"
-    },
-    {
-        "id": 147245,
-        "name": "The Coffee Shop - The Windsor Farm Shop",
-        "address": "The Windsor Farm Shop, Datchet Road, Old Windsor, Berkshire, SL4 2RQ",
-        "details": "",
-        "website": "https:\/\/www.windsorfarmshop.co.uk\/the-coffee-shop",
-        "lat": 51.4665,
-        "lng": -0.586631
     },
     {
         "id": 147246,
@@ -15587,14 +15235,6 @@
         "photo": "https:\/\/cafes.cyclingmaps.net\/photos\/1977.jpg"
     },
     {
-        "id": 147307,
-        "name": "The Friar Tuck Cafe",
-        "address": "8 Salisbury St, Amesbury, Wiltshire, SP4 7HD",
-        "details": "",
-        "lat": 51.172127,
-        "lng": -1.781583
-    },
-    {
         "id": 147308,
         "name": "The Friar's House Tea Room and Cafe",
         "address": "Poplar Farmhouse, The Village, Dale Abbey, Ilkeston, Derbys DE7 4PN",
@@ -15660,16 +15300,6 @@
         "lat": 52.29676,
         "lng": -0.674914,
         "photo": "https:\/\/cafes.cyclingmaps.net\/photos\/1986.jpg"
-    },
-    {
-        "id": 147315,
-        "name": "The Garden Room",
-        "address": "Byrkely Park Garden Centre, Rangemore, Burton upon Trent, DE13 9RN",
-        "details": "",
-        "website": "http:\/\/www.byrkleyparkcentre.co.uk\\gardenroom.html",
-        "phone": "01283 716593",
-        "lat": 52.8088,
-        "lng": -1.7566648
     },
     {
         "id": 147316,
@@ -15780,12 +15410,12 @@
         "id": 147329,
         "name": "The Granary Tearoom",
         "address": "Willow Brook Farm, Scotsman Lodge, Stamford Rd, Helpston Heath, Peterborough PE6 7EL",
-        "details": "",
+        "details": "Open Mon - Sun 9:00 - 16:00, Sat 9:00 - 17:00",
         "phone": "01780 749483",
         "email": "infowillowbrookfarmshop@btinternet.com",
         "lat": 52.612892,
         "lng": -0.349762,
-        "photo": "https:\/\/media-cdn.tripadvisor.com\/media\/photo-s\/06\/4d\/b6\/b4\/getlstd-property-photo.jpg"
+        "photo": "https://www.lincsonline.co.uk/_media/img/TXTY6T2KTJ1KS7W0X3MO.jpg"
     },
     {
         "id": 147330,
@@ -16703,17 +16333,6 @@
         "photo": "https:\/\/media-cdn.tripadvisor.com\/media\/photo-s\/02\/69\/fc\/ec\/outside-terrace.jpg"
     },
     {
-        "id": 147437,
-        "name": "The Orchard Tea Room",
-        "address": "8 Redmoor Lane, Wisbech, Cambridgeshire  PE14 0RN",
-        "details": "",
-        "website": "http:\/\/www.theorchardtearoom.co.uk\\where-to-find-us",
-        "phone": "01945 475754",
-        "lat": 52.641045,
-        "lng": 0.144002,
-        "photo": "https:\/\/media-cdn.tripadvisor.com\/media\/photo-s\/05\/ab\/7f\/43\/the-orchard-tea-room.jpg"
-    },
-    {
         "id": 147439,
         "name": "Hatties",
         "address": "6A Market Pl, Corby Glen, Grantham NG33 4NH",
@@ -16849,17 +16468,6 @@
         "lat": 54.4728,
         "lng": -2.349,
         "photo": "https:\/\/media-cdn.tripadvisor.com\/media\/photo-s\/1a\/40\/70\/82\/our-cafe-in-landscape.jpg"
-    },
-    {
-        "id": 147454,
-        "name": "The Plassey Leisure Park",
-        "address": "Eyton, The Plassey, Wrexham LL13 0SP",
-        "details": "",
-        "website": "https:\/\/www.plassey.com\/food-drink\/",
-        "phone": "01978 780 277",
-        "email": "enquiries@plassey.com",
-        "lat": 53.000553,
-        "lng": -2.969688
     },
     {
         "id": 147455,
@@ -17263,22 +16871,23 @@
         "id": 147498,
         "name": "The Stables Tearooms",
         "address": "Bridge House, E Waterside, Upton upon Severn, Worcester WR8 0HF",
-        "details": "",
+        "details": "Open Wed - Sat 10:00 - 15:30",
         "phone": "01684 591580",
         "lat": 52.064274,
-        "lng": -2.217135
+        "lng": -2.217135,
+        "photo": "https://res.dayoutwiththekids.co.uk/image/upload/v1679415936/attractions/t/the-stables-tearoom-at-carlton-towers-vineyard-dxre8sdz/Tearoom_jhnyl4.jpg"
     },
     {
         "id": 147499,
         "name": "The Staithes Cafe",
         "address": "1 Autumn Drive, Dunston Riverside, Staiths Southbank, Gateshead, NE8 2BZ",
-        "details": "",
+        "details": "Open Mon - Thurs 9:00 - 18:00, Fri - Sat 9:00 - 22:00, Sun 10:00 - 17:00",
         "website": "http:\/\/www.thestaithscafe.co.uk\/index",
         "phone": "07733 335313",
         "email": "staithscafebar@gmail.com",
         "lat": 54.957874,
         "lng": -1.628521,
-        "photo": "http:\/\/thestaithscafe.co.uk\/media\/img\/location.jpg"
+        "photo": "https://pbs.twimg.com/media/Fx23a2TXwAQBp1w?format=jpg&name=large"
     },
     {
         "id": 147500,
@@ -17545,14 +17154,6 @@
         "lng": 0.772476
     },
     {
-        "id": 147530,
-        "name": "The Village Greengrocer",
-        "address": "Main St, Castlemartyr, Co. Cork, Ireland",
-        "details": "Great coffee stop for cyclist. Tool station outside. Free wi-fi. Sell cycling gels bars tubes and other emergency stuff you need to stay on the road",
-        "lat": 51.912,
-        "lng": -8.053754
-    },
-    {
         "id": 147531,
         "name": "The Village Stores",
         "address": "Market Place, Hartington, Buxton SK17 0AL",
@@ -17811,7 +17412,7 @@
         "id": 147562,
         "name": "Thorncombe Village Shop",
         "address": "Chard St, Thorncombe, Chard, Dorset TA20 4NF",
-        "details": "",
+        "details": "Open Mon - Tues 8:30 - 14:00, Wed - Fri 8:30 - 16:00, Sat 8:30 - 13:00, Sun 9:30 - 12:30",
         "website": "https:\/\/www.facebook.com\/ThorncombeVillageShop\/",
         "phone": "01460 302820",
         "lat": 50.82593,
@@ -18113,11 +17714,12 @@
         "id": 147596,
         "name": "Trowell Garden Centre",
         "address": "Stapleford Rd, Trowell, Nottingham, NG9 3TG",
-        "details": "",
+        "details": "Open Mon - Sat 9:00 - 17:00, Sun 9:30 - 16:00",
         "website": "http:\/\/www.trowellgardencentre.co.uk",
         "phone": "0115 9326920",
         "lat": 52.949184,
-        "lng": -1.271783
+        "lng": -1.271783,
+        "photo": "https://media-cdn.tripadvisor.com/media/photo-s/1a/b1/34/a6/dining-area.jpg"
     },
     {
         "id": 147597,
@@ -18350,7 +17952,7 @@
         "id": 147621,
         "name": "Mays Thai",
         "address": "1 Mill Lane, Darton, Barnsley  South Yorkshire  S75 5HE",
-        "details": "Closed Sun, Open Mon  - Sat 11:00 -20:30. Thai and English food. no cake.",
+        "details": "Closed Sun, Open Mon - Sat 11:00 -20:30. Thai and English food. no cake.",
         "website": "https:\/\/www.facebook.com\/MAYTHAIDARTON\/",
         "phone": "01226 382675",
         "lat": 53.58647,
@@ -20346,16 +19948,6 @@
         "photo": "https:\/\/www.dropbox.com\/s\/v228bbj0982pvl9\/2551.jpg?raw=1"
     },
     {
-        "id": 147841,
-        "name": "Patshull Park Golf Club",
-        "address": "Patshull Park Hotel, Golf and Country Club, Patshull Road,Pattingham, WV6 7HR",
-        "details": "",
-        "website": "https:\/\/patshull-park.co.uk\/earls-brasserie\/",
-        "phone": "01902 700100",
-        "lat": 52.605938,
-        "lng": -2.293717
-    },
-    {
         "id": 147842,
         "name": "James at the Putting Green",
         "address": "Marine Road, Nairn, IV12 4EA",
@@ -20786,7 +20378,7 @@
         "id": 147893,
         "name": "Cole Cafe & Deli",
         "address": "1 Side Cottage,, Back Roker Terrace, Sunderland SR6 9LX",
-        "details": "Open weekdays 10:00 - 16:00, 10:   - 17:00 Sat & Sun.",
+        "details": "Open weekdays 10:00 - 16:00, Sat - Sun 10:00 - 17:00",
         "website": "https:\/\/www.facebook.com\/colecafeanddeli\/",
         "phone": "07834 236851",
         "lat": 54.92317,
@@ -23857,30 +23449,6 @@
         "photo": "https:\/\/cafes.cyclingmaps.net\/photos\/2930.jpg"
     },
     {
-        "id": 148204,
-        "name": "Cafe Velo",
-        "address": "3 George's Quay, Centre, Cork, T12 KD37, Ireland",
-        "details": "Open weekdays 7:30 - 15:30, Sat 8:00 - 15:30, Sun 9:00 - 15:30.",
-        "website": "https:\/\/cafevelo.ie\/",
-        "phone": "+353 21 432 3044",
-        "email": "cake@cafevelo.ie",
-        "lat": 51.89494,
-        "lng": -8.47006,
-        "photo": "https:\/\/media-cdn.tripadvisor.com\/media\/photo-s\/0c\/63\/f8\/ac\/the-outside.jpg"
-    },
-    {
-        "id": 148205,
-        "name": "The Village Greengrocer",
-        "address": "Main St, Gortnahomna Beg, Castlemartyr, Co. Cork, Ireland",
-        "details": "Open daily 7:30 - 18:00, closed Sun. Great coffee stop for cyclist. Tool station outside. Free wi-fi. Sell cycling gels bars tubes and other emergency stuff you need to stay on the road.",
-        "website": "https:\/\/www.facebook.com\/the-village-greengrocer-foodhall-124582754234318\/",
-        "phone": "+353 21 466 7655",
-        "email": "thevillagegreengrocerfoodhall@gmail.com",
-        "lat": 51.91204,
-        "lng": -8.05369,
-        "photo": "https:\/\/cafes.cyclingmaps.net\/photos\/2932.jpg"
-    },
-    {
         "id": 148206,
         "name": "The Mardle Cafe & Bakery",
         "address": "51 The Street, Lound, Lowestoft NR32 5LP",
@@ -23963,7 +23531,7 @@
         "id": 148215,
         "name": "Maglia Rosso",
         "address": "Lawshall Road, Hawstead, Bury St Edmunds, Suffolk, IP29 5NR",
-        "details": "Open Mon - Sat 9:00 - 17.30.  Sun 9:00  - 18:00",
+        "details": "Open Mon - Sat 9:00 - 17.30.  Sun 9:00 - 18:00",
         "website": "https:\/\/magliarosso.co.uk\/the-cafe\/",
         "phone": "01284 386884",
         "email": "info@magliarosso.co.uk",
@@ -24260,11 +23828,12 @@
         "id": 148248,
         "name": "Mrs B's Potting Shed Cafe",
         "address": "Russells Garden Centre, Mill Hill, Baginton, Coventry, CV8 3AG",
-        "details": "",
+        "details": "Open Tues - Sat 10:00 - 16:00, Sun 10:00 - 15:00",
         "website": "http:\/\/www.russellsgardencentre.co.uk\/family-businesses\/the-potting-shed-cafe\/",
         "phone": "024 7630 3627",
         "lat": 52.373,
-        "lng": -1.50626
+        "lng": -1.50626,
+        "photo": "https://scontent-lhr6-2.xx.fbcdn.net/v/t39.30808-6/336874419_617292320213960_1755862170169316082_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=xWQj4p-fNTUQ7kNvgHnT_HD&_nc_zt=23&_nc_ht=scontent-lhr6-2.xx&_nc_gid=AvXDTFJCT7gM8JkQCcVnHRE&oh=00_AYA57j0NbzgN5oz7qy_9phhN2u5opZho3jDOU8DCzH37DQ&oe=678863C9"
     },
     {
         "id": 148249,
@@ -24735,7 +24304,7 @@
         "id": 148298,
         "name": "The Shop at Crowle",
         "address": "Crowle Parish Hall, Church Road, Crowle, Worcestershire, WR7 4AZ",
-        "details": "Open Mon - Fri 9:00  - 17:00, Sat 9:00 -15:00, Sun & Bank hol 10:00 - 12:00",
+        "details": "Open Mon - Fri 9:00 - 17:00, Sat 9:00 -15:00, Sun & Bank hol 10:00 - 12:00",
         "website": "https:\/\/www.theshopatcrowle.co.uk\/the-cafe\/",
         "phone": "01905 381416",
         "email": "manager@theshopatcrowle.co.uk",
@@ -25089,7 +24658,7 @@
         "id": 148334,
         "name": "Bryer's",
         "address": "13 Gotham Rd, East Leake Loughborough, LE12 6JG",
-        "details": "Closed Sun, Mon, Open Tues - Fri  9:00  - 14:30, Sat 9:00 - 13:30",
+        "details": "Closed Sun, Mon, Open Tues - Fri  9:00 - 14:30, Sat 9:00 - 13:30",
         "website": "https:\/\/www.facebook.com\/bryerseastleake\/",
         "email": "info@bryersdeli.com",
         "lat": 52.83202,
@@ -25882,7 +25451,7 @@
         "id": 148409,
         "name": "The Clawson Kitchen",
         "address": "7 The Sands, Long Clawson, Melton Mowbray LE14 4PA",
-        "details": "Take away open Mon - Sat 9;00 - 15:00, Sun 9:00  -14:00 . Last hot food 13:30",
+        "details": "Take away open Mon - Sat 9;00 - 15:00, Sun 9:00 - 14:00 . Last hot food 13:30",
         "website": "https:\/\/www.facebook.com\/theclawsonkitchen\/",
         "phone": "01664 820208",
         "lat": 52.83893,
@@ -26183,7 +25752,7 @@
         "id": 148439,
         "name": "Decades",
         "address": "TOPS plant centre, B4632, Broadway Rd, Mickleton, Chipping Campden GL55 6PT",
-        "details": "Open Tues & Wed 10:00 - 16:00, Thurs  - Sat 10:00 - 21:00, Sun 10:00 - 14:00, closed Mon. Indoor and outdoor seating. Please note: able to accommodate 4 cyclists in total at a time to enable Cafe to provide good service to all customers. If there are already cyclist present don\u2019t make an issue, pedal on to the next cafe.",
+        "details": "Open Tues & Wed 10:00 - 16:00, Thurs - Sat 10:00 - 21:00, Sun 10:00 - 14:00, closed Mon. Indoor and outdoor seating. Please note: able to accommodate 4 cyclists in total at a time to enable Cafe to provide good service to all customers. If there are already cyclist present don\u2019t make an issue, pedal on to the next cafe.",
         "website": "https:\/\/www.facebook.com\/decadesmickleton\/",
         "phone": "07525 748289",
         "lat": 52.0864,
@@ -26308,7 +25877,7 @@
         "id": 148451,
         "name": "Whistlestop Cafe",
         "address": "Tetbury Goods Shed, Gumstool Hill, Tetbury, Gloucestershire, GL8 8DG",
-        "details": "Takeaway from 4th July sat, Sun 10:00  - 16:00",
+        "details": "Takeaway from 4th July sat, Sun 10:00 - 16:00",
         "website": "https:\/\/www.cotswolds.com\/food-and-drink\/the-whistlestop-cafe-p2509963?fbclid=IwAR1rWEa0H3F_ZyQzJTmdiPST1Xi3e7C6zk9vAETBBfonYnpcvJRAM2iwvIA",
         "phone": "01666 505496",
         "lat": 51.63777,
@@ -27609,7 +27178,7 @@
     {
         "id": 148581,
         "name": "Compton Abbas Airfield",
-        "address": "Ashmore, Near Salisbury, Wiltshire SP5 5AP",
+        "address": "Ashmore, Salisbury, Wiltshire SP5 5AP",
         "details": "Closed Mon Open Tues -Sun 10:00 -16:00. Bikes aren't allowed on the patio area and must be left in the car park. There is fencing to lock your bike to and a bike lock but you might prefer to take your own.",
         "website": "https:\/\/comptonabbasairfield.co.uk\/airfield-cafe",
         "phone": "01747 811767",
@@ -27701,13 +27270,13 @@
         "id": 148591,
         "name": "Hinton Marsh Farm Shop",
         "address": "52 High St, Shrivenham, Swindon, SN6 8AA",
-        "details": "",
+        "details": "Open Mon - Fri 8:30 - 17:30, Wed 8:30 - 16:00, Sat 8:30 - 16:00, Sun 10:00 - 14:00",
         "website": "https:\/\/www.facebook.com\/HMF-Farm-Shop-102556978047821\/",
         "phone": "07968 866323",
         "email": "info@hintonmarshfarm.co.uk",
         "lat": 51.59824,
         "lng": -1.65587,
-        "photo": "https:\/\/cafes.cyclingmaps.net\/photos\/3333.jpg"
+        "photo": "https://lh3.googleusercontent.com/p/AF1QipP4wYsUp1Bgk6C9f4z7bKqC5COF3SOVl305cT7O=s680-w680-h510"
     },
     {
         "id": 148592,
@@ -32156,7 +31725,7 @@
         "id": 149025,
         "name": "The Apple Pie Bakery",
         "address": "3 Biggar Rd, Carnwath, Lanark ML11 8HJ",
-        "details": "Open daily 6:00  - 16:00, Sun 9:00 - 15:00.",
+        "details": "Open daily 6:00 - 16:00, Sun 9:00 - 15:00.",
         "phone": "01555 841794",
         "lat": 55.70019,
         "lng": -3.62482,
@@ -33409,17 +32978,6 @@
         "photo": "https:\/\/cafes.cyclingmaps.net\/photos\/3891.jpg"
     },
     {
-        "id": 149139,
-        "name": "Along The Way",
-        "address": "Main St, Goleen, Co. Cork, Ireland",
-        "details": "Open daily 9:30 - 17:30.",
-        "website": "https:\/\/www.facebook.com\/alongthewaycafe\/",
-        "phone": "+353 28 35300",
-        "lat": 51.49539,
-        "lng": -9.71186,
-        "photo": "https:\/\/cafes.cyclingmaps.net\/photos\/3892.jpg"
-    },
-    {
         "id": 149141,
         "name": "Toni's Tea Room",
         "address": "1 Metropole, Esplanade, Ventnor, IOW PO38 1JT",
@@ -34565,7 +34123,7 @@
         "id": 149251,
         "name": "The Corner Shop",
         "address": "3 The Square, Glamis, Forfar DD8 1RS",
-        "details": "Open daily 7:30 - 16:30, Wed 7:30  - 13:30, Sun 7:30 - 12:00.  It's a shop and it's a Cafe. Home made quiche is superb.",
+        "details": "Open daily 7:30 - 16:30, Wed 7:30 - 13:30, Sun 7:30 - 12:00.  It's a shop and it's a Cafe. Home made quiche is superb.",
         "website": "https:\/\/www.facebook.com\/number3thesquare",
         "phone": "01307 840822",
         "email": "glamispostoffice@gmail.com",
@@ -36131,7 +35689,7 @@
         "id": 149401,
         "name": "Hartletts Cafe",
         "address": "Hook community centre, 12 Ravenscroft, Hook RG27 9NN",
-        "details": "Open Mon - Fri 8:00  - 16:30  Sat 8:00 -16:00  Sun 9:00 -15:00",
+        "details": "Open Mon - Fri 8:00 - 16:30  Sat 8:00 -16:00  Sun 9:00 -15:00",
         "website": "https:\/\/www.facebook.com\/Hartletts-Caf%C3%A9-781475291947775\/",
         "phone": "01256 541821",
         "lat": 51.28356,
@@ -36783,7 +36341,7 @@
         "id": 149464,
         "name": "Six Trees Kitchen & Bar",
         "address": "Trafford Park Rd, Trafford Park, Stretford, Manchester M17 1BN",
-        "details": "Open Tues 7:00 -20:00, Wed  - Fri 7:00 - 23:00, Sat 10:00 - 23:00, Sun 10:00 - 18:00, closed Mon. always a warm welcome whether a small or a large group and they accommodate our bikes safely. It is an outdoor venue but they have covered areas. The new canopy is fabulous. They don\u2019t do cakes but their savoury food is extremely fresh and cooked from scratch.",
+        "details": "Open Tues 7:00 -20:00, Wed - Fri 7:00 - 23:00, Sat 10:00 - 23:00, Sun 10:00 - 18:00, closed Mon. always a warm welcome whether a small or a large group and they accommodate our bikes safely. It is an outdoor venue but they have covered areas. The new canopy is fabulous. They don\u2019t do cakes but their savoury food is extremely fresh and cooked from scratch.",
         "website": "https:\/\/www.facebook.com\/sixtreeskitchen\/",
         "phone": "0161 302 9157",
         "email": "info@sixtreeskitchen.co.uk",
@@ -38278,7 +37836,7 @@
         "id": 149602,
         "name": "Pennikkity Pots Ceramics Cafe",
         "address": "1, Crown Anchor Mews, Tower Ramparts, Ipswich IP1 3DJ",
-        "details": "Open daily 10:00 - 16:00, Sun 11:   - 16:00, closed Wed. Lovely bike friendly ceramics painting Cafe, good selection of cakes and savoury snacks plus top up coffee for \u00a31",
+        "details": "Open daily 10:00 - 16:00, Sun 11:00 - 16:00, closed Wed. Lovely bike friendly ceramics painting Cafe, good selection of cakes and savoury snacks plus top up coffee for \u00a31",
         "website": "https:\/\/www.facebook.com\/PennikkityPots\/",
         "phone": "01473 216865",
         "email": "info@pennikkitypots.co.uk",
@@ -38914,7 +38472,7 @@
         "id": 149661,
         "name": "Canal Cottage Cafe",
         "address": "Hopwell Road, Draycott, Derbyshire DE72 3PE",
-        "details": "Open Mon, Wed, Thur, Fri, Sat 9:00 - 16:00, Sun 10:00  - 16:00. Closed Tues. Good selection of cakes and hot & cold drinks. Indoor and outdoor seating.",
+        "details": "Open Mon, Wed, Thur, Fri, Sat 9:00 - 16:00, Sun 10:00 - 16:00. Closed Tues. Good selection of cakes and hot & cold drinks. Indoor and outdoor seating.",
         "website": "https:\/\/www.facebook.com\/canalcottagecafe",
         "phone": "07531 970145",
         "email": "joycebrucko@gmail.com",
@@ -40653,7 +40211,7 @@
         "id": 149818,
         "name": "Brunswick Coffee Station",
         "address": "Brunswick Organic Nursery and Craft Workshop, Appleton Road, Bishopthorpe, York YO 23 2RF",
-        "details": "Open daily  10:00 - !6:30   Serves hot & cold drinks, home made cake, ice cream and organic fruit and veg. Outdoor only On the Solar System Greenway from York to Selby",
+        "details": "Open daily  10:00 - 16:30   Serves hot & cold drinks, home made cake, ice cream and organic fruit and veg. Outdoor only On the Solar System Greenway from York to Selby",
         "website": "https:\/\/www.brunswickyork.org.uk\/shop-with-us\/brunswick-coffee-station",
         "phone": "01904 701689",
         "lat": 53.9187,
@@ -43804,7 +43362,7 @@
         "id": 150104,
         "name": "Monkland Cheese Dairy Cafe",
         "address": "The Pleck, Monkland, Leominster, HR6 9DB.",
-        "details": "Open Mon to Sat  - 10:00  - 16:00.",
+        "details": "Open Mon - Sat 10:00 - 16:00.",
         "website": "https:\/\/monklandcheesedairy.co.uk\/i\/Cafe",
         "phone": "01568 720307",
         "lat": 52.21338,
@@ -45565,17 +45123,6 @@
         "lat": 51.87749,
         "lng": -1.62582,
         "photo": "https:\/\/cafes.cyclingmaps.net\/photos\/5018.jpg"
-    },
-    {
-        "id": 150259,
-        "name": "Rocksalt Cafe",
-        "address": "Main St, Haggardstown, Blackrock, Co. Louth, A91 PXA7, Ireland",
-        "details": "Open daily 8:00 - 17:00. Not the cheapest Cafe around but excellent food.",
-        "website": "https:\/\/www.rocksaltcafe.ie\/",
-        "phone": "+353 87 912 7174",
-        "lat": 53.96107,
-        "lng": -6.36713,
-        "photo": "https:\/\/cafes.cyclingmaps.net\/photos\/5019.jpg"
     },
     {
         "id": 150260,
