@@ -66,9 +66,11 @@ app.post('/api', async (req, res, next) => {
           if (result == "GBR") {
             //polyline, list of cafes within it'
 
-            getCafeList(polyline)
+            cafesArr = getCafeList(data)
 
-            //res.render('routes', { message: polyline });
+            
+            res.render('routes', { data: { message: polyline, cafes: cafesArr } });
+
             //checkServerErrURL();
             //verifyJSON();
             res.end(); 
@@ -76,6 +78,7 @@ app.post('/api', async (req, res, next) => {
           else { return next("locationError"); }
         })
         .catch(err => {
+          console.log(err);
           return next("countryCodeErr");
         })
     }

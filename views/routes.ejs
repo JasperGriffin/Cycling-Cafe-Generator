@@ -26,7 +26,8 @@
 
 
     <script>
-        const data = '<%- JSON.stringify(message) %>'
+        let data = '<%- JSON.stringify(data.message) %>'
+        let cafesArr = `<%- JSON.stringify(data.cafes) %>`
     </script>
 
     <script defer type="text/javascript" src="routes.js"></script>

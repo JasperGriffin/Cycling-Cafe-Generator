@@ -3,7 +3,7 @@
 
 //cafe link: https://uxwing.com/coffee-shop-map-location-icon/
 
-setTimeout(1000);
+//setTimeout(1000);
 
 var map = L.map('map').setView([51.39434, -0.31393], 10);//13
 
@@ -26,6 +26,11 @@ var bigIcon = L.icon({
     popupAnchor:  [0, -35] // point from which the popup should open relative to the iconAnchor
 });
 
+
+let cafes = JSON.parse(cafesArr)
+cafes.forEach((item) => {
+    console.log(item.name);
+})
 
 var parsedData = JSON.parse(data);
 initMap(parsedData) 
@@ -56,29 +61,25 @@ async function initMap(parsedData) {
     }, 1000);
 }
 
-async function printJSON() {
-    const res = await fetch('./assets/cafes.json');
-    return await res.json();
-}
-
-
 function addCafeMarkers(data) {
-    //let marker = L.marker([51.1627, 0.16314], {icon: cafeIcon}).addTo(map);
 
+    //cafesArr
+
+    /*
     var locations = [
         ["Kingdom", 51.1627, 0.16314, "Open everyday 9am - 5pm (after 4pm drinks and cake only)", "Grove Road,Penshurst, Tonbridge, Kent, TN11 8DU"],
         ["Giro", 51.37064, -0.363588, "Open daily 7:30 - 15:00, Sat & Sun 7:30 - 17:00", "2 High St, Esher KT10 9RT"],
         ["Rapha", 51.510784, -0.136667, "Open daily 7:30 - 19:00", "85 Brewer St, Soho, London W1F 9ZN, UK"],
         ["Rykas", 51.255543, -0.32239097, "Open Mon - Fri 8:00 -16:00, Sat - Sun8;00 -17:00", "Old London Rd, Mickleham, Dorking, Surrey RH5 6BY"],
     ];
-
-    let json = printJSON(); 
-    console.log("json: " + json); 
+    */
     
-    for (var i = 0; i < locations.length; i++) {
+    for (var i = 0; i < cafesArr.length; i++) {
 
         //Find town from address field
-        let town = getLocationName(i, locations); 
+        //let town = getLocationName(i, locations); 
+
+
         
         //create marker
         marker = new L.marker([locations[i][1], locations[i][2]], {icon: cafeIcon});
@@ -87,7 +88,7 @@ function addCafeMarkers(data) {
             //marker.bindPopup(locations[i][0]);
             marker.bindPopup(
                 "<div class=marker-background>"+
-                "<img class='marker-img' src='https://lh3.googleusercontent.com/p/AF1QipN1FE0zhWzca3hD0KOCZqQuMUUwSWHlHcmHnHNa=s1360-w1360-h1020'>" +
+                "<img class='marker-img' src=''>" +
                 "<h1>"+locations[i][0]+"</h1>" + town + "<br/>" + locations[i][3]+
                 "</div>"
             );
@@ -95,7 +96,7 @@ function addCafeMarkers(data) {
         }
         else {
             marker.bindPopup(
-                "<img class='marker-img' src='https://lh3.googleusercontent.com/p/AF1QipM3gy7yJuB6YbI_9qImLAAzTiwXBWMH-zlzCefU=s680-w680-h510'>" +
+                "<img class='marker-img' src=''>" +
                 "<h1>"+locations[i][0]+"</h1>" + town + "<br/>" + locations[i][3]
             );
             marker.addTo(map);
@@ -121,7 +122,8 @@ function getLocationName(i, locations) {
 }
 
 function isMarkerInsidePolygon(marker, poly) {
-    var polyPoints = poly.getLatLngs();       
+    var polyPoints = poly.getLatLngs();   
+    console.log(polyPoints);     
     var x = marker.getLatLng().lat, y = marker.getLatLng().lng;
 
     var inside = false;
@@ -136,7 +138,3 @@ function isMarkerInsidePolygon(marker, poly) {
 
     return inside;
 }
-
-
-
-

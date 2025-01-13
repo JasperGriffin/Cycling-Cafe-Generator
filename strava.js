@@ -24,7 +24,7 @@ function getPolyline(data) {
     
     try {
         let obj = polylineConvert.decode(polyline); 
-        //console.log(obj);
+        //console.log("polyline obj: " + obj.length);
         return obj;
     }
     catch(err) {
@@ -42,7 +42,7 @@ async function getCountry(polyline) {
     a = Number(array[0]), b = Number(array[1]);  
     
     let res = await latlongify.find(a, b); 
-    console.log("country code: " + res.country.code); 
+    //console.log("country code: " + res.country.code); 
 
     return res.country.code; 
     //if (res.country.code == "GBR") {
@@ -50,24 +50,50 @@ async function getCountry(polyline) {
     //}
 }
 
-function getCafeList(polyline) {
+function getCafeList(data) {
 
-    json.forEach(async (item) => {
-        //console.log("this is working!"); 
-        console.log(item.phone);
+  let polyline = getPolyline(data);
 
-        //lat, lng, address, photo, 
-    })
+  let cafeArr = [];
+
+  json.forEach(async (item) => {
+
+    //console.log(item.phone);
+
+    let lat = item.lat;
+    let lng = item.lng; 
+
+     
+
+    if (isCafeInsidePolygon(polyline, lat, lng)) {
+      //console.log("Name: " + item.name); 
+
+      //function to fill any missing fields
+
+      cafeArr.push({
+        name: item.name,
+        address: item.address,
+        details: item.details,
+        lat: item.lat,
+        lng: item.lng,
+        photo: item.photo
+      })
+    }
+    
+  })
+  //console.log(cafeArr); 
+  return cafeArr; 
 } 
 
-function isMarkerInsidePolygon(marker, poly) {
-    var polyPoints = poly.getLatLngs();       
-    var x = marker.getLatLng().lat, y = marker.getLatLng().lng;
 
+function isCafeInsidePolygon(poly, lat, lng) {
+
+    var x = lat, y = lng;
     var inside = false;
-    for (var i = 0, j = polyPoints.length - 1; i < polyPoints.length; j = i++) {
-        var xi = polyPoints[i].lat, yi = polyPoints[i].lng;
-        var xj = polyPoints[j].lat, yj = polyPoints[j].lng;
+    
+    for (var i = 0, j = poly.length - 1; i < poly.length; j = i++) {
+        var xi = poly[i][0], yi = poly[i][1];
+        var xj = poly[j][0], yj = poly[j][1];
 
         var intersect = ((yi > y) != (yj > y))
             && (x < (xj - xi) * (y - yi) / (yj - yi) + xi);
@@ -76,6 +102,7 @@ function isMarkerInsidePolygon(marker, poly) {
 
     return inside;
 }
+
 
 //Method checks for 404 errors for photo URLs
 async function checkServerErrURL(json) {
