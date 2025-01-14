@@ -27,11 +27,6 @@ var bigIcon = L.icon({
 });
 
 
-let cafes = JSON.parse(cafesArr)
-cafes.forEach((item) => {
-    console.log(item.name);
-})
-
 var parsedData = JSON.parse(data);
 initMap(parsedData) 
 .then(result => {
@@ -50,7 +45,7 @@ async function initMap(parsedData) {
     
     firstpolyline.addTo(map);
 
-    //addCafeMarkers(firstpolyline);
+    addCafeMarkers(firstpolyline);
 
     setTimeout(function () {
         addCafeMarkers(firstpolyline);
@@ -63,44 +58,33 @@ async function initMap(parsedData) {
 
 function addCafeMarkers(data) {
 
-    //cafesArr
-
     /*
-    var locations = [
-        ["Kingdom", 51.1627, 0.16314, "Open everyday 9am - 5pm (after 4pm drinks and cake only)", "Grove Road,Penshurst, Tonbridge, Kent, TN11 8DU"],
-        ["Giro", 51.37064, -0.363588, "Open daily 7:30 - 15:00, Sat & Sun 7:30 - 17:00", "2 High St, Esher KT10 9RT"],
-        ["Rapha", 51.510784, -0.136667, "Open daily 7:30 - 19:00", "85 Brewer St, Soho, London W1F 9ZN, UK"],
-        ["Rykas", 51.255543, -0.32239097, "Open Mon - Fri 8:00 -16:00, Sat - Sun8;00 -17:00", "Old London Rd, Mickleham, Dorking, Surrey RH5 6BY"],
-    ];
+        cafeArr.push({
+            name: item.name,
+            address: item.address,
+            details: item.details,
+            lat: item.lat,
+            lng: item.lng,
+            photo: item.photo
+        })
     */
     
-    for (var i = 0; i < cafesArr.length; i++) {
-
-        //Find town from address field
-        //let town = getLocationName(i, locations); 
-
-
+    let cafes = JSON.parse(cafesArr)    
+    cafes.forEach((item) => {
         
-        //create marker
-        marker = new L.marker([locations[i][1], locations[i][2]], {icon: cafeIcon});
-       
-        if (isMarkerInsidePolygon(marker, data)) {
-            //marker.bindPopup(locations[i][0]);
-            marker.bindPopup(
-                "<div class=marker-background>"+
-                "<img class='marker-img' src=''>" +
-                "<h1>"+locations[i][0]+"</h1>" + town + "<br/>" + locations[i][3]+
-                "</div>"
-            );
-            marker.addTo(map);
-        }
-        else {
-            marker.bindPopup(
-                "<img class='marker-img' src=''>" +
-                "<h1>"+locations[i][0]+"</h1>" + town + "<br/>" + locations[i][3]
-            );
-            marker.addTo(map);
-        }
+        let town = getTown(item); 
+        let address = splitAddress(item); 
+
+        //create marker (x, y, cafeIcon)
+        marker = new L.marker([item.lat, item.lng], {icon: cafeIcon});
+
+        marker.bindPopup(
+            "<div class=marker-background>"+
+                "<img class='marker-img' src="+item.photo+">" +
+                "<h1>"+item.name+"</h1>" +town +"<br/>" + address+
+            "</div>"
+        );
+        marker.addTo(map);
 
         marker.on('mouseover',function(ev) {
             ev.target.openPopup();
@@ -110,31 +94,19 @@ function addCafeMarkers(data) {
         marker.on('mouseout',function(ev) {
             ev.target.setIcon(cafeIcon);
         });
-    }
+    })
     
 }
     
-function getLocationName(i, locations) {
-    let text = locations[i][4]
+function getTown(item) {
+    let text = item.address
     let townArr = text.split(",");
     let town = townArr[1];
     return town; 
 }
 
-function isMarkerInsidePolygon(marker, poly) {
-    var polyPoints = poly.getLatLngs();   
-    console.log(polyPoints);     
-    var x = marker.getLatLng().lat, y = marker.getLatLng().lng;
-
-    var inside = false;
-    for (var i = 0, j = polyPoints.length - 1; i < polyPoints.length; j = i++) {
-        var xi = polyPoints[i].lat, yi = polyPoints[i].lng;
-        var xj = polyPoints[j].lat, yj = polyPoints[j].lng;
-
-        var intersect = ((yi > y) != (yj > y))
-            && (x < (xj - xi) * (y - yi) / (yj - yi) + xi);
-        if (intersect) inside = !inside;
-    }
-
-    return inside;
+function splitAddress(item) {
+    let detailsArr = item.details.split(".");
+    let address = detailsArr[0];
+    return address; 
 }

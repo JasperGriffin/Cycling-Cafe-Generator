@@ -63,21 +63,14 @@ function getCafeList(data) {
     let lat = item.lat;
     let lng = item.lng; 
 
-     
-
     if (isCafeInsidePolygon(polyline, lat, lng)) {
       //console.log("Name: " + item.name); 
+    
+      //validation
+      validateCafeList(item);
 
-      //function to fill any missing fields
-
-      cafeArr.push({
-        name: item.name,
-        address: item.address,
-        details: item.details,
-        lat: item.lat,
-        lng: item.lng,
-        photo: item.photo
-      })
+      addCafeToList(cafeArr, item);
+      
     }
     
   })
@@ -103,6 +96,40 @@ function isCafeInsidePolygon(poly, lat, lng) {
     return inside;
 }
 
+function addCafeToList(cafeArr, item) {
+  cafeArr.push({
+    name: item.name,
+    address: item.address,
+    details: item.details,
+    lat: item.lat,
+    lng: item.lng,
+    photo: item.photo
+  })
+  return cafeArr;
+}
+
+function validateCafeList(item) {
+
+  /*
+    cafeArr.push({
+        name: item.name,
+        address: item.address,
+        details: item.details,
+        lat: item.lat,
+        lng: item.lng,
+        photo: item.photo
+    })
+  */
+
+  if (!item.photo) {
+    item["photo"] = "https://media.ntslive.co.uk/crop/770x770/4f0a253d-a3a4-49e7-90a6-59071475be10_1554249600.jpeg";
+  }
+  if (!item.) {
+
+  }
+
+  return item; 
+}
 
 //Method checks for 404 errors for photo URLs
 async function checkServerErrURL(json) {
@@ -111,7 +138,6 @@ async function checkServerErrURL(json) {
   
     //var json = require('./assets/cafes.json'); 
     var noPhotoArr = [];
-    var absoluteURLErr = []; 
     var totalArr = []; 
     var failed404 = [];
     var failedOther = []; 
