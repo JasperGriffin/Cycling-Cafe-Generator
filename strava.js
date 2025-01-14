@@ -96,6 +96,9 @@ function isCafeInsidePolygon(poly, lat, lng) {
     return inside;
 }
 
+//51.176489505874024, 0.18694405131728786 - coordinates for penhurst cafe
+//51.176153986622694, 0.18069822159516988 - closest point to cafe
+
 function addCafeToList(cafeArr, item) {
   cafeArr.push({
     name: item.name,
