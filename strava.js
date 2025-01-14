@@ -124,9 +124,6 @@ function validateCafeList(item) {
   if (!item.photo) {
     item["photo"] = "https://media.ntslive.co.uk/crop/770x770/4f0a253d-a3a4-49e7-90a6-59071475be10_1554249600.jpeg";
   }
-  if (!item.) {
-
-  }
 
   return item; 
 }
