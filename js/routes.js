@@ -72,8 +72,9 @@ function addCafeMarkers(data) {
     let cafes = JSON.parse(cafesArr)    
     cafes.forEach((item) => {
         
-        let town = getTown(item); 
-        let address = splitAddress(item); 
+        //let town = getTown(item); 
+        let town = item.address;
+        let details = splitDetails(item); 
 
         //create marker (x, y, cafeIcon)
         marker = new L.marker([item.lat, item.lng], {icon: cafeIcon});
@@ -81,7 +82,7 @@ function addCafeMarkers(data) {
         marker.bindPopup(
             "<div class=marker-background>"+
                 "<img class='marker-img' src="+item.photo+">" +
-                "<h1>"+item.name+"</h1>" +town +"<br/>" + address+
+                "<h1>"+item.name+"</h1>" +town +"<br/>" + details+
             "</div>"
         );
         marker.addTo(map);
@@ -105,7 +106,7 @@ function getTown(item) {
     return town; 
 }
 
-function splitAddress(item) {
+function splitDetails(item) {
     let detailsArr = item.details.split(".");
     let address = detailsArr[0];
     return address; 
