@@ -1,7 +1,7 @@
 let polylineConvert = require('google-polyline'); 
 const latlongify = require('latlongify');
 
-var json = require('./assets/cafes.json'); 
+let json = require('./assets/cafes.json'); 
 
 //const regex = new RegExp("^https:\/\/www\.strava\.com\/routes\/\d+");
 const regex = new RegExp("^https:\/\/www\.strava\.com\/routes\/[0-9]{19}$");
@@ -94,18 +94,6 @@ function isCafeInsidePolygon(poly, lat, lng) {
   return inside;
 }
 
-//51.176153986622694, 0.18069822159516988 - closest point to cafe
-//51.176489505874024, 0.18694405131728786 - coordinates for penhurst cafe
-//> 0.00033551925132968563 - lat
-//> 0.006245829722117985 - long
-//0.010
-
-//51.17157998047327, 0.27608825410817145 - too far!!
-
-//> 0.004574006149425713
-//> 0.09539003251300157
-
-//0.0001
 function isCafeNearPolygon(poly, lat, lng) {
   var x = lat, y = lng;
   var near = false;
@@ -166,10 +154,14 @@ function validateCafeList(item) {
     
     //regex to split towns from their postcodes
     const reg = /[A-Z]{1,2}\d[A-Z\d]?\s?\d[A-Z]{2}/
-    let updatedTown = town.replace(reg, "");
-    item.address = updatedTown; 
-
-    console.log(updatedTown);
+    if (town) {
+      let updatedTown = town.replace(reg, "");
+      item.address = updatedTown; 
+      console.log(updatedTown);
+    }
+    else {
+      console.log("cafe's address is weird: " + text); 
+    }
   }
 
   return item; 

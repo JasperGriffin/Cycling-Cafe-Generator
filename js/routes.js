@@ -14,14 +14,14 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 var cafeIcon = L.icon({
     iconUrl: 'img/pin.png',
-    iconSize:     [60, 60], // size of the icon
+    iconSize:     [40, 40], // size of the icon. Originally [60, 60]
     //iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
     popupAnchor:  [0, -35] // point from which the popup should open relative to the iconAnchor
 });
 
 var bigIcon = L.icon({
     iconUrl: 'img/pin.png',
-    iconSize:     [70, 70], // size of the icon
+    iconSize:     [50, 50], // size of the icon. Originally [70, 70]
     //iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
     popupAnchor:  [0, -35] // point from which the popup should open relative to the iconAnchor
 });

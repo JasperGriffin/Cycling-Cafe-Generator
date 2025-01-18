@@ -47,41 +47,42 @@ app.get('/api', async (req, res) => {
 app.post('/api', async (req, res, next) => {
 
   let link = req.body['routeSrc'];  
+  let id = getId(link);
+  let api = new StravaApiV3.RoutesApi()
+  let err = ""
 
   if(!validateLink(link)) {
     return next("linkError"); 
   }
 
-  let id = getId(link);
-  let api = new StravaApiV3.RoutesApi();
-  
   var callback = function(error, data, response) {
 
-    if (error) { return next(error);} 
-    else {
-      let polyline = getPolyline(data);
+    if (error) { 
+      return next(error);
+    } 
 
-      getCountry(polyline) // <- return here is important
-        .then(result => {
-          if (result == "GBR") {
-            //polyline, list of cafes within it'
+    let polyline = getPolyline(data);
 
-            cafesArr = getCafeList(data)
+    getCountry(polyline) // <- return here is important
+      .then(result => {
+        if (result != "GBR") {
+          //polyline, list of cafes within it'
+          return next("locationError");
+        }
 
-            
-            res.render('routes', { data: { message: polyline, cafes: cafesArr } });
+        cafesArr = getCafeList(data)      
 
-            //checkServerErrURL();
-            //verifyJSON();
-            res.end(); 
-          }
-          else { return next("locationError"); }
-        })
-        .catch(err => {
-          console.log(err);
-          return next("countryCodeErr");
-        })
-    }
+        if (cafesArr.length == 0) {
+          err = "Unfortunately no cafes could be found in this area"
+        }
+        res.render('routes', { data: { message: polyline, cafes: cafesArr, error: err } });
+        res.end(); 
+      })
+      .catch(err => {
+        console.log("polyine not found"); 
+        console.log(err);
+        return next("countryCodeErr");
+      })
   };
   api.getRouteById(id, callback);
     
@@ -114,7 +115,6 @@ app.use((err, req, res, next) => {
     res.render('index', { message: 'Unfortunately there was an error with the link. Please ensure the route is from the UK'})
     res.end();
   }
-
 });
 
 
