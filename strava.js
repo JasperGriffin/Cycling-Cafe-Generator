@@ -157,10 +157,6 @@ function validateCafeList(item) {
     if (town) {
       let updatedTown = town.replace(reg, "");
       item.address = updatedTown; 
-      console.log(updatedTown);
-    }
-    else {
-      console.log("cafe's address is weird: " + text); 
     }
   }
 
@@ -169,8 +165,6 @@ function validateCafeList(item) {
 
 //Method checks for 404 errors for photo URLs
 async function checkServerErrURL(json) {
-
-    console.log("this server is being run"); 
   
     //var json = require('./assets/cafes.json'); 
     var noPhotoArr = [];

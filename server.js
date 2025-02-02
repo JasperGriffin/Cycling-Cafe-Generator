@@ -3,10 +3,12 @@ const app = express();
 const port = 3000;
 var path = require('path');
 var fs = require('fs');
+var https = require('https'); 
 var http = require('http'); 
 const fetch = require('node-fetch');
 //ejs library
 let ejs = require('ejs');
+const querystring = require('querystring');
 
 //referencing env variables
 require('dotenv').config();
@@ -28,20 +30,68 @@ app.use(express.static(path.join(__dirname, 'assets')));
 app.set('view engine', 'ejs'); 
 app.set('trust proxy', true);
 
-app.get('/', (req, res) => {
-    res.render('index', {title: 'Hey', message: '' }) 
-})//.listen(port);  
- 
 // Configure OAuth2 access token for authorization: strava_oauth
 var strava_oauth = defaultClient.authentications['strava_oauth'];
-strava_oauth.accessToken = process.env.ACCESS_TOKEN;
+var json = require('./assets/cafes.json');
 
-var json = require('./assets/cafes.json'); 
+app.get('/', (req, res) => {
+  res.render('index', {title: 'Hey', message: '' });
+});
 
-app.get('/api', async (req, res) => {
-  /*
-  OAUTH
-  */
+app.get('/auth', (req, res) => {
+
+    const { code, state, scope } = req.query;
+    if (code) {
+      console.log('Authorization code:', code);  // Logs the code received from Strava
+      console.log('State:', state);  // Logs the state parameter, if present
+      console.log('Scope:', scope);  // Logs the scope granted, if present
+
+      const data = querystring.stringify({
+        client_id: process.env.CLIENT_ID,
+        client_secret: process.env.CLIENT_SECRET,
+        code: code,
+        grant_type: 'authorization_code'
+      });
+      
+      const options = {
+        hostname: 'www.strava.com',
+        path: '/api/v3/oauth/token',
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+          'Content-Length': Buffer.byteLength(data)
+        }
+      };
+      
+      console.log("is this running?"); 
+      const req = https.request(options, (res) => {
+        let responseBody = '';
+      
+        res.on('data', (chunk) => {
+          responseBody += chunk;
+        });
+      
+        res.on('end', () => {
+          console.log('Response:', responseBody);
+
+          let obj = JSON.parse(responseBody);
+          console.log('access_token: ' + obj.access_token); 
+          strava_oauth.accessToken = obj.access_token;
+        });
+      });
+      
+      req.on('error', (e) => {
+        console.error(`Request failed: ${e.message}`);
+      });
+
+      req.write(data);
+      req.end();  
+
+    }
+
+    res.redirect('/'); 
+
+    //error handling when pressed cancelled
 });
 
 app.post('/api', async (req, res, next) => {
@@ -63,10 +113,9 @@ app.post('/api', async (req, res, next) => {
 
     let polyline = getPolyline(data);
 
-    getCountry(polyline) // <- return here is important
+    getCountry(polyline) 
       .then(result => {
         if (result != "GBR") {
-          //polyline, list of cafes within it'
           return next("locationError");
         }
 
