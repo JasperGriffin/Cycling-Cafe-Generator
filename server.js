@@ -38,6 +38,10 @@ app.get('/', (req, res) => {
   res.render('index', {title: 'Hey', message: '' });
 });
 
+app.get('/home', (req, res) => {
+  res.render('home', {title: 'Hey', message: '' });
+})
+
 app.get('/auth', (req, res) => {
 
     const { code, state, scope } = req.query;
@@ -63,7 +67,6 @@ app.get('/auth', (req, res) => {
         }
       };
       
-      console.log("is this running?"); 
       const req = https.request(options, (res) => {
         let responseBody = '';
       

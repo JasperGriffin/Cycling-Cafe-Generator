@@ -1,0 +1,27 @@
+.first-container {
+    padding: 10px;
+    height: 300px;
+    width: 100%;
+}
+
+
+.second-container {
+    padding: 10px;
+    background-color: #29C18C; 
+    height: 300px;
+    width: 100%;
+}
+
+.third-container {
+    padding: 10px;
+    text-align: center;
+    height: 300px;
+    width: 100%;
+}
+
+.fourth-container {
+    padding: 10px;
+    background-color: #29C18C; 
+    height: 300px;
+    width: 100%;
+}

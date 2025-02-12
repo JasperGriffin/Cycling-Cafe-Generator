@@ -48228,5 +48228,16 @@
         "lat": 51.409258,
         "lng": -0.305812,
         "photo": "https://media-cdn.tripadvisor.com/media/photo-s/0c/fd/37/62/front-view.jpg"
+    },
+    {
+        "id": 150530,
+        "name": "VIA Atelier",
+        "address": "18-19 Stable St, King's Cross, London N1C 4AB",
+        "details": "Open Mon 10:00 - 19:00, Tues - Fri 7:30 - 19:00, Sat 8:30 - 17:00. Sun 10:00 - 17:00",
+        "website": "https://www.via-atelier.cc/",
+        "phone": "02033190011",
+        "lat": 51.53716,
+        "lng": -0.125219,
+        "photo": "https://lh3.googleusercontent.com/p/AF1QipMboeVGue_CmHgcz6oQTOfsL-7gau0Uy0rhmD5x=s1360-w1360-h1020"
     }
 ]
