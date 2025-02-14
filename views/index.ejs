@@ -24,7 +24,7 @@
             -->
             
             <a href="https://strava.com/oauth/authorize?client_id=<%= process.env.CLIENT_ID %>&redirect_uri=http://localhost:3000/auth&response_type=code&scope=read,read_all">Connect here!</a>  
-            
+            <b class="auth-message"><%= authMessage %></b>
 
             <div class="form-container">                 
                 <form action="/api" id="routeForm" method="POST"> 

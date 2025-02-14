@@ -1,13 +1,38 @@
+
 .first-container {
-    padding: 10px;
     height: 300px;
     width: 100%;
+    padding: 100px;
+    text-align: center;
 }
+
+.first-container h1 {
+    font-size: 50px;
+}
+
+.profile-img-container {
+    padding: 100px;
+    margin-right: 50px;
+}
+
+.profile-img-container img {
+    height: 300px;
+    width: 300px;
+}
+
+.text-img-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
+
+
 
 
 .second-container {
     padding: 10px;
-    background-color: #29C18C; 
+    background-color: #51ff93; 
     height: 300px;
     width: 100%;
 }
@@ -21,7 +46,7 @@
 
 .fourth-container {
     padding: 10px;
-    background-color: #29C18C; 
+    background-color: #51ff93; 
     height: 300px;
     width: 100%;
 }
