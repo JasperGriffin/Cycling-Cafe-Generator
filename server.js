@@ -33,9 +33,10 @@ app.set('trust proxy', true);
 // Configure OAuth2 access token for authorization: strava_oauth
 var strava_oauth = defaultClient.authentications['strava_oauth'];
 var json = require('./assets/cafes.json');
+let token = ""; 
 
 app.get('/', (req, res) => {
-  res.render('index', {title: 'Hey', message: '', authMessage: ''});
+    res.render('index', {title: 'Hey', message: '', authMessage: ''}); 
 });
 
 app.get('/home', (req, res) => {
@@ -93,8 +94,8 @@ app.get('/auth', (req, res) => {
     }
 
     //res.redirect('/'); 
-    res.render('index', {title: 'Hey', message: '', authMessage: 'Connected!'});
-
+    token = 'Connected!';
+    res.render('index', {title: 'Hey', message: '', authMessage: token});
 
     //error handling when pressed cancelled
 });
