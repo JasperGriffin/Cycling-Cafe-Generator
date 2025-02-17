@@ -25,6 +25,7 @@
             
             <a href="https://strava.com/oauth/authorize?client_id=<%= process.env.CLIENT_ID %>&redirect_uri=http://localhost:3000/auth&response_type=code&scope=read,read_all">Connect here!</a>  
             <b class="auth-message"><%= authMessage %></b>
+            <b class="auth-message"><%= errMessage %></b>
 
             <% if(authMessage){ %> 
             <div class="form-container">                 
@@ -40,7 +41,16 @@
                 </form>
             </div>
             <% } %> 
-            
+        </div>
+
+        <div class="instructions-container">
+            <hr />
+            <h3>How does this work?</h3>
+            <p>Blah blah blah</p>
+            <br />
+            <h3>Is any of my data stored?</h3>
+            <p>Blah blah blah</p>
+            <br />
         </div>
 
         

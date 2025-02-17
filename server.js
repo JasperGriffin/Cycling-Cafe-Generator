@@ -36,7 +36,7 @@ var json = require('./assets/cafes.json');
 let token = ""; 
 
 app.get('/', (req, res) => {
-    res.render('index', {title: 'Hey', message: '', authMessage: ''}); 
+    res.render('index', {title: 'Hey', message: '', authMessage: '', errMessage: ''}); 
 });
 
 app.get('/home', (req, res) => {
@@ -78,6 +78,10 @@ app.get('/auth', (req, res) => {
         res.on('end', () => {
           console.log('Response:', responseBody);
 
+          if (responseBody.message == "Bad Request") {
+            res.render('index', {title: 'Hey', message: '', authMessage: '', errMessage: 'Bad Request'}); 
+          }
+
           let obj = JSON.parse(responseBody);
           console.log('access_token: ' + obj.access_token); 
           strava_oauth.accessToken = obj.access_token;
@@ -95,7 +99,7 @@ app.get('/auth', (req, res) => {
 
     //res.redirect('/'); 
     token = 'Connected!';
-    res.render('index', {title: 'Hey', message: '', authMessage: token});
+    res.render('index', {title: 'Hey', message: '', authMessage: token, errMessage: ''}); 
 
     //error handling when pressed cancelled
 });

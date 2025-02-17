@@ -35,3 +35,7 @@
 .auth-message {
     color: #7cfc00;
 }
+
+.instructions-container {
+    padding: 40px;
+}
