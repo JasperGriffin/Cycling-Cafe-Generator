@@ -39,3 +39,14 @@
 .instructions-container {
     padding: 40px;
 }
+
+.oauth-container {
+    padding: 40px;
+}
+
+#instructions-header {
+    color: grey;
+    font-size: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

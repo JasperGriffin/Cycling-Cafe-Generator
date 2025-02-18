@@ -36,7 +36,7 @@ var json = require('./assets/cafes.json');
 let token = ""; 
 
 app.get('/', (req, res) => {
-    res.render('index', {title: 'Hey', message: '', authMessage: '', errMessage: ''}); 
+    res.render('index', {title: 'Hey', message: '', authMessage: '', authErr: ''}); 
 });
 
 app.get('/home', (req, res) => {
@@ -79,7 +79,8 @@ app.get('/auth', (req, res) => {
           console.log('Response:', responseBody);
 
           if (responseBody.message == "Bad Request") {
-            res.render('index', {title: 'Hey', message: '', authMessage: '', errMessage: 'Bad Request'}); 
+            res.render('index', {title: 'Hey', message: '', authMessage: '', authErr: 'Bad Request'}); 
+            //return next("locationError");
           }
 
           let obj = JSON.parse(responseBody);
@@ -99,7 +100,7 @@ app.get('/auth', (req, res) => {
 
     //res.redirect('/'); 
     token = 'Connected!';
-    res.render('index', {title: 'Hey', message: '', authMessage: token, errMessage: ''}); 
+    res.render('index', {title: 'Hey', message: '', authMessage: token, authErr: ''}); //errMessage
 
     //error handling when pressed cancelled
 });
@@ -155,23 +156,25 @@ app.use((err, req, res, next) => {
   //app.set('views','/views/errors/');
 
   if(err.status == 403) {
+    console.log("error 403 is run");
     res.render('403', { url: req.url });
     res.end(); 
   }
   else if(err.status == 404) {
-    res.render('404', {url: req.url})
+    res.render('404', {url: req.url}) //set to 403 temporarily
     res.end(); 
   }
   else if(err == "linkError") {
-    res.render('index', { message: 'Make sure your link is a full Strava URL route'})
+    console.log("linkerror is run"); ///this is run
+    res.render('index', { message: 'Make sure your link is a full Strava URL route', authMessage: ''})
     res.end(); 
   }
   else if(err == "locationError") {
-    res.render('index', { message: 'This website is sadly exclusive to routes in the UK only'})
+    res.render('index', { message: 'This website is sadly exclusive to routes in the UK only', authMessage: ''})
     res.end();
   }
   else if (err == "countryCodeErr") {
-    res.render('index', { message: 'Unfortunately there was an error with the link. Please ensure the route is from the UK'})
+    res.render('index', { message: 'Unfortunately there was an error with the link. Please ensure the route is from the UK', authMessage: ''})
     res.end();
   }
 });
