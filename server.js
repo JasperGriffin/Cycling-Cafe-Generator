@@ -13,7 +13,7 @@ const querystring = require('querystring');
 //referencing env variables
 require('dotenv').config();
 
-let { validateLink, getId, getPolyline, getCountry, getCafeList, checkServerErrURL, verifyJSON } = require('./strava.js');
+let { validateLink, getId, getPolyline, getCountry, getCafeList } = require('./strava.js');
 
 //Strava API
 var StravaApiV3 = require('strava_api_v3');
@@ -33,7 +33,6 @@ app.set('trust proxy', true);
 // Configure OAuth2 access token for authorization: strava_oauth
 var strava_oauth = defaultClient.authentications['strava_oauth'];
 var json = require('./assets/cafes.json');
-let token = ""; 
 
 app.get('/', (req, res) => {
     res.render('index', {title: 'Hey', message: '', authMessage: '', authErr: ''}); 
@@ -43,7 +42,7 @@ app.get('/home', (req, res) => {
   res.render('home', {title: 'Hey', message: '' });
 })
 
-app.get('/auth', (req, res) => {
+app.get('/auth', (req, res, next) => {
 
     const { code, state, scope } = req.query;
     if (code) {
@@ -77,32 +76,30 @@ app.get('/auth', (req, res) => {
       
         res.on('end', () => {
           console.log('Response:', responseBody);
-
-          if (responseBody.message == "Bad Request") {
-            res.render('index', {title: 'Hey', message: '', authMessage: '', authErr: 'Bad Request'}); 
-            //return next("locationError");
-          }
-
           let obj = JSON.parse(responseBody);
-          console.log('access_token: ' + obj.access_token); 
+
+          if (obj.message == "Bad Request") {
+            //res.redirect('index', {title: 'Hey', message: '', authMessage: '', authErr: 'Bad Request'}); 
+            return next("badRequest");
+          }
           strava_oauth.accessToken = obj.access_token;
         });
       });
       
       req.on('error', (e) => {
+        console.log("this is being run"); 
         console.error(`Request failed: ${e.message}`);
       });
 
       req.write(data);
       req.end();  
 
+      res.render('index', {title: 'Hey', message: '', authMessage: 'Connected!', authErr: ''}); //errMessage
     }
-
-    //res.redirect('/'); 
-    token = 'Connected!';
-    res.render('index', {title: 'Hey', message: '', authMessage: token, authErr: ''}); //errMessage
-
-    //error handling when pressed cancelled
+    else {
+      //error handling when pressed cancelled needs more testing
+      res.redirect('/'); 
+    }
 });
 
 app.post('/api', async (req, res, next) => {
@@ -166,16 +163,20 @@ app.use((err, req, res, next) => {
   }
   else if(err == "linkError") {
     console.log("linkerror is run"); ///this is run
-    res.render('index', { message: 'Make sure your link is a full Strava URL route', authMessage: ''})
+    res.render('index', { message: 'Make sure your link is a full Strava URL route', authMessage: '', authErr: ''})
     res.end(); 
   }
   else if(err == "locationError") {
-    res.render('index', { message: 'This website is sadly exclusive to routes in the UK only', authMessage: ''})
+    res.render('index', { message: 'This website is sadly exclusive to routes in the UK only', authMessage: '', authErr: ''})
     res.end();
   }
   else if (err == "countryCodeErr") {
-    res.render('index', { message: 'Unfortunately there was an error with the link. Please ensure the route is from the UK', authMessage: ''})
+    res.render('index', { message: 'Unfortunately there was an error with the link. Please ensure the route is from the UK', authMessage: '', authErr: ''})
     res.end();
+  }
+  else if (err == "badRequest") {
+    res.render('index', {title: 'Hey', message: '', authMessage: '', authErr: 'Bad Request'}); 
+    res.end(); 
   }
 });
 

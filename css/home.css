@@ -1,34 +1,41 @@
 
-.first-container {
+.primary-text-container {
     height: 300px;
     width: 100%;
-    padding: 100px;
-    text-align: center;
+    padding: 50px;
+    /*
+    margin-top: 30px;
+    */
 }
 
-.first-container h1 {
+.primary-text-container h1 {
     font-size: 50px;
 }
 
-.profile-img-container {
-    padding: 100px;
-    margin-right: 50px;
+.profile-pic-container {
+    
+    
+    padding: 50px;    
 }
 
-.profile-img-container img {
+.profile-pic-container img {
     height: 300px;
     width: 300px;
 }
 
-.text-img-container {
+/*both text and img*/
+.primary-content-container, .second-text-container  {
+    
     display: flex;
     justify-content: center;
+    
+    padding-left: 20vw;
+    padding-right: 20vw;
+    
+    /*
     position: relative;
-
+    */
 }
-
-
-
 
 .second-container {
     padding: 10px;

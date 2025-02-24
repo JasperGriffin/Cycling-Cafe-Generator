@@ -37,7 +37,7 @@ initMap(parsedData)
 async function initMap(parsedData) {
 
     var firstpolyline = new L.Polyline(parsedData, {
-        color: '#FC5200',
+        color: 'c',
         weight: 5,
         opacity: 1,
         smoothFactor: 1

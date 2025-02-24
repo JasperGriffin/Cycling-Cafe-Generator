@@ -1,11 +1,13 @@
 .container {
     padding: 10px;
-    text-align: center;
+    /*text-align: center;*/
 }
 
 .title { 
     padding-top: 20px;
     font-size: 30px;
+    color: #FC5200;
+    text-align: center;
 }
 
 .form-container { 
@@ -28,6 +30,10 @@
     border-radius: 5px;
 }
 
+.message-container {
+    text-align: center;
+}
+
 .error-message {
     color: red;
 }
@@ -41,7 +47,10 @@
 }
 
 .oauth-container {
-    padding: 40px;
+    padding: 20px;
+    width: 20%;
+    background-color: chocolate;
+    text-align: center;
 }
 
 #instructions-header {
@@ -50,3 +59,4 @@
     padding-top: 10px;
     padding-bottom: 10px;
 }
+

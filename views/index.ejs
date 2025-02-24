@@ -22,20 +22,24 @@
                 <input type="submit" value="Authenticate through OAuth please">
             </form>
             -->
+            <% if(!authMessage){ %> 
             <div class="oauth-container">
                 <a href="https://strava.com/oauth/authorize?client_id=<%= process.env.CLIENT_ID %>&redirect_uri=http://localhost:3000/auth&response_type=code&scope=read,read_all">Connect here!</a> 
             </div>
-            <b class="auth-message"><%= authMessage %></b>
-            <b class="error-message"><%= authErr %></b>
+            <% } %> 
 
+            <div class="message-container">
+                <b class="auth-message"><%= authMessage %></b>
+                <b class="error-message"><%= authErr %></b>
+                <b class="error-message"><%= message %></b>
+                </div>
+            </div>
+            
             <% if(authMessage){ %> 
             <div class="form-container">                 
                 <form action="/api" id="routeForm" method="POST"> 
                     <label for="routeTitle" id="route-title"><b>Enter your Strava route</b></label><br> 
                     <br />
-                    <div class="error-message">
-                        <b><%= message %></b>
-                    </div>
                     <br />
                     <input type="text" id="route-src" name="routeSrc">
                     <input type="submit" id="submit-button" value="Search">
@@ -48,7 +52,7 @@
             <hr />
             <h1 id="instructions-header">A quick Q&A about how this all works</h1>
             <br />
-            <h2>Sooo how does this work?</h2>
+            <h2>So how does this work?</h2>
             <p>Simply click the link above and login with your Strava username and password. Once authenticated, you can post any of your routes and the website will find the closest cycling-friendly cafes!</p>
             <br />
             <h2>Do I need to connect my Strava account?</h2>
@@ -58,7 +62,10 @@
             <p>No personal data is stored anywhere on this website. The only thing that is processed is your access token from Strava which temporarily grants this website to pull route data from any link you provide.</p>
             <br />
             <h2>How can I revoke my access</h2>
-            <p>To do this, simply navigate to the apps section on your Strava settings webpage. Here you will see the website which you can then revoke access.</p>
+            <p>To do this, simply navigate to the apps section on your Strava settings webpage. Here you will see the website where you can then revoke access.</p>
+            <br />
+            <h2>How can I see a full list of these cafes?</h2>
+            <p>[insert link]</p>
             <br />
         </div>
 
