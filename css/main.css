@@ -1,17 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+* {
+	font-family: "Montserrat", sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 18vh;
+}
+
 .container {
     padding: 10px;
-    /*text-align: center;*/
+}
+
+footer {
+    position: absolute
 }
 
 .title { 
     padding-top: 20px;
-    font-size: 30px;
+    font-size: 2.5vw; /*Originally: 30px*/
     color: #FC5200;
     text-align: center;
 }
 
 .form-container { 
     padding-top: 20px;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 #route-title {
@@ -28,10 +50,14 @@
     width: 60px;
     height: 40px;
     border-radius: 5px;
+    color: white;
+    background-color: #FC5200;
 }
 
 .message-container {
+   
     text-align: center;
+    
 }
 
 .error-message {
@@ -44,13 +70,25 @@
 
 .instructions-container {
     padding: 40px;
+    position: relative;
+
+}
+
+.oauth-box {
+    font-size: 1.5vw;
+    color: black;
+    text-align: center;
+
+    padding: 2vw;
+    margin-left: 35vw;
+    margin-right: 35vw;
+    border-radius: 20px;
+    border: 3px solid black;
+
 }
 
 .oauth-container {
-    padding: 20px;
-    width: 20%;
-    background-color: chocolate;
-    text-align: center;
+    padding: 50px;
 }
 
 #instructions-header {

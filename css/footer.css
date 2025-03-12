@@ -4,8 +4,6 @@
 	font-family: "Montserrat", sans-serif;
 	padding: 0;
 	margin: 0;
-
-	clear:both;
 }
 
 a {
@@ -17,16 +15,16 @@ a {
 }
 
 .background-container {
+
+
 	background-color: #262626;
 	text-align: center;
 	left: 0;
 	bottom: 0;
 	width: 100%;
-	position: fixed;
-	/*margin-top: auto;*/
+	position: absolute;
 
-	position: relative; 
-
+	margin-top: auto;
 }
 
 .background-container h2 {

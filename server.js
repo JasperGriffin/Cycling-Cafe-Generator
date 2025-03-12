@@ -79,7 +79,6 @@ app.get('/auth', (req, res, next) => {
           let obj = JSON.parse(responseBody);
 
           if (obj.message == "Bad Request") {
-            //res.redirect('index', {title: 'Hey', message: '', authMessage: '', authErr: 'Bad Request'}); 
             return next("badRequest");
           }
           strava_oauth.accessToken = obj.access_token;
@@ -152,15 +151,17 @@ app.use((err, req, res, next) => {
 
   //app.set('views','/views/errors/');
 
-  if(err.status == 403) {
+  if(err.status == 404) {
     console.log("error 403 is run");
     res.render('403', { url: req.url });
     res.end(); 
   }
+  /*
   else if(err.status == 404) {
     res.render('404', {url: req.url}) //set to 403 temporarily
     res.end(); 
   }
+  */
   else if(err == "linkError") {
     console.log("linkerror is run"); ///this is run
     res.render('index', { message: 'Make sure your link is a full Strava URL route', authMessage: '', authErr: ''})
@@ -171,7 +172,7 @@ app.use((err, req, res, next) => {
     res.end();
   }
   else if (err == "countryCodeErr") {
-    res.render('index', { message: 'Unfortunately there was an error with the link. Please ensure the route is from the UK', authMessage: '', authErr: ''})
+    res.render('index', { message: 'Unfortunately there was an error with the link. Please ensure the route is within the UK', authMessage: '', authErr: ''})
     res.end();
   }
   else if (err == "badRequest") {
