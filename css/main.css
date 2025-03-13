@@ -49,15 +49,19 @@ footer {
 #submit-button {
     width: 60px;
     height: 40px;
+    color: #FC5200;
     border-radius: 5px;
-    color: white;
+    background: url(../img/search-13-xxl.png);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: 12px 3px;
     background-color: #FC5200;
 }
 
 .message-container {
-   
     text-align: center;
-    
+    border: 2px red;
+    border-radius: 8px;
 }
 
 .error-message {
@@ -65,7 +69,9 @@ footer {
 }
 
 .auth-message {
-    color: #7cfc00;
+    color: #0bff70da;
+    border-radius: 8px;
+    padding: 10px;
 }
 
 .instructions-container {
@@ -75,16 +81,20 @@ footer {
 }
 
 .oauth-box {
-    font-size: 1.5vw;
-    color: black;
+    font-size: 1vw;
     text-align: center;
 
     padding: 2vw;
     margin-left: 35vw;
     margin-right: 35vw;
-    border-radius: 20px;
-    border: 3px solid black;
+    border-radius: 40px;
+    background-color: #FC5200;
+    color: white;
 
+
+}
+.oauth-box p, h3 {
+    color: white;
 }
 
 .oauth-container {

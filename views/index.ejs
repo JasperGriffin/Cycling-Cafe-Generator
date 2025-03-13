@@ -13,7 +13,7 @@
         <div class="container"> 
 
             <div class="title">
-                <h1>Cycle Cafe Generator</h1>
+                <h1>Find my <br />Cycle Cafe...</h1>
             </div>
             <br />
 
@@ -25,14 +25,15 @@
             <% if(!authMessage){ %> 
             <div class="oauth-container">
                 <div class="oauth-box">
-                    <a href="https://strava.com/oauth/authorize?client_id=<%= process.env.CLIENT_ID %>&redirect_uri=http://localhost:3000/auth&response_type=code&scope=read,read_all">Connect here!</a> 
+                    <a href="https://strava.com/oauth/authorize?client_id=<%= process.env.CLIENT_ID %>&redirect_uri=http://localhost:3000/auth&response_type=code&scope=read,read_all">
+                        <h3>Connect here!</h3>
+                    </a> 
                 </div>
             </div>
             <% } %> 
 
             <div class="message-container">
                 <b class="auth-message"><%= authMessage %></b>
-                <b class="error-message"><%= authErr %></b>
                 <b class="error-message"><%= message %></b>
             </div>
             
@@ -43,7 +44,7 @@
                     <br />
                     <br />
                     <input type="text" id="route-src" name="routeSrc">
-                    <input type="submit" id="submit-button" value="Search">
+                    <input type="submit" id="submit-button" value=".">
                 </form>
             </div>
             <% } %> 
@@ -61,7 +62,7 @@
                 <p>Yes as this is the only way to pull route data directly from Strava.</p>
                 <br />
                 <h2>Is any of my data from Strava stored?</h2>
-                <p>No personal data is stored anywhere on this website. The only thing that is processed is your access token from Strava which temporarily grants this website to pull route data from any link you provide.</p>
+                <p>No personal data is stored anywhere on this website. Only your access token is processed from Strava which temporarily grants this website to pull route data from the link you provide.</p>
                 <br />
                 <h2>How can I revoke my access</h2>
                 <p>To do this, simply navigate to the apps section on your Strava settings webpage. Here you will see the website where you can then revoke access.</p>

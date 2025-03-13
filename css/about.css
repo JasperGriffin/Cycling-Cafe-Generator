@@ -1,3 +1,11 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 18vh;
+}
 
 .primary-text-container {
     height: auto;/*300px*/

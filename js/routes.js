@@ -13,15 +13,15 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 var cafeIcon = L.icon({
-    iconUrl: 'img/pin.png',
-    iconSize:     [40, 40], // size of the icon. Originally [60, 60]
+    iconUrl: 'img/cafe-pin.png',
+    iconSize:     [45, 45], // size of the icon. Originally [60, 60]
     //iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
     popupAnchor:  [0, -35] // point from which the popup should open relative to the iconAnchor
 });
 
 var bigIcon = L.icon({
-    iconUrl: 'img/pin.png',
-    iconSize:     [50, 50], // size of the icon. Originally [70, 70]
+    iconUrl: 'img/cafe-pin.png',
+    iconSize:     [55, 55], // size of the icon. Originally [70, 70]
     //iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
     popupAnchor:  [0, -35] // point from which the popup should open relative to the iconAnchor
 });

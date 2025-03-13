@@ -35,7 +35,7 @@ var strava_oauth = defaultClient.authentications['strava_oauth'];
 var json = require('./assets/cafes.json');
 
 app.get('/', (req, res) => {
-    res.render('index', {title: 'Hey', message: '', authMessage: '', authErr: ''}); 
+  res.render('index', {title: 'Hey', message: '', authMessage: ''}); 
 });
 
 app.get('/home', (req, res) => {
@@ -93,7 +93,7 @@ app.get('/auth', (req, res, next) => {
       req.write(data);
       req.end();  
 
-      res.render('index', {title: 'Hey', message: '', authMessage: 'Connected!', authErr: ''}); //errMessage
+      res.render('index', {title: 'Hey', message: '', authMessage: 'Connected!'}); 
     }
     else {
       //error handling when pressed cancelled needs more testing
@@ -164,19 +164,20 @@ app.use((err, req, res, next) => {
   */
   else if(err == "linkError") {
     console.log("linkerror is run"); ///this is run
-    res.render('index', { message: 'Make sure your link is a full Strava URL route', authMessage: '', authErr: ''})
+    res.render('index', { message: 'Make sure your link is a full Strava URL route', authMessage: ''})
     res.end(); 
   }
   else if(err == "locationError") {
-    res.render('index', { message: 'This website is sadly exclusive to routes in the UK only', authMessage: '', authErr: ''})
+    res.render('index', { message: 'This website is sadly exclusive to routes in the UK only', authMessage: ''})
     res.end();
   }
   else if (err == "countryCodeErr") {
-    res.render('index', { message: 'Unfortunately there was an error with the link. Please ensure the route is within the UK', authMessage: '', authErr: ''})
+    res.render('index', { message: 'Unfortunately there was an error with the link. Please ensure the route is within the UK', authMessage: ''})
     res.end();
   }
   else if (err == "badRequest") {
-    res.render('index', {title: 'Hey', message: '', authMessage: '', authErr: 'Bad Request'}); 
+    res.render('index', {title: 'Hey', message: 'Bad Request', authMessage: ''}); 
+    //res.render('index', {title: 'Hey', message: '', authMessage: '', authErr: 'Bad Request'}); 
     res.end(); 
   }
 });
