@@ -228,6 +228,13 @@ async function verifyJSON() {
     })
   }
   
+  function getDistance(data) {
+    return data.distance;
+  }
+
+  function getName(data) {
+    return data.name;
+  }
 
 
-module.exports = { validateLink, getId, getPolyline, getCountry, getCafeList, checkServerErrURL, verifyJSON};
+module.exports = { validateLink, getId, getPolyline, getCountry, getCafeList, checkServerErrURL, verifyJSON, getDistance, getName};

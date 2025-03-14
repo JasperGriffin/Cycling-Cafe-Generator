@@ -44,7 +44,6 @@ async function initMap(parsedData) {
     });
     
     firstpolyline.addTo(map);
-
     addCafeMarkers(firstpolyline);
 
     setTimeout(function () {
@@ -111,3 +110,4 @@ function splitDetails(item) {
     let address = detailsArr[0];
     return address; 
 }
+

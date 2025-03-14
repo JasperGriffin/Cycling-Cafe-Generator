@@ -30,11 +30,26 @@
     </script>
 
     <script defer type="text/javascript" src="routes.js"></script>
-
+    
+    <div class="">
+        <p>Total amount of cafes: </p>
+        <script>
+        let cafeObj = JSON.parse(cafesArr)    
+        let numOfCafes = Object.keys(cafeObj).length;
+        document.write(numOfCafes);
+        </script>
+    </div>
 
     <br />
     <div class="error-message">
         <b><%= data.error %></b>
+    </div>
+
+
+    <div class="">
+        <b><%= data.name %></b>
+        <b><%= data.distance %></b>
+
     </div>
 
     <%- include('templates/footer.ejs') -%>

@@ -13,7 +13,7 @@ const querystring = require('querystring');
 //referencing env variables
 require('dotenv').config();
 
-let { validateLink, getId, getPolyline, getCountry, getCafeList } = require('./strava.js');
+let { validateLink, getId, getPolyline, getCountry, getCafeList, getName, getDistance} = require('./strava.js');
 
 //Strava API
 var StravaApiV3 = require('strava_api_v3');
@@ -126,17 +126,17 @@ app.post('/api', async (req, res, next) => {
           return next("locationError");
         }
 
-        cafesArr = getCafeList(data)      
+        cafesArr = getCafeList(data)    
+        let name = getName(data);
+        let distance = getDistance(data);  
 
         if (cafesArr.length == 0) {
           err = "Unfortunately no cafes could be found in this area"
         }
-        res.render('routes', { data: { message: polyline, cafes: cafesArr, error: err } });
+        res.render('routes', { data: { message: polyline, cafes: cafesArr, name: name, distance: distance, error: err } });
         res.end(); 
       })
       .catch(err => {
-        console.log("polyine not found"); 
-        console.log(err);
         return next("countryCodeErr");
       })
   };
@@ -164,7 +164,7 @@ app.use((err, req, res, next) => {
   */
   else if(err == "linkError") {
     console.log("linkerror is run"); ///this is run
-    res.render('index', { message: 'Make sure your link is a full Strava URL route', authMessage: ''})
+    res.render('index', { message: 'Make sure your link is a full Strava URL route. E.g. https://www.strava.com/routes/3335599655108500324', authMessage: ''})
     res.end(); 
   }
   else if(err == "locationError") {
