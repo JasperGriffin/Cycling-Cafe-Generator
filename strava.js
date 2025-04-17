@@ -68,7 +68,6 @@ function getCafeList(data) {
       //validation
       validateCafeList(item);
       addCafeToList(cafeArr, item);
-      
     }
   
   })
@@ -145,8 +144,6 @@ function validateCafeList(item) {
     item["photo"] = "https://media.ntslive.co.uk/crop/770x770/4f0a253d-a3a4-49e7-90a6-59071475be10_1554249600.jpeg";
   }
 
-
-  //Needles Bank, Godstone RH9 8DZ
   if (item.address) {
     let text = item.address
     let townArr = text.split(",");
@@ -229,7 +226,9 @@ async function verifyJSON() {
   }
   
   function getDistance(data) {
-    return data.distance;
+    var num = parseInt(data.distance)/1000
+    num = num.toFixed(2);
+    return num;
   }
 
   function getName(data) {

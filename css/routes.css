@@ -1,5 +1,8 @@
 #map {
-    height: 600px; 
+    height: 60vh; 
+    width: 65%; /*65%*/
+    /*float: left;
+    position: absolute;*/
 }
 
 .marker-img {
@@ -7,12 +10,27 @@
     height: auto;
 }
 
-.marker-background {
-    
+.marker-background h1 {
+    color: blueviolet;
+}
+
+.info-container {
+    float: right;
+    height: 60vh; 
+    width: 35vw;
+    margin: 20px;
+}
+
+#halfway-desc {
+    color: grey;
+    font-size: 12.5px;
+}
+
+.flex-container {
+    display: flex;
 }
 
 h1 {
-    color: blueviolet;
 }
 
 .error-message {

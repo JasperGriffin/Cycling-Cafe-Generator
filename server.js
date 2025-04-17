@@ -177,7 +177,6 @@ app.use((err, req, res, next) => {
   }
   else if (err == "badRequest") {
     res.render('index', {title: 'Hey', message: 'Bad Request', authMessage: ''}); 
-    //res.render('index', {title: 'Hey', message: '', authMessage: '', authErr: 'Bad Request'}); 
     res.end(); 
   }
 });

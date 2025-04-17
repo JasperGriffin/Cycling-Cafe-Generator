@@ -20,7 +20,7 @@ body {
 }
 
 footer {
-    position: absolute
+    position: absolute;
 }
 
 .title { 
@@ -44,6 +44,8 @@ footer {
     width: 500px;
     height: 40px;
     padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
 }
 
 #submit-button {
