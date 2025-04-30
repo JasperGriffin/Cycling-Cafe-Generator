@@ -7,16 +7,18 @@ body {
     margin-bottom: 18vh;
 }
 
-.primary-text-container {
+.first-text-container, .second-text-container {
     height: auto;/*300px*/
     width: 100%;
+    
     padding: 50px;
     /*
     margin-top: 30px;
     */
 }
 
-.primary-text-container h1 {
+
+.first-text-container h1 {
     font-size: 50px;
 }
 
@@ -29,26 +31,28 @@ body {
     width: 300px;
 }
 
-.primary-content-container, .second-content-container  {
+.first-content-container, .second-content-container  {
     
     display: flex;
     justify-content: center;
     
+    
     padding-left: 20vw;
     padding-right: 20vw;
     
+
     /*
     position: relative;
     */
 }
 
-.second-content-container, .third-content-container, .fourth-content-container {
+.second-content-container, .third-content-container { 
     padding: 10px;
-    height: 300px;
-    width: 100%;
+    min-height: 300px;
+    /*width: 100%;   - causes width to expand over footer*/
     text-align: center;
 }
 
-.second-content-container, .fourth-content-container {
+.second-content-container {
     background-color: #51ff93; 
 }

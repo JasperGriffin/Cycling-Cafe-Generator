@@ -112,7 +112,7 @@ app.post('/api', async (req, res, next) => {
     return next("linkError"); 
   }
 
-  var callback = function(error, data, response) {
+  var callback = async function(error, data, response) {
 
     if (error) { 
       return next(error);
@@ -120,25 +120,29 @@ app.post('/api', async (req, res, next) => {
 
     let polyline = getPolyline(data);
 
-    getCountry(polyline) 
-      .then(result => {
-        if (result != "GBR") {
-          return next("locationError");
-        }
+    //getCountry(polyline) 
+    //  .then(result => {
 
-        cafesArr = getCafeList(data)    
-        let name = getName(data);
-        let distance = getDistance(data);  
+    let result = await getCountry(polyline)
+        
+    if (result != '["GBR"]') {
+      console.log("countryCode: " + result);
+      return next("locationError");
+    }
+    
+    cafesArr = getCafeList(data);    
+    let name = getName(data);
+    let distance = getDistance(data);  
 
-        if (cafesArr.length == 0) {
-          err = "Unfortunately no cafes could be found in this area"
-        }
-        res.render('routes', { data: { message: polyline, cafes: cafesArr, name: name, distance: distance, error: err } });
-        res.end(); 
-      })
-      .catch(err => {
-        return next("countryCodeErr");
-      })
+    console.log("no of cafes: " + cafesArr.length); 
+
+    if (cafesArr.length == 0) {
+      console.log("Unfortunately no cafes could be found in this area"); 
+      err = "Unfortunately no cafes could be found in this area"
+    }
+    res.render('routes', { data: { message: polyline, cafes: cafesArr, name: name, distance: distance, error: err } });
+    res.end(); 
+
   };
   api.getRouteById(id, callback);
     

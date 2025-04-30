@@ -1,11 +1,5 @@
-//import { readFileSync } from "node:fs";
-//var http = require('http'); 
 
-//cafe link: https://uxwing.com/coffee-shop-map-location-icon/
-
-//setTimeout(1000);
-
-var map = L.map('map').setView([51.39434, -0.31393], 10);//13
+var map = L.map('map').setView([51.39434, -0.31393], 7);//13, 10, 
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
@@ -67,7 +61,7 @@ function addCafeMarkers(data) {
             photo: item.photo
         })
     */
-    
+ 
     let cafes = JSON.parse(cafesArr)    
     cafes.forEach((item) => {
         

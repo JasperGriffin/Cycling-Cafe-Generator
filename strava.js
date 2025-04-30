@@ -1,5 +1,6 @@
 let polylineConvert = require('google-polyline'); 
 const latlongify = require('latlongify');
+const  lookup = require("coordinate_to_country");
 
 let json = require('./assets/cafes.json'); 
 
@@ -40,15 +41,15 @@ async function getCountry(polyline) {
     let str = polyline[0].toString(); 
     
     let array = str.split(',');
-    a = Number(array[0]), b = Number(array[1]);  
-    
-    let res = await latlongify.find(a, b); 
-    //console.log("country code: " + res.country.code); 
+    a = Number(array[0]), b = Number(array[1]);      
+    //let res = await latlongify.find(a, b); 
 
-    return res.country.code; 
-    //if (res.country.code == "GBR") {
-    //    return true; 
-    //}
+    let res = lookup(a, b); 
+    console.log("A: " + a);
+    console.log("B: " + b);  
+
+    let countryCode = JSON.stringify(res); //["GBR"]
+    return countryCode; 
 }
 
 function getCafeList(data) {
@@ -116,6 +117,8 @@ function difference(a, b) {
 }
 
 function addCafeToList(cafeArr, item) {
+  
+  //console.log("cafe name: " + item.name); 
   cafeArr.push({
     name: item.name,
     address: item.address,
