@@ -1,5 +1,5 @@
 #map {
-    height: 10vh; /*55vh*/
+    height: 55vh; /*55vh*/
     width: 65%; /*65%*/
     /*float: left;
     position: absolute;*/
@@ -35,5 +35,4 @@ h1 {
 
 .error-message {
     color: red;
-    text-align: center;
 }

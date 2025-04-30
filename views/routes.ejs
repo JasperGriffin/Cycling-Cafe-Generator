@@ -39,28 +39,24 @@
             <br />
             <hr />
             <br />
-            <h3>Number of total cafes:        
-                <script>document.write(numOfCafes);</script>
-            </h3>
-            <br />
-            <h3>Number of cafes halfway: N/A</h3>
-            <p id="halfway-desc">These cafes are roughly halfway between the start and finish</p>
+            <% if(!data.error){ %>
+                <h3>Number of total cafes:        
+                    <script>document.write(numOfCafes);</script>
+                </h3>
+                <br />
+                <h3>Number of cafes halfway: N/A</h3>
+                <p id="halfway-desc">These cafes are roughly halfway between the start and finish</p>
 
-            <!--TESTING-->
-            <!-- data: { message: polyline, cafes: cafesArr, name: name, distance: distance, error: err } }-->
+            <% } %> 
 
+            <% if(data.error){ %>
+                <div class="error-message">
+                    <b><%= data.error %></b>
+                </div>
+            <% } %> 
+            
         </div>
     </div>
-    
-    
-
-    <br />
-    <div class="error-message">
-        <b><%= data.error %></b>
-    </div>
-
-
-    
 
 </body> 
 <%- include('templates/footer.ejs') -%>

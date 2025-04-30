@@ -43,7 +43,7 @@ footer {
 #route-src {
     width: 500px;
     height: 40px;
-    padding: 10px;
+    padding: 0px; /*10px*/
     font-size: 15px;
     border-radius: 5px;
 }
@@ -53,6 +53,7 @@ footer {
     height: 40px;
     color: #FC5200;
     border-radius: 5px;
+    padding: 10px;
     background: url(../img/search-13-xxl.png);
     background-repeat: no-repeat;
     background-size: 25px;
