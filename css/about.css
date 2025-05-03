@@ -7,50 +7,59 @@ body {
     margin-bottom: 18vh;
 }
 
-.first-text-container, .second-text-container {
+.first-text-container, .second-text-container, .third-text-container {
     height: auto;/*300px*/
     width: 100%;
-    
-    padding: 50px;
-    /*
-    margin-top: 30px;
-    */
+    padding: 3vw; /*50px*/
 }
-
 
 .first-text-container h1 {
-    font-size: 50px;
+    font-size: 4vw; /*50px - make this em*/
 }
 
-.profile-pic-container { 
-    padding: 50px;    
+.first-text-container h3, .second-text-container h3, .third-text-container h3 {
+    font-size: 1.75vw; /*make this em*/ 
+}
+
+.first-text-container p, .second-text-container p, .third-text-container p {
+    font-size: 1em;
+}
+
+.profile-pic-container, .second-pic-container, .third-pic-container { 
+    padding: 2.5vw; /*50px*/
 }
 
 .profile-pic-container img {
-    height: 300px;
-    width: 300px;
+    height: 20vw; /*300px*/
+    width: 20vw; /*300px*/
 }
 
-.first-content-container, .second-content-container  {
+.second-pic-container img { 
+    height: 20vw; 
+    width: 20vw; 
+}
+
+.third-pic-container img { 
+    height: 20vw;
+    width: 20vw;
+}
+
+.first-content-container {
     
     display: flex;
-    justify-content: center;
-    
-    
-    padding-left: 20vw;
-    padding-right: 20vw;
-    
-
-    /*
-    position: relative;
-    */
+    justify-content: center; 
+    padding-left: 15vw;
+    padding-right: 15vw;
 }
 
 .second-content-container, .third-content-container { 
+    display: flex;
     padding: 10px;
-    min-height: 300px;
-    /*width: 100%;   - causes width to expand over footer*/
+    min-height: 300px; /*300px*/
     text-align: center;
+
+    padding-left: 10vw;
+    padding-right: 10vw;
 }
 
 .second-content-container {

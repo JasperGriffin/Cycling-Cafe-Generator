@@ -2,12 +2,7 @@ const express = require('express');
 const app = express(); 
 const port = 3000;
 var path = require('path');
-//var fs = require('fs');
 var https = require('https'); 
-//var http = require('http'); 
-//const fetch = require('node-fetch');
-//ejs library
-//let ejs = require('ejs');
 const querystring = require('querystring');
 
 //referencing env variables
@@ -77,7 +72,6 @@ app.get('/auth', (req, res, next) => {
       });
     
       res.on('end', () => {
-        //console.log('Response:', responseBody)
         let obj = JSON.parse(responseBody);
 
         if (obj.message == "Bad Request") {
