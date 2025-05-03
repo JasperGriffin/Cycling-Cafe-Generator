@@ -43,9 +43,9 @@ footer {
 #route-src {
     width: 500px;
     height: 40px;
-    padding: 0px; /*10px*/
+    padding: 10px; /*10px*/
     font-size: 15px;
-    border-radius: 5px;
+    border-radius: 15px; /*5px*/
 }
 
 #submit-button {
@@ -63,18 +63,20 @@ footer {
 
 .message-container {
     text-align: center;
-    border: 2px red;
-    border-radius: 8px;
 }
 
 .error-message {
     color: red;
+    border-radius: 8px;
+    padding: 10px;
+    border-style: solid;
 }
 
 .auth-message {
-    color: #0bff70da;
+    color: #0ce266da;
     border-radius: 8px;
-    padding: 10px;
+    padding: 10px 20px 10px 20px;
+    border-style: solid;
 }
 
 .instructions-container {

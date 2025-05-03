@@ -2,12 +2,12 @@ const express = require('express');
 const app = express(); 
 const port = 3000;
 var path = require('path');
-var fs = require('fs');
+//var fs = require('fs');
 var https = require('https'); 
-var http = require('http'); 
-const fetch = require('node-fetch');
+//var http = require('http'); 
+//const fetch = require('node-fetch');
 //ejs library
-let ejs = require('ejs');
+//let ejs = require('ejs');
 const querystring = require('querystring');
 
 //referencing env variables
@@ -32,74 +32,88 @@ app.set('trust proxy', true);
 
 // Configure OAuth2 access token for authorization: strava_oauth
 var strava_oauth = defaultClient.authentications['strava_oauth'];
-var json = require('./assets/cafes.json');
+//var json = require('./assets/cafes.json');
 
 app.get('/', (req, res) => {
   res.render('index', {title: 'Hey', message: '', authMessage: ''}); 
 });
 
-app.get('/home', (req, res) => {
-  res.render('home', {title: 'Hey', message: '' });
+app.get('/about', (req, res) => {
+  res.render('about', {title: 'Hey', message: '' });
 })
 
 app.get('/auth', (req, res, next) => {
 
-    const { code, state, scope } = req.query;
-    if (code) {
-      console.log('Authorization code:', code);  // Logs the code received from Strava
-      console.log('State:', state);  // Logs the state parameter, if present
-      console.log('Scope:', scope);  // Logs the scope granted, if present
+  let firstname;
+  
+  const { code, state, scope } = req.query;
+  if (code) {
+    console.log('Authorization code:', code);  // Logs the code received from Strava
+    console.log('State:', state);  // Logs the state parameter, if present
+    console.log('Scope:', scope);  // Logs the scope granted, if present
 
-      const data = querystring.stringify({
-        client_id: process.env.CLIENT_ID,
-        client_secret: process.env.CLIENT_SECRET,
-        code: code,
-        grant_type: 'authorization_code'
+    const data = querystring.stringify({
+      client_id: process.env.CLIENT_ID,
+      client_secret: process.env.CLIENT_SECRET,
+      code: code,
+      grant_type: 'authorization_code'
+    });
+    
+    const options = {
+      hostname: 'www.strava.com',
+      path: '/api/v3/oauth/token',
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+        'Content-Length': Buffer.byteLength(data)
+      }
+    };
+    
+    const req = https.request(options, (res) => {
+      let responseBody = '';
+    
+      res.on('data', (chunk) => {
+        responseBody += chunk;
       });
-      
-      const options = {
-        hostname: 'www.strava.com',
-        path: '/api/v3/oauth/token',
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
-          'Content-Length': Buffer.byteLength(data)
+    
+      res.on('end', () => {
+        //console.log('Response:', responseBody)
+        let obj = JSON.parse(responseBody);
+
+        if (obj.message == "Bad Request") {
+          return next("badRequest");
         }
-      };
-      
-      const req = https.request(options, (res) => {
-        let responseBody = '';
-      
-        res.on('data', (chunk) => {
-          responseBody += chunk;
-        });
-      
-        res.on('end', () => {
-          console.log('Response:', responseBody);
-          let obj = JSON.parse(responseBody);
-
-          if (obj.message == "Bad Request") {
-            return next("badRequest");
-          }
-          strava_oauth.accessToken = obj.access_token;
-        });
+          
+        firstname = obj.athlete.firstname; 
+        strava_oauth.accessToken = obj.access_token;
       });
-      
-      req.on('error', (e) => {
-        console.log("this is being run"); 
-        console.error(`Request failed: ${e.message}`);
-      });
+    });
+    
+    req.on('error', (e) => {
+      console.error(`Request failed: ${e.message}`);
+    });
 
-      req.write(data);
-      req.end();  
+    req.write(data);
+    req.end(); 
 
-      res.render('index', {title: 'Hey', message: '', authMessage: 'Connected!'}); 
-    }
-    else {
-      //error handling when pressed cancelled needs more testing
-      res.redirect('/'); 
-    }
+    setTimeout(() => {
+      let welcomeMessage
+      if (firstname) {
+        welcomeMessage = "Connected! Welcome " + firstname; 
+      } 
+      else {
+        welcomeMessage = "Connected!"
+      }
+      res.render('index', {title: 'Hey', message: '', authMessage: welcomeMessage}); 
+    }, "1000"); //Timeout of 1 sec
+  }
+  else {
+    //error handling when pressed cancelled needs more testing
+    res.redirect('/'); 
+  }
 });
+
+
 
 app.post('/api', async (req, res, next) => {
 
@@ -134,8 +148,6 @@ app.post('/api', async (req, res, next) => {
     let name = getName(data);
     let distance = getDistance(data);  
 
-    console.log("no of cafes: " + cafesArr.length); 
-
     if (cafesArr.length == 0) {
       console.log("Unfortunately no cafes could be found in this area"); 
       err = "Unfortunately no cafes could be found in this area"
@@ -167,7 +179,6 @@ app.use((err, req, res, next) => {
   }
   */
   else if(err == "linkError") {
-    console.log("linkerror is run"); ///this is run
     res.render('index', { message: 'Make sure your link is a full Strava URL route. E.g. https://www.strava.com/routes/3335599655108500324', authMessage: ''})
     res.end(); 
   }
@@ -180,7 +191,7 @@ app.use((err, req, res, next) => {
     res.end();
   }
   else if (err == "badRequest") {
-    res.render('index', {title: 'Hey', message: 'Bad Request', authMessage: ''}); 
+    res.render('index', {title: 'Hey', message: 'Bad Request - Try re-authenticating again', authMessage: ''}); 
     res.end(); 
   }
 });

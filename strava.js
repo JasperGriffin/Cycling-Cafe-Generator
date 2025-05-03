@@ -1,5 +1,4 @@
 let polylineConvert = require('google-polyline'); 
-const latlongify = require('latlongify');
 const  lookup = require("coordinate_to_country");
 
 let json = require('./assets/cafes.json'); 
@@ -42,11 +41,8 @@ async function getCountry(polyline) {
     
     let array = str.split(',');
     a = Number(array[0]), b = Number(array[1]);      
-    //let res = await latlongify.find(a, b); 
 
     let res = lookup(a, b); 
-    console.log("A: " + a);
-    console.log("B: " + b);  
 
     let countryCode = JSON.stringify(res); //["GBR"]
     return countryCode; 
@@ -60,19 +56,19 @@ function getCafeList(data) {
 
   json.forEach(async (item) => {
 
-    //console.log(item.phone);
-
     let lat = item.lat;
     let lng = item.lng; 
 
     if (isCafeInsidePolygon(polyline, lat, lng) || isCafeNearPolygon(polyline, lat, lng)) {
+
+      
+
       //validation
       validateCafeList(item);
       addCafeToList(cafeArr, item);
     }
   
   })
-  //console.log(cafeArr); 
   return cafeArr; 
 } 
 
@@ -218,7 +214,6 @@ async function verifyJSON() {
     //check for 404 errors
     json.forEach(async (item) => {
       let x = Object.keys(item).length
-      //console.log(x + " : Name: " + item.name + " : Full address: " + item.details);
       if (item.details) {
         console.log(item.details);
       }
@@ -237,6 +232,5 @@ async function verifyJSON() {
   function getName(data) {
     return data.name;
   }
-
 
 module.exports = { validateLink, getId, getPolyline, getCountry, getCafeList, checkServerErrURL, verifyJSON, getDistance, getName};

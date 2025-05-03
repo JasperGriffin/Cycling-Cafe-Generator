@@ -33,10 +33,21 @@
             </div>
             <% } %> 
 
-            <div class="message-container">
-                <b class="auth-message"><%= authMessage %></b>
-                <b class="error-message"><%= message %></b>
-            </div>
+            <br />
+            <br /> 
+            <% if(authMessage){ %> 
+                <div class="message-container">
+                    <b class="auth-message"><%= authMessage %></b>
+                </div>
+                
+            <% } else if(message){ %> 
+                <div class="message-container">
+                    <b class="error-message"><%= message %></b>
+                </div>
+            <% } %> 
+            <br />
+            <br />
+
             
             <% if(authMessage){ %> 
             <div class="form-container">                 
