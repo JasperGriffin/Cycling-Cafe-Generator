@@ -4,53 +4,61 @@ html {
 }
 
 body {
-    margin-bottom: 18vh;
+    margin-bottom: 18vh; /*Originall 25vw*/
 }
 
-.first-text-container, .second-text-container, .third-text-container {
+.first-text-container, .second-text-container, .third-text-container, .fourth-text-container {
     height: auto;/*300px*/
     width: 100%;
     padding: 3vw; /*50px*/
 }
 
+
 .first-text-container h1 {
     font-size: 3em; /*4vw*/
 }
 
-.first-text-container h3, .second-text-container h3, .third-text-container h3 {
+.first-text-container h3, .second-text-container h3, .third-text-container h3, .fourth-text-container h3 {
     font-size:1.5em; /*1.75vw*/ 
 }
 
-.first-text-container p, .second-text-container p, .third-text-container p {
+.first-text-container p, .second-text-container p, .third-text-container p, .fourth-text-container p {
     font-size: 1em;
 }
 
-.profile-pic-container, .second-pic-container, .third-pic-container { 
+.profile-pic-container, .second-pic-container, .third-pic-container, .fourth-pic-container { 
     padding: 2.5vw; /*50px*/
 }
 
-.profile-pic-container img, .second-pic-container img, .third-pic-container img {
-    height: 20vw; /*300px*/
-    width: 20vw; /*300px*/
+.profile-pic-container img, .second-pic-container img, .third-pic-container img, .fourth-pic-container img {
+        /*centres vertically*/
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    
+        width: 20vw; /*300px originally*/
+        height: 20vw;/*300px originally*/
+        border-radius: 50%; 
+        overflow: hidden; /* Ensures image doesn't overflow the circle */
 }
 
-.first-content-container {
+.first-content-container, .second-content-container, .third-content-container, .fourth-content-container { 
     display: flex;
-    justify-content: center; 
-    padding-left: 15vw;
-    padding-right: 15vw;
-}
-
-.second-content-container, .third-content-container { 
-    display: flex;
-    padding: 10px;
     min-height: 300px; /*300px*/
     /*text-align: center;*/
-
     padding-left: 10vw;
     padding-right: 10vw;
 }
 
-.second-content-container {
+.first-content-container {
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+
+.fourth-content-container {
+    padding-bottom: 30px;
+}
+
+.second-content-container, .fourth-content-container {
     background-color: #51ff93; 
 }
