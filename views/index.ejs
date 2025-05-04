@@ -35,16 +35,13 @@
 
             <br />
             <br /> 
-            <% if(authMessage){ %> 
-                <div class="message-container">
+            <div class="message-container">
+                <% if(authMessage){ %> 
                     <b class="auth-message"><%= authMessage %></b>
-                </div>
-                
-            <% } else if(message){ %> 
-                <div class="message-container">
-                    <b class="error-message"><%= message %></b>
-                </div>
-            <% } %> 
+                <% } else if(message){ %> 
+                        <b class="error-message"><%= message %></b>
+                <% } %> 
+            </div>
             <br />
             <br />
 
@@ -55,7 +52,7 @@
                     <label for="routeTitle" id="route-title"><b>Enter your Strava route</b></label><br> 
                     <br />
                     <br />
-                    <input type="text" id="route-src" name="routeSrc">
+                    <input type="text" id="route-src" name="routeSrc" placeholder="Search...">
                     <input type="submit" id="submit-button" value=".">
                 </form>
             </div>
