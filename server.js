@@ -37,6 +37,10 @@ app.get('/about', (req, res) => {
   res.render('about', {title: 'Hey', message: '' });
 })
 
+app.get('/projects', (req, res) => {
+  res.render('projects', {title: 'Hey', message: '' });
+})
+
 app.get('/auth', (req, res, next) => {
 
   let firstname;

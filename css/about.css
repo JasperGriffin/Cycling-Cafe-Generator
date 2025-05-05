@@ -31,15 +31,15 @@ body {
 }
 
 .profile-pic-container img, .second-pic-container img, .third-pic-container img, .fourth-pic-container img {
-        /*centres vertically*/
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
-    
-        width: 20vw; /*300px originally*/
-        height: 20vw;/*300px originally*/
-        border-radius: 50%; 
-        overflow: hidden; /* Ensures image doesn't overflow the circle */
+    /*centres vertically*/
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 20vw; /*300px originally*/
+    height: 20vw;/*300px originally*/
+    border-radius: 50%; 
+    overflow: hidden; /* Ensures image doesn't overflow the circle */
 }
 
 .first-content-container, .second-content-container, .third-content-container, .fourth-content-container { 
@@ -51,8 +51,8 @@ body {
 }
 
 .first-content-container {
-    padding-left: 15vw;
-    padding-right: 15vw;
+    padding-left: 20vw; /*15vw originally*/
+    padding-right: 20vw;
 }
 
 .fourth-content-container {

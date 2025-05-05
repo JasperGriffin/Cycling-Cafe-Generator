@@ -31,32 +31,47 @@
     <br /> 
     <div class="flex-container">
         <div id="map"></div>
-        <div class="info-container">
+
+        <div class="column-container">
+            <div class="info-container">
             
-            <h1><b><%= data.name %></b></h1>
-            <br />
-            <h2><b><%= data.distance %>km</b></h2>
-            <br />
-            <hr />
-            <br />
-            <% if(!data.error){ %>
-                <h3>Number of total cafes:        
-                    <script>document.write(numOfCafes);</script>
-                </h3>
+                <h1><b><%= data.name %></b></h1>
                 <br />
-                <h3>Number of cafes halfway: N/A</h3>
-                <p id="halfway-desc">These cafes are roughly halfway between the start and finish</p>
+                <h2><b><%= data.distance %>km</b></h2>
+                <br />
+                <hr />
+                <br />
+                <% if(!data.error){ %>
+                    <h3>Number of total cafes:        
+                        <script>document.write(numOfCafes);</script>
+                    </h3>
+                    <br />
+                    <h3>Number of cafes halfway: N/A</h3>
+                    <p id="halfway-desc">These cafes are roughly halfway between the start and finish</p>
+    
+                <% } %> 
+    
+                <% if(data.error){ %>
+                    <div class="error-message">
+                        <b><%= data.error %></b>
+                    </div>
+                <% } %> 
+    
+    
+                
+            </div>
+            <div class="return-button">
+                <a href="../">
+                    <h3>Try another route</h3>
+                </a> 
+            </div>
 
-            <% } %> 
-
-            <% if(data.error){ %>
-                <div class="error-message">
-                    <b><%= data.error %></b>
-                </div>
-            <% } %> 
-            
         </div>
+        
+        
     </div>
+    
+    
     <%- include('templates/footer.ejs') -%>
 
 </body> 

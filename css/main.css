@@ -38,7 +38,6 @@ footer {
 .oauth-box {
     font-size: 1vw;
     text-align: center;
-
     padding: 2vw;
     margin-left: 35vw;
     margin-right: 35vw;
@@ -86,7 +85,7 @@ footer {
     background: url(../img/search-13-xxl.png);
     background-repeat: no-repeat;
     background-size: 32px;
-    background-position: 24px 10px;
+    background-position: 24px 12px;
     background-color: #FC5200;
     box-shadow: 5px 5px rgb(206, 206, 206); 
 }
