@@ -1,3 +1,50 @@
-.container {
+* {
+	font-family: "Montserrat", sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    margin-bottom: 35vh; /*18vh*/
+}
+
+a {
+    color: inherit;
+}
+
+footer {
+    position: absolute;
+}
+
+
+.error-container {
     text-align: center;
+}
+
+.error-container img {
+    height: 30vh;
+    width: auto; 
+}
+
+
+.return-button {
+    text-align: center;
+    padding: 1vw; /*1vw*/
+    margin: 50px; 
+    margin-right: 300px;
+    margin-left: 300px;
+    border-radius: 40px;
+    background-color: #FC5200;
+    color: white;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+.page-container {
+    position: relative;
 }

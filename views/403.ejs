@@ -8,18 +8,24 @@
 </head>
 <body>
 
-    <div class="container">
-        <img src="../img/sus-dog.gif" alt="sus-dog"> 
-        <br />
-        <br />
-        <h2>You sure that was the right Strava route?</h2>
-        <br /> 
-        <p>If you're seeing this, it might mean you entered your Strava route incorrectly.</p>
-        <br />
-        <p>An example for a valid Strava link would be: <b>https://www.strava.com/routes/3335599655108500324</b></p>
-
+    <div class="page-container">
+        <div class="error-container">
+            <img src="../img/sus-dog.gif" alt="sus-dog"> 
+            <br />
+            <br />
+            <h2>You sure that was the right Strava route?</h2>
+            <br /> 
+            <p>If you're seeing this, it might mean you entered your Strava route incorrectly.</p>
+            <br />
+            <p>An example for a valid Strava link would be: <b>https://www.strava.com/routes/3335599655108500324</b></p>
+        </div>
+        <div class="return-button">
+            <a href="../">
+                <h3>Try another route</h3>
+            </a> 
+        </div>
     </div>
-
-    <%- include('templates/footer.ejs') -%>
 </body>
+
 </html>
+<%- include('templates/footer.ejs') -%>
