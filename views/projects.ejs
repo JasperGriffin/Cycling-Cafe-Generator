@@ -3,11 +3,33 @@
 <head>
     <meta charset="UTF-8">
 
-    <link rel="stylesheet" type="text/css" href="???.css">
+    <link rel="stylesheet" type="text/css" href="projects.css">
     <%- include('templates/header.ejs') -%>
 </head>
 <body>
-    <p>This projects page is working</p>
+    <div class="container">
+        <a href="../">
+            <div class="project-container">
+                <img src="../img/cafe-project-blur-background.png"alt="cafe-finder-background">  
+                
+                <div class="project-text-container">
+                    <h3>Find my cafe generator</h3>
+                    <p>Description...</p>
+                    <p>Last updated: </p>
+                </div>
+            </div>
+        </a>
+        <div class="project-container">
+            <img src="../img/London-Coffee-Tube-Map.png"alt="london-coffee-background" id="Blur-background">  
+            
+            <div class="project-text-container">
+                <h3>London Coffee Underground</h3>
+                <p>Description...</p>
+                <p>Expected release:  </p>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 <%- include('templates/footer.ejs') -%>
