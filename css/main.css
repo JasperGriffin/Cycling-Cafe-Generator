@@ -104,10 +104,11 @@ footer {
 }
 
 .auth-message {
-    color: #0ce266da;
+    background-color: #34A827;
     border-radius: 8px;
     padding: 10px 20px 10px 20px;
     border-style: solid;
+    color: white; 
 }
 
 .instructions-container {

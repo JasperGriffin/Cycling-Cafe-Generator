@@ -11,7 +11,7 @@ a {
 }
 
 .nav-container { 
-    padding: 30px;
+    padding: 30px calc(0px + 3vw) 30px calc(15px + 3vw); /*30px*/
 }
 
 .logo-container { 
@@ -29,7 +29,6 @@ a {
     top: 3.5vh;
     font-size: 2.45vh;
 }
-
 
 /*hover animation*/
 .logo-container:hover {
@@ -51,7 +50,7 @@ a {
 /*Navbar*/
 .nav-right {
     float: right;
-    padding: 20px;
+    padding: 20px; /*20px*/
 }
 .clear { clear:both; }
 
@@ -64,8 +63,8 @@ a {
     border: none;
     cursor: pointer; 
     background: none;
-    padding: 10px 20px;
-    font-size: 2.45vh;
+    padding: calc(12px + 0.5vw); /*10px 20px*/
+    font-size: calc(12px + 1vw); /*2.45vh*/
     color: black;
 
 }

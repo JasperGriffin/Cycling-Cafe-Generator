@@ -23,7 +23,8 @@ footer {
 
 .container {
     display: flex; 
-    padding: 50px;
+    flex-wrap: wrap;
+    padding: calc(20px + 1vw) /*50px*/
 }
 
 .project-container { /*project-container*/
@@ -38,8 +39,8 @@ footer {
 }
 
 .project-container img {
-    height: 200px; /*250px*/ /*16:9 format*/
-    width: auto;
+    width: 300px;
+    height: 168px; /*150px*/ /*16:9 format*/
 }
 
 .project-text-container { 

@@ -51,8 +51,8 @@ body {
 }
 
 .first-content-container {
-    padding-left: 20vw; /*15vw originally*/
-    padding-right: 20vw;
+    padding-left: 15vw; /*20vw originally*/
+    padding-right: 15vw;
 }
 
 .fourth-content-container {

@@ -21357,17 +21357,6 @@
         "photo": "https:\/\/www.dropbox.com\/s\/flqp01djovfgeew\/2714.jpg?raw=1"
     },
     {
-        "id": 147994,
-        "name": "The Snack Shack",
-        "address": "Goldcrest Way, Newburn Riverside, Newcastle Upon Tyne, NE15 8NY",
-        "details": "Open daily 7:00 - 14:00. Next to North East Ambulance Service.",
-        "website": "https:\/\/www.facebook.com\/theburritotruck\/",
-        "phone": "07553 911104",
-        "lat": 54.96811,
-        "lng": -1.71102,
-        "photo": "https:\/\/www.dropbox.com\/s\/o44326haorlg1t4\/2715.jpg?raw=1"
-    },
-    {
         "id": 147995,
         "name": "Emmet's Store, Shop, Cafe",
         "address": "The St, Peasenhall, IP17 2HJ",
@@ -33983,7 +33972,7 @@
     },
     {
         "id": 149244,
-        "name": "Charlie & Ginger",
+        "name": "Charlie & Ginger Leatherhead",
         "address": "1B North St, Leatherhead KT22 7AX",
         "details": "Open weekdays 7:30 - 17:00, Sat 9:00 - 17:00, Sun 9:00 - 16:00. Vertical cycle racks out the front. Good range of coffee &cakes. Happy to refill water bottles",
         "website": "https:\/\/www.facebook.com\/charlieandgingercoffee\/",
@@ -34228,7 +34217,7 @@
     {
         "id": 149267,
         "name": "Knights by the Burn Coffee House",
-        "address": "Walker Davison House, High St, Newburn, Newcastle upon Tyne NE15 8LN",
+        "address": "Walker Davison House, Newburn, Newcastle upon Tyne NE15 8LN",
         "details": "Open Wed - Sat 9:30 - 14:30, closed Sun - Tues. Great cafe indoor and outdoor seating with a bike rake secured to the wall. Great cake.",
         "website": "https:\/\/www.facebook.com\/knightsbytheburn\/",
         "phone": "0191 430 2620",
@@ -45159,9 +45148,9 @@
     },
     {
         "id": 150270,
-        "name": "Secret Valley Catering box",
+        "name": "The Secret Valley Catering box",
         "address": "Rannerdale Farm,  Cockermouth, CA139UY",
-        "details": "Open Weekends but expanding in summer  Converted Horsebox, Outdoor rseating, Toilet available, Coffee & cakes, bacon butties and various other things",
+        "details": "Open Fri - Sun 10:00 - 16:00",
         "website": "https:\/\/www.facebook.com\/profile.php?id=61550874177980",
         "phone": "07773 405028",
         "email": "thesecretvalleybox@gmail.com",
@@ -48260,5 +48249,64 @@
         "lat": 51.356930, 
         "lng": -0.215984,
         "photo": "https://scontent-man2-1.xx.fbcdn.net/v/t51.75761-15/472570724_18266403412271361_1022128079737154894_n.jpg?stp=dst-jpg_tt6&_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Oe0gweOkymsQ7kNvwEs6uVz&_nc_oc=AdlxgliMEDE-3-0xKLqynJNZF8Be9Co71mp0ZI9p0PZEB69bSYH3eDoHENJcLqF8Lrq3Bqu1rebYHE3CX9VwN7zO&_nc_zt=23&_nc_ht=scontent-man2-1.xx&_nc_gid=7JZOV3Z5GmdCLvam9KjbKw&oh=00_AfL6dWGIu4KZXeyTpQuPfRKBIW3BvQuYhowTkUu35ASoPA&oe=6820FA64"
+    },
+    {
+        "id": 150533,
+        "name": "Brickwood Coffee & Bread",
+        "address": "162-164 Lower Richmond Rd, Putney, SW15 1LY",
+        "details": "Open Mon - Fri 7:30 - 16:00, Sat - Sun 8:00 - 17:00",
+        "website": "https://www.brickwoodcafes.co.uk/",
+        "lat": 51.46857, 
+        "lng": -0.22596,
+        "photo": "https://lh3.googleusercontent.com/p/AF1QipNokl7dQXWiUl1QJF9VLTtkhOdG9fO1pmQPMU_I=s1360-w1360-h1020-rw"
+    },
+    {
+        "id": 150534,
+        "name": "Ernest Cafe Bar",
+        "address": "1 Boyd St, Shieldfield, Newcastle upon Tyne, NE2 1AP",
+        "details": "Open Mon - Thurs 10:00 - 23:00, Fri - Sat 10:00 to 1:00, Sun 10:00 - 17:00",
+        "website": "https://weareernest.com/",
+        "lat": 54.97664,
+        "lng": -1.59629,
+        "photo": "https://lh3.googleusercontent.com/p/AF1QipM0hTxMD8Gc0m5TGNm5UFzCXMnyXXwWM8bWjXbK=s1360-w1360-h1020-rw"
+    },
+    {
+        "id": 150535,
+        "name": "Local NCL",
+        "address": "18 Acorn Rd, Jesmond, Newcastle upon Tyne, NE2 2DJ",
+        "details": "Open daily 8:00 - 17:00",
+        "website": "https://localncl.com/",
+        "lat": 54.99244,
+        "lng": -1.60530,
+        "photo": "https://lh3.googleusercontent.com/p/AF1QipMk5BXzXSi93plj92hIQV6QsAySrJFVI9311r2P=s1360-w1360-h1020-rw"
+    },
+    {
+        "id": 150536,
+        "name": "Pink Lane Coffee",
+        "address": "1 Pink Ln, Newcastle upon Tyne, NE1 5DW",
+        "details": "Open Mon - Fri 8:00 - 17:00, Sat 9:00 - 17:00, Sun 10:00 - 16:00",
+        "website": "https://www.pinklanecoffee.co.uk/?srsltid=AfmBOoo9GirGJkQMlBxaE-ijSmYFGSifDRpHl6dHiz_ueAgkkUopc8bQ",
+        "lat": 54.96937,
+        "lng": -1.61769,
+        "photo": "https://www.only-in-newcastle.co.uk/wp-content/uploads/2020/10/Pink-Lane-Cafe-1.jpg"
+    },
+    {
+        "id": 150537,
+        "name": "Lagom Coffee Bar",
+        "address": "8 Monk St, Newcastle upon Tyne, NE1 5XD",
+        "details": "Open Mon - Fri 8:30 - 16:30, Sat - Sun 10:00 - 16:30",
+        "lat": 54.97152,
+        "lng": -1.61879,
+        "photo": "https://europeancoffeetrip.com/wp-content/uploads/city-guides/cafes/20102/7ebf59c0-aec7-486d-85f6-ed954f8e391a.jpeg"
+    },
+    {
+        "id": 150538,
+        "name": "Charlie & Ginger Epsom",
+        "address": "72 High St, Epsom, KT19 8BA",
+        "details": "Open Mon - Fri 8:00 - 17:00, Sat 9:00 - 17:00, Sun 9:00 - 16:00",
+        "lat": 51.333321,
+        "lng": -0.2676334,
+        "photo": "https://images.squarespace-cdn.com/content/v1/63c32d01d40ca263a442ce8f/8119739c-4541-4796-904c-94ae38a326f9/IMG_6600.jpeg"
     }
+    
 ]
