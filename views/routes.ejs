@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script defer type="text/javascript" src="routes.js"></script>
 
@@ -28,8 +29,11 @@
         let numOfCafes = Object.keys(cafeObj).length;
     </script>
 
+    <!--
     <br />
     <br /> 
+    -->
+    
     <div class="flex-container">
         
         <div id="map"></div>
@@ -50,7 +54,6 @@
                     <br />
                     <h3>Number of cafes halfway: N/A</h3>
                     <p id="halfway-desc">These cafes are roughly halfway between the start and finish</p>
-    
                 <% } %> 
     
                 <% if(data.error){ %>
@@ -62,20 +65,21 @@
     
                 
             </div>
-            <div class="return-button">
-                <a href="../">
-                    <h3>Try another route</h3>
-                </a> 
-            </div>
 
+            <div class="return-button-container">
+                <div class="return-button">
+                    <a href="../">
+                        <h3>Try another route</h3>
+                    </a> 
+                </div>
+            </div>
+            
         </div>
-        
-        
     </div>
     
     
-    <%- include('templates/footer.ejs') -%>
 
 </body> 
 
-</html>
+</html>   
+<%- include('templates/footer.ejs') -%>

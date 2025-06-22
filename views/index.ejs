@@ -2,7 +2,8 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script defer type="text/javascript" src="routes.js"></script>
     <script type="text/javascript" src="auth.js"></script>
@@ -19,12 +20,7 @@
                 <h1>Find my <br />Cycle Cafe...</h1>
             </div>
             <br />
-
-            <!--
-            <form action="/api/" id="" method="GET"> 
-                <input type="submit" value="Authenticate through OAuth please">
-            </form>
-            -->
+            
             <% if(!authMessage){ %> 
             <div class="oauth-container">
                 <div class="oauth-box">
@@ -34,14 +30,14 @@
                 </div>
             </div>
             <% } %> 
-
-            <br />
-            <br /> 
+            
             <div class="message-container">
                 <% if(authMessage){ %> 
+                    <br />
+                    <br />
                     <b class="auth-message"><%= authMessage %></b>
                 <% } else if(message){ %> 
-                        <b class="error-message"><%= message %></b>
+                    <b class="error-message"><%= message %></b>
                 <% } %> 
             </div>
             <br />

@@ -25,35 +25,39 @@ footer {
 
 .title { 
     padding-top: 20px;
-    font-size: 2.5vw; /*Originally: 2.5vw*/
-    /*padding-right: min(50px, 5%);*/
-
+    font-size: calc(15px + 1vw); /*Originally: 2.5vw*/
     color: #FC5200;
     text-align: center;
 }
 
 /*Start of Connect here box*/
-
-
 .oauth-box {
-    font-size: 1vw;
+    width: calc(100px + 10vw);
+    font-size: calc(10px + 0.5vw); /*1vw*/
     text-align: center;
-    padding: 2vw;
-    margin-left: 35vw;
-    margin-right: 35vw;
+    padding: 20px; /*2vw*/
     border-radius: 40px;
     background-color: #FC5200;
-    color: white;
-}
-.oauth-box h3 {
     color: white;
 }
 
 .oauth-container {
     padding: 50px;
+    display: flex;
+    justify-content: center;
+
 }
 
+.oauth-box h3 {
+    color: white;
+}
+
+
 /*End of Connect here box*/
+
+
+
+
 
 /*Start of search bar*/
 
@@ -64,33 +68,35 @@ footer {
 }
 
 #route-title {
-    font-size: 2em; /*30px*/ 
+    font-size: calc(20px + 1vw); /*2em*/ 
 }
 
 #route-src {
-    width: 40vw; /*500px*/
+    width: calc(180px + 15vw); /*40vw*/
     height: 30px;
-    padding: 15px; /*10px*/
-    font-size: 1em; /*20px*/
+    padding: 10px; /*10px*/
+    font-size: 12.5px; /*20px*/
     border-radius: 30px; /*15px*/
+
+
     box-shadow: 5px 5px rgb(206, 206, 206); 
 }
 
 #submit-button {
-    width: 80px;
+    width: 60px; /*80px*/
     height: 60px;
     color: #FC5200;
     border-radius: 30px;
     padding: 10px;
     background: url(../img/search-13-xxl.png);
     background-repeat: no-repeat;
-    background-size: 32px;
-    background-position: 24px 12px;
+    background-size: 30px;
+    background-position: 15px 12px;
     background-color: #FC5200;
     box-shadow: 5px 5px rgb(206, 206, 206); 
 }
 
-/*End of search bar*/
+/*Error messages*/
 
 .message-container {
     text-align: center;
@@ -111,16 +117,27 @@ footer {
     color: white; 
 }
 
+
+/*instructions container*/
+
 .instructions-container {
     padding: 40px;
     position: relative;
+    font-size: calc(0.75em + 0.25vw);
+}
 
+.instructions-container h1 {
+    font-size: calc(1em + 1vw); /*4vw*/
+}
+
+.instructions-container h2 {
+    font-size: calc(1.1em + 0.25vw);
 }
 
 #instructions-header {
     color: grey;
-    font-size: 40px;
     padding-top: 10px;
     padding-bottom: 10px;
+    font-size: calc(1.5em + 1vw); 
 }
 
