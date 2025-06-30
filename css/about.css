@@ -66,7 +66,7 @@ body {
 /*FONT-SIZES*/
 
 .first-text-container h1 {
-    font-size: calc(2em + 1vw); /*4vw*/
+    font-size: calc(1.8em + 1vw); /*2vw + 1vw*/
 }
 
 .first-text-container h3, .second-text-container h3, .third-text-container h3, .fourth-text-container h3 {

@@ -26,22 +26,33 @@ footer {
     text-align: center;
 }
 
+.error-container h2 {
+    font-size: calc(1.1em + 0.25vw);
+
+}
+
+.error-container p {
+    font-size: calc(0.75em + 0.25vw);
+}
+
 .error-container img {
-    height: 30vh;
+    height: 30vh; /*30vh*/
     width: auto; 
 }
 
+.return-btn-container {
+    justify-content: center;
+}
 
 .return-button {
     text-align: center;
-    padding: 1vw; /*1vw*/
-    margin: 50px; 
-    margin-right: 300px;
-    margin-left: 300px;
+    margin: auto;
+    width: 40%;
+    padding: calc(10px + 0.5vw); /*2vw*/
     border-radius: 40px;
     background-color: #FC5200;
     color: white;
-    font-size: 1em;
+    font-size: calc(0.75em + 0.25vw);
     text-decoration: none;
 }
 

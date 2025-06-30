@@ -177,7 +177,7 @@ app.use((err, req, res, next) => {
   }
   */
   else if(err == "linkError") {
-    res.render('index', { message: 'Make sure your link is a full Strava URL route. E.g. https://www.strava.com/routes/3335599655108500324', authMessage: ''})
+    res.render('index', { message: 'Make sure your link is a full Strava URL route (E.g. https://www.strava.com/routes/3335599655108500324)', authMessage: ''})
     res.end(); 
   }
   else if(err == "locationError") {
