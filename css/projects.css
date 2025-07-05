@@ -22,10 +22,10 @@ footer {
 }
 
 hr {
-  border: none;
-  height: 1px;
-  color: #333;
-  background-color: #333;  
+    border: none;
+    height: 1px;
+    color: #333;
+    background-color: #333;  
 }
 
 .container {
@@ -48,7 +48,7 @@ hr {
 
 .project-container img {
     width: 300px;
-    height: 168px; /*150px*/ /*16:9 format*/
+    height: 150px; /*150px*/ /*16:9 format*/
 }
 
 .project-text-container { 
@@ -67,7 +67,7 @@ hr {
     filter: blur(2px);
 }
 
-@media (max-width:500px) {
+@media (max-width:800px) {
 
     .container {
         padding: 0px;
@@ -82,6 +82,11 @@ hr {
 
     .project-container img {
         width: 100%;
-        height: auto; /*150px*/ /*16:9 format*/
+        height: auto;
     }
+
+    body {
+    margin-bottom: 60vh; /*18vh*/
+    }
+
 }

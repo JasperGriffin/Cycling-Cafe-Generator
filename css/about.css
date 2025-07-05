@@ -63,7 +63,7 @@ body {
     background-color: #51ff93; 
 }
 
-/*FONT-SIZES*/
+/*FONT SIZES*/
 
 .first-text-container h1 {
     font-size: calc(1.8em + 1vw); /*2vw + 1vw*/
@@ -77,32 +77,70 @@ body {
     font-size: calc(0.75em + 0.25vw); /*1em*/
 }
 
-/*
-.second-text-container, .third-text-container, .fourth-text-container {
-    height: auto;
-    padding: 3vw;
-    width: 100%;
-}
-*/
+/*CONTENT EDITS*/
 
-/*
-.second-pic-container img, .third-pic-container img, .fourth-pic-container img {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-
-    width: 20vw; 
-    height: 20vw;
-    border-radius: 50%; 
-    overflow: hidden;
+/*Tool and dev buttons*/
+.tool-btn-1, .tool-btn-2, .tool-btn-3, .tool-btn-4, .tool-btn-5,
+.dev-btn-1, .dev-btn-2, .dev-btn-3, .dev-btn-4, .dev-btn-5, .dev-btn-6, .dev-btn-7, .dev-btn-8 {
+    background-color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 5px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
 }
-*/
 
-/*
-.second-content-container, .third-content-container, .fourth-content-container { 
-    display: flex;
-    min-height: 300px;
-    padding-left: 10vw;
-    padding-right: 10vw;
+.tool-btn-1:hover {
+    background-color: #8dd3c7;
 }
-*/
+
+.tool-btn-2:hover {
+    background-color: #ffffb3;
+}
+
+.tool-btn-3:hover {
+    background-color: #bebada;
+}
+
+.tool-btn-4:hover {
+    background-color: #fb8072;
+}
+
+.tool-btn-5:hover {
+    background-color: #80b1d3;
+}
+
+.dev-btn-1:hover {
+    background-color: #fdb462;
+}
+
+.dev-btn-2:hover {
+    background-color: #b3de69;
+}
+
+.dev-btn-3:hover {
+    background-color: #fccde5;
+}
+
+.dev-btn-4:hover {
+    background-color: #d9d9d9;
+}
+
+.dev-btn-5:hover {
+    background-color: #bc80bd;
+}
+
+.dev-btn-6:hover {
+    background-color: #ccebc5;
+}
+
+.dev-btn-7:hover {
+    background-color: #ffed6f;
+}
+
+.dev-btn-8:hover {
+    background-color: #8dd3c7;
+}
+

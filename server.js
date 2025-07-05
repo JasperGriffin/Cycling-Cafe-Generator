@@ -8,7 +8,7 @@ const querystring = require('querystring');
 //referencing env variables
 require('dotenv').config();
 
-let { validateLink, getId, getPolyline, getCountry, getCafeList, getName, getDistance} = require('./strava.js');
+let { validateLink, getId, getPolyline, getCountry, getCafeList, getName, getDistance} = require('./js/strava.js')
 
 //Strava API
 var StravaApiV3 = require('strava_api_v3');
@@ -150,6 +150,7 @@ app.post('/api', async (req, res, next) => {
       console.log("Unfortunately no cafes could be found in this area"); 
       err = "Unfortunately no cafes could be found in this area"
     }
+
     res.render('routes', { data: { message: polyline, cafes: cafesArr, name: name, distance: distance, error: err } });
     res.end(); 
 
@@ -193,5 +194,3 @@ app.use((err, req, res, next) => {
     res.end(); 
   }
 });
-
-
