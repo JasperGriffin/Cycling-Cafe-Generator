@@ -25,7 +25,7 @@
             <div class="oauth-container">
                 <div class="oauth-box">
                     <a href="https://strava.com/oauth/authorize?client_id=<%= process.env.CLIENT_ID %>&redirect_uri=http://localhost:3000/auth&response_type=code&scope=read,read_all">
-                        <h3>Connect here!</h3>
+                        <h3>Connect here via Strava</h3>
                     </a> 
                 </div>
             </div>
@@ -43,7 +43,7 @@
             <br />
             <br />
 
-            
+
             <% if(authMessage){ %> 
             <div class="form-container">                 
                 <form action="/api" id="routeForm" method="POST"> 
@@ -54,21 +54,22 @@
                     <input type="submit" id="submit-button" value=".">
                 </form>
             </div>
-            
+
             <% } %> 
-             <div class="route-list-container">
-                <h1 class="route-list-title">Don't have a route on hand? Click here to copy and paste some examples!</h1>
+
+            <div class="route-list-container">
+                <input class="route-input" type="radio" id="one" name="item">
+                <label for="one" class="route-list-title">Don't have a route on hand?</label>
                 <div class="route-content">
-                    London: https://www.strava.com/routes/3244825677467971438
-                    <br />
-                    Bristol: https://www.strava.com/routes/3376551584396066110
-                    <br />
-                    Manchester: https://www.strava.com/routes/3376549018309109634
-                    <br />
-                    Newcastle: https://www.strava.com/routes/3376552983549442366
+                    London: <a href="https://www.strava.com/routes/3244825677467971438">https://www.strava.com/routes/3244825677467971438</a>
+                    <br /><br />
+                    Bristol: <a href="https://www.strava.com/routes/3376551584396066110">https://www.strava.com/routes/3376551584396066110</a>
+                    <br /><br />
+                    Manchester: <a href="https://www.strava.com/routes/3376549018309109634">https://www.strava.com/routes/3376549018309109634</a>
+                    <br /><br />
+                    Newcastle: <a href="https://www.strava.com/routes/3376552983549442366">https://www.strava.com/routes/3376552983549442366</a>
                 </div>
             </div>
-        
 
             <div class="instructions-container">
                 <hr />
@@ -77,17 +78,14 @@
                 <h2>So how does this work?</h2>
                 <p>Simply click the link above and login with your Strava username and password. Once logged in, you can then upload  any of your routes and the website will find the closest cycling-friendly cafes!</p>
                 <br />
-                <h2>Do I need to connect my Strava account?</h2>
-                <p>Yes as this is the only way to pull route data directly from Strava.</p>
-                <br />
-                <h2>Is any of my data from Strava stored?</h2>
-                <p>No personal data is stored anywhere on this website. Only your access token is processed from Strava which temporarily lets this website to pull route data from any link you provide.</p>
-                <br />
-                <h2>How can I revoke my access</h2>
-                <p>To do this, navigate to the apps section on your Strava settings webpage. Here you will see the website where you can then revoke access.</p>
-                <br />
                 <h2>How can I see a full list of these cafes?</h2>
                 <p>An (almost full) list of these cafes can be <b><u><a href="https://cafes.cyclingmaps.net/">here</a></u></b> :)</p>
+                <br />
+                <h2>Is any of my data from Strava stored?</h2>
+                <p>No personal data is stored anywhere on this website. Only your access token from Strava is processed which temporarily lets this website to pull route data from any link you provide.</p>
+                <br />
+                <h2>How can I revoke my access?</h2>
+                <p>To do this, navigate to the apps section on your Strava settings webpage. Here you will see the website where you can then revoke access.</p>
                 <br />
                 <h2>Why am I seeing a 403 error AAHHHHH?</h2>
                 <p>This is because the app has reached its max capacity of athletes signed up. To fix this, reach out to me via email which you can find <b><a href="about.ejs">here</a></b> or you can use my socials below!</p>

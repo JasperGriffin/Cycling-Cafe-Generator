@@ -53,13 +53,13 @@ a {
 }
 
 .return-button { 
-    margin: 20px;
+    margin: 0.75vw; /*20px*/
     text-align: center;
-    padding: 2vw;
+    padding: calc(10px + 0.5vw) calc(20px + 0.5vw);
     border-radius: 40px;
     background-color: #FC5200;
     color: white;
-    font-size: 1em; /*1em*/
+    font-size: calc(0.65em + 0.25vw); /*1em*/
     text-decoration: none;
 }
 
@@ -73,7 +73,7 @@ a {
 
     #map {
         width: 100%;    
-        height: 300px; /*55vh*/
+        height: 400px; /*55vh*/
     }
     .info-container {
          width: 80%; /*80%*/

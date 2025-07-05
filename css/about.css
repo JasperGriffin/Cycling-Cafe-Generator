@@ -47,6 +47,11 @@ body {
 
     .first-text-container, .second-text-container, .third-text-container, .fourth-text-container {
         width: 90%; /*Can alter this to 80 or 100*/
+        margin-bottom: 10px;
+    }
+
+    body {
+        margin-bottom: 20vh; /*Originall 25vw*/
     }
 }
 
@@ -67,6 +72,10 @@ body {
 
 .first-text-container h1 {
     font-size: calc(1.8em + 1vw); /*2vw + 1vw*/
+}
+
+.first-text-container h2, .second-text-container h2, .third-text-container h2, .fourth-text-container h2 {
+    font-size: calc(1.4em + 0.25vw); /*1.5em*/
 }
 
 .first-text-container h3, .second-text-container h3, .third-text-container h3, .fourth-text-container h3 {
@@ -90,6 +99,9 @@ body {
     padding: 10px 5px;
     margin: 4px 2px;
     transition-duration: 0.4s;
+
+    /*font-size: calc(0.75em + 0.25vw); /*1em*/
+  
 }
 
 .tool-btn-1:hover {

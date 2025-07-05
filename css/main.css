@@ -56,9 +56,6 @@ footer {
 /*End of Connect here box*/
 
 
-
-
-
 /*Start of search bar*/
 
 .form-container { 
@@ -146,15 +143,22 @@ footer {
 /*Strava routes examples*/
 
 .route-list-container {
-    width: 40%;
+    width: 50%;
     background-color: rgb(248, 248, 248);
     align-items: center;
     justify-content: center;
-    padding: 40px;
+    padding: 1em; /*40px*/
+    margin: auto;
+    overflow: hidden;
 }
 
 .route-list-title {
-    font-size: 20px; /*20px*/
+    font-size: calc(0.75em + 0.25vw); /*1em*/
+    justify-content: space-between;
+    cursor: pointer;
+    display: flex;
+    padding: 1em;
+    font-weight: bold;
 }
 
 .route-list-title:after {
@@ -162,8 +166,40 @@ footer {
     width: 1em;
     height: 1em;
     text-align: center;
+    transition: all 0.35s;
 }
 
-.route-content {
 
+.route-content {
+    max-height: 0;
+    padding: 0 2em; 
+    overflow: hidden;
+    transition: all 0.35s;
+
+    font-size: calc(0.6em + 0.35vw);
+}
+
+
+.route-input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.route-input:checked + .route-list-title:after {
+    transform: rotate(90deg);
+}
+
+.route-input:checked ~ .route-content {
+    max-height: 100vh;
+} 
+
+@media (max-width:800px) {
+    .route-list-container {
+        width: 80%;
+    }
+
+    .route-content {
+        padding: 0;
+    }
 }

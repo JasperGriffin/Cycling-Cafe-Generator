@@ -61,8 +61,6 @@ function getCafeList(data) {
 
     if (isCafeInsidePolygon(polyline, lat, lng) || isCafeNearPolygon(polyline, lat, lng)) {
 
-      
-
       //validation
       validateCafeList(item);
       addCafeToList(cafeArr, item);
@@ -140,7 +138,7 @@ function validateCafeList(item) {
   */
 
   if (!item.photo) {
-    item["photo"] = "https://media.ntslive.co.uk/crop/770x770/4f0a253d-a3a4-49e7-90a6-59071475be10_1554249600.jpeg";
+    item["photo"] = "";
   }
 
   if (item.address) {

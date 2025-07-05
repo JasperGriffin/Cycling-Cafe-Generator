@@ -131,10 +131,6 @@ app.post('/api', async (req, res, next) => {
     } 
 
     let polyline = getPolyline(data);
-
-    //getCountry(polyline) 
-    //  .then(result => {
-
     let result = await getCountry(polyline)
         
     if (result != '["GBR"]') {
@@ -171,14 +167,8 @@ app.use((err, req, res, next) => {
     res.render('403', { url: req.url });
     res.end(); 
   }
-  /*
-  else if(err.status == 404) {
-    res.render('404', {url: req.url}) //set to 403 temporarily
-    res.end(); 
-  }
-  */
   else if(err == "linkError") {
-    res.render('index', { message: 'Make sure your link is a full Strava URL route (E.g. https://www.strava.com/routes/3335599655108500324)', authMessage: ''})
+    res.render('index', { message: 'Make sure your link is a full Strava URL route as seen below', authMessage: ''})
     res.end(); 
   }
   else if(err == "locationError") {
