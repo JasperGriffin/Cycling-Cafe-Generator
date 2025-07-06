@@ -23,7 +23,6 @@
     "express": "^4.21.0",
     "google-polyline": "^1.0.3",
     "leaflet": "^1.9.4",
-    "nodemon": "^3.1.9",
-    "strava-oauth2": "^1.1.0"
+    "nodemon": "^3.1.9"
   }
 }
