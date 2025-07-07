@@ -27,7 +27,7 @@ body {
     width: 50%; /*calc(300px + 20vw)*/
 }
 
-.profile-pic-container img, .second-pic-container img, .third-pic-container img, .fourth-pic-container img {
+.profile-pic-container video, .second-pic-container video, .third-pic-container video, .fourth-pic-container video {
     /*centres vertically*/
     position: relative;
     top: 50%;
