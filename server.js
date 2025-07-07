@@ -11,7 +11,7 @@ require('dotenv').config();
 let { validateLink, getId, getPolyline, getCountry, getCafeList, getName, getDistance} = require('./js/strava.js')
 
 //Strava API
-var StravaApiV3 = require('../node_modules/strava_api_v3');
+var StravaApiV3 = require('./vendor/strava_api_v3');
 var defaultClient = StravaApiV3.ApiClient.instance;
 
 app.use(express.json()); 
