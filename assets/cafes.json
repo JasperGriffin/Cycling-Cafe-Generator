@@ -48033,7 +48033,7 @@
     {
         "id": 150514,
         "name": "Round Chimneys Farm",
-        "address": "Round Chimneys Farm, Glanvilles Wootton, Sherborne DT9 5QQ",
+        "address": "Round Chimneys Farm, Glanvilles Wootton, Sherborne, DT9 5QQ",
         "details": "Open daily 9:00 - 16:00, closed Mon & Tues. Plenty of space on the bike rack, amazing coffee, great cake and always a warm welcome. The owner once helped me out by giving me a spare tube when I had a flat as well!",
         "website": "https:\/\/www.roundchimneysfarm.co.uk\/pages\/the-farm-shop",
         "phone": "07450 876969",
@@ -48046,7 +48046,7 @@
     {
         "id": 150515,
         "name": "Quayside Kitchen",
-        "address": "12 Strand, Rye TN31 7AY",
+        "address": "12 Strand, Rye, TN31 7AY",
         "details": "Open daily 9:00 - 18:00. Behind the Rye Heritage Centre, accessed most easily from The Deals. Small cafe with outdoor space, safe parking for bikes against the fences and walls. Nice to be slightly away from the main road! Good cake and coffee, also a variety of light meals and breakfasts. Cheerful service. There is a toilet.",
         "website": "https:\/\/www.facebook.com\/Quaysidekitchen\/",
         "phone": "01797 222272",
@@ -48059,7 +48059,7 @@
     {
         "id": 150516,
         "name": "The Bee's Knees Sandwich Bar",
-        "address": "15 Pinions Rd, High Wycombe HP13 7AT",
+        "address": "15 Pinions Rd, High Wycombe, HP13 7AT",
         "details": "Open weekdays 8:00 - 14:30, Sat 8:00 - 13:00, closed Sun. Friendly cafe set back from the A40, with a wide menu selection, good prices, great food and really fast service.",
         "website": "https:\/\/www.facebook.com\/p\/The-Bees-knees-sandwich-bar-100040875443584\/?locale=en_GB",
         "phone": "01494 436552",
@@ -48307,6 +48307,15 @@
         "lat": 51.333321,
         "lng": -0.2676334,
         "photo": "https://images.squarespace-cdn.com/content/v1/63c32d01d40ca263a442ce8f/8119739c-4541-4796-904c-94ae38a326f9/IMG_6600.jpeg"
+    },
+    {
+        "id": 150539,
+        "name": "Little Brew Coffee Co",
+        "address": "E End, Whitley Bay, NE26 4RL",
+        "details": "Open Mon, Tue, Thurs, Fri 8:00 - 13:00, Sat 8:00 - 16:00, Sun 8:00 - 14:00",
+        "lat": 55.075320,
+        "lng": -1.463553,
+        "photo": "https://scontent-man2-1.xx.fbcdn.net/v/t39.30808-6/509428624_122156491364484625_5672749851960165334_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=QU-xPcBK9doQ7kNvwGgLPDB&_nc_oc=Admcp9UDLhCxI5nQXHVvzoZfYwijsMaL_9zjOzfPU5nwEuFeWs2k_KoholcRf6YOaJMsaWBDefyrEdtm8hlPV-NE&_nc_zt=23&_nc_ht=scontent-man2-1.xx&_nc_gid=FqLKo23K4O-Vvv1EdqUSQg&oh=00_AfRsz8r8xhZ20u-rRk1_9YU_bU4XZPDkElwfpdNZ8kBlPQ&oe=6876D565"
     }
     
 ]

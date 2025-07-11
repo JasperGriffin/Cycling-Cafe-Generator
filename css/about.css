@@ -99,8 +99,7 @@ body {
     padding: 10px 5px;
     margin: 4px 2px;
     transition-duration: 0.4s;
-
-    /*font-size: calc(0.75em + 0.25vw); /*1em*/
+    color:black;    /*font-size: calc(0.75em + 0.25vw); /*1em*/
   
 }
 
