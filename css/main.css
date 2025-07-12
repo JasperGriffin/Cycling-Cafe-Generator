@@ -24,7 +24,7 @@ footer {
 }
 
 .title { 
-    padding-top: 20px;
+    padding-top: 0px;
     padding-bottom: 30px;
     text-align: center;
 }
@@ -62,7 +62,7 @@ footer {
 /*Start of search bar*/
 
 .form-container { 
-    padding-top: 20px;
+    /*padding-top: 20px;*/
     text-align: center;
     margin-bottom: 40px;
 }
@@ -112,9 +112,10 @@ footer {
 .auth-message {
     background-color: #34A827;
     border-radius: 8px;
-    padding: 10px 20px 10px 20px;
+    padding: 10px 10px 10px 10px; /*CHANGE THIS*/
     border-style: solid;
-    color: white; 
+    color: white;    
+    font-size: calc(0.75em + 0.25vw);
 }
 
 

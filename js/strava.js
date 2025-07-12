@@ -126,16 +126,8 @@ function addCafeToList(cafeArr, item) {
 
 function validateCafeList(item) {
 
-  /*
-    cafeArr.push({
-        name: item.name,
-        address: item.address,
-        details: item.details,
-        lat: item.lat,
-        lng: item.lng,
-        photo: item.photo
-    })
-  */
+  const exactReg = /^[A-Z]{1,2}\d[A-Z\d]?\s?\d[A-Z]{2}/
+  const reg = /[A-Z]{1,2}\d[A-Z\d]?\s?\d[A-Z]{2}/
 
   if (!item.photo) {
     item["photo"] = "";
@@ -144,13 +136,19 @@ function validateCafeList(item) {
   if (item.address) {
     let text = item.address
     let townArr = text.split(",");
-    let town = townArr[1];
-    
-    //regex to split towns from their postcodes
-    const reg = /[A-Z]{1,2}\d[A-Z\d]?\s?\d[A-Z]{2}/
+    let n = townArr.length;
+    let town = townArr[n-1];
+    town = town.trim(); //removes whitespace either side
+
     if (town) {
-      let updatedTown = town.replace(reg, "");
-      item.address = updatedTown; 
+      if (town.match(exactReg)) {
+        town = townArr[n-2];
+        item.address = town;
+      }
+      else {
+        let updatedTown = town.replace(reg, "");
+        item.address = updatedTown;
+      }
     }
   }
 
