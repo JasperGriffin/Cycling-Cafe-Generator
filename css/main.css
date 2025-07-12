@@ -25,9 +25,12 @@ footer {
 
 .title { 
     padding-top: 20px;
-    font-size: calc(15px + 1vw); /*Originally: 2.5vw*/
-    color: #FC5200;
+    padding-bottom: 30px;
     text-align: center;
+}
+
+.title img {
+    width: calc(200px + 20vw);
 }
 
 /*Start of Connect here box*/
@@ -42,7 +45,7 @@ footer {
 }
 
 .oauth-container {
-    padding: 50px;
+    padding: 20px 50px 50px 50px;
     display: flex;
     justify-content: center;
 
@@ -201,5 +204,9 @@ footer {
 
     .route-content {
         padding: 0;
+    }
+
+    .oauth-container {
+        padding: 20px 50px 20px 50px;
     }
 }
