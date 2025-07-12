@@ -30,7 +30,7 @@ footer {
 }
 
 .title img {
-    width: calc(200px + 20vw);
+    width: calc(200px + 15vw); /*200px + 20vw*/
 }
 
 /*Start of Connect here box*/
