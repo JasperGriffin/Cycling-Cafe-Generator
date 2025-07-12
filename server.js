@@ -115,10 +115,12 @@ app.get('/auth', (req, res, next) => {
 
 app.post('/api', async (req, res, next) => {
 
-  let link = req.body['routeSrc'];  
+  let link = req.body['routeSrc'];
+  link = link.trim(); 
+  console.log("link: " + link);
   let id = getId(link);
-  let api = new StravaApiV3.RoutesApi()
-  let err = ""
+  let api = new StravaApiV3.RoutesApi();
+  let err = "";
 
   if(!validateLink(link)) {
     return next("linkError"); 

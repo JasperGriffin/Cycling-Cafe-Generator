@@ -25,7 +25,6 @@ function getPolyline(data) {
     
     try {
         let obj = polylineConvert.decode(polyline); 
-        //console.log("polyline obj: " + obj.length);
         return obj;
     }
     catch(err) {
