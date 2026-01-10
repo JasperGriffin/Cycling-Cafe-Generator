@@ -1,5 +1,6 @@
 let polylineConvert = require('google-polyline'); 
 const  lookup = require("coordinate_to_country");
+import * as turf from '@turf/turf'
 
 let json = require('../assets/cafes.json'); 
 
@@ -61,7 +62,8 @@ function getCafeList(data) {
     if (isCafeInsidePolygon(polyline, lat, lng) || isCafeNearPolygon(polyline, lat, lng)) {
 
       //validation
-      validateCafeList(item);
+      validateCafeList(item); 
+
       addCafeToList(cafeArr, item);
     }
   

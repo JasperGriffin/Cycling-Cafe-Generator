@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="contact.css">
+    <%- include('templates/header.ejs') -%>
+
+</head>
+<body>
+    <div class="form-container">
+        <h2>Contact</h2>
+        <hr />
+        <br />
+
+        <form action="https://formspree.io/f/mkgqqaqa" id="routeForm" method="POST"> 
+
+            <label for="userCategory">Select a category</label>
+            <select id="categories" name="categories">
+                <option value="Cafe suggestion">New cafe suggestion</option>
+                <option value="Cafe opening times update">Incorrect opening times</option>
+                <option value="Cafe closed">Cafe is closed down</option>
+                <option value="Other">Other</option>
+            </select><br /><br />
+
+            <label for="userEmail">Enter your email</label>
+            <input type="text" name="email" id="userEmail" placeholder="Search..."><br />
+            <label for="userMessage" placeholder="Type your message below...">Enter your message</label><br />
+
+            <textarea type="text" name="message" id="userMessage" rows="10" cols="10" wrap="soft" placeholder="Enter message here..."></textarea><br />
+
+            <div class="btn-container">
+                <input type="submit" id="submit-button" value="Submit">
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("routeForm").addEventListener("submit", async (e) => {
+
+            e.preventDefault(); // prevent normal redirect
+            const form = e.target;
+            const data = new FormData(form);
+
+            const response = await fetch("https://formspree.io/f/mkgqqaqa", {
+                method: "POST",
+                body: data,
+                headers: { 'Accept': 'application/json' }
+            });
+
+            if (response.ok) {
+                window.location.href = "./thanks"
+            } else {
+                window.location.href = "./error";
+            }
+        }
+        
+        
+    
+    );
+    </script>
+</body>
+</html>
+ <%- include('templates/footer.ejs') -%> 

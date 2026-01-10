@@ -17,12 +17,15 @@
   },
   "homepage": "https://github.com/JasperGriffin/Cycling-Cafe-Generator#readme",
   "dependencies": {
+    "@turf/turf": "^7.2.0",
     "coordinate_to_country": "^1.1.0",
     "dotenv": "^16.4.5",
     "ejs": "^3.1.10",
     "express": "^4.21.0",
     "google-polyline": "^1.0.3",
     "leaflet": "^1.9.4",
+    "leaflet.fullscreen": "^4.0.0",
+    "nodemailer": "^7.0.5",
     "nodemon": "^3.1.9"
   }
 }

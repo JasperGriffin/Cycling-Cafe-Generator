@@ -16,6 +16,10 @@
     crossorigin="">
     </script>
 
+   <!-- Leaflet Fullscreen -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.fullscreen@4.0.0/Control.FullScreen.css" />
+    <script src="https://unpkg.com/leaflet.fullscreen@4.0.0/Control.FullScreen.js"></script>
+
     <link rel="stylesheet" type="text/css" href="routes.css">
 
     <%- include('templates/header.ejs') -%>
@@ -47,8 +51,6 @@
                         <script>document.write(numOfCafes);</script>
                     </h3>
                     <br />
-                    <!--<h3>Number of cafes halfway: N/A</h3>
-                    <p id="halfway-desc">These cafes are roughly halfway between the start and finish</p>-->
                 <% } %> 
     
                 <% if(data.error){ %>
@@ -60,9 +62,15 @@
             </div>
 
             <div class="return-button-container">
-                <div class="return-button">
+                <div class="return-button" id="return">
                     <a href="../">
                         <h3>Try another route</h3>
+                    </a> 
+                </div>
+
+                <div class="return-button" id="contact">
+                    <a href="../contact">
+                        <h3>Cafe suggestions?</h3>
                     </a> 
                 </div>
             </div>

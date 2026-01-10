@@ -1,5 +1,11 @@
 
-var map = L.map('map').setView([51.39434, -0.31393], 8);//13, 10, 
+
+let map = new L.map('map', {
+	fullscreenControl: true,
+	fullscreenControlOptions: {
+		position: 'topleft'
+	}
+});
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
@@ -23,10 +29,6 @@ var bigIcon = L.icon({
 
 var parsedData = JSON.parse(data);
 initMap(parsedData) 
-.then(result => {
-    //addCafeMarkers(); 
-
-  })
 
 async function initMap(parsedData) {
 
@@ -49,26 +51,29 @@ async function initMap(parsedData) {
     }, 1000);
 }
 
+
+/*
+    cafeArr.push({
+        name: item.name,
+        address: item.address,
+        details: item.details,
+        lat: item.lat,
+        lng: item.lng,
+        photo: item.photo
+    })
+*/
 function addCafeMarkers(data) {
 
-    /*
-        cafeArr.push({
-            name: item.name,
-            address: item.address,
-            details: item.details,
-            lat: item.lat,
-            lng: item.lng,
-            photo: item.photo
-        })
-    */
- 
+    
     let cafes = JSON.parse(cafesArr)    
     cafes.forEach((item) => {
         
-        //let town = getTown(item); 
         let town = item.address;
         let details = splitDetails(item); 
 
+        //testing distance
+        calcDistance();
+        
         //create marker (x, y, cafeIcon)
         marker = new L.marker([item.lat, item.lng], {icon: cafeIcon});
 
@@ -91,6 +96,11 @@ function addCafeMarkers(data) {
     })
     
 }
+
+function calcDistance() {
+            
+}
+
     
 function getTown(item) {
     let text = item.address
@@ -105,3 +115,6 @@ function splitDetails(item) {
     return address; 
 }
 
+function shareLink(data) {
+    console.log("data: " + JSON.stringify(data)); 
+}
