@@ -59,3 +59,8 @@ footer {
 .page-container {
     position: relative;
 }
+
+.vid-container video {
+    height: 30vh;
+    overflow: auto;
+}
